@@ -1,0 +1,64 @@
+\documentclass[a4paper,12pt,twoside,hidelinks,openany]{report}
+
+\usepackage[spanish,es-tabla]{babel}
+\usepackage[utf8x]{inputenc}
+
+\input{config.tex}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		PORTADA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\thispagestyle{empty}
+% Se pueden utilizar las macros tfgPortada (TFG) o tfmPortada (TFM)
+
+\tfgPortada
+{TFM} %opciones: TFG o TFM
+{Escuela Politécnica Superior de Jaén} %Facultad o Escuela
+{Título del TFT} %El título debe coincidir con el de la propuesta
+{Autor: Nombre del alumno} 
+{Grado: Ingeniería Informática}
+{Director: Prof. D. Nombre del Profesor} %Director o directores
+{Departamento del director: Informática}
+{Fecha: 30/05/2024}
+{CC-BY-NC-SA} %opciones: CC-BY, CC-BY-SA, CC-BY-NC, CC-BY-NC-ND, CC-BY-ND, CC-BY-NC-SA
+
+\thispagestyle{empty}
+\cleardoublepage
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		Agradecimientos, Ficha e Índice
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+\input{Capitulos/Agradecimientos}
+\thispagestyle{empty}
+\cleardoublepage
+\newpage
+\thispagestyle{empty}
+\input{Capitulos/FichaNormas}
+\thispagestyle{empty}
+\cleardoublepage
+\renewcommand{\contentsname}{Índice}
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		Capítulos
+% Puedes añadir los capítulos que creas convenientes, en la carpeta capítulos, copia, pega y modifica. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{1}
+\input{Capitulos/Aniadir_y_referenciar_imagenes.tex}
+\input{Capitulos/Negrita_cursiva_subrayada_y_caracteres_especiales.tex}
+\input{Capitulos/Aniadir_tabla.tex}
+\input{Capitulos/Conclusion.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%		BIBLIOGRAFÍA Y REFERENCIAS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{unsrt}
+\bibliography{Bibliografia}
+\nocite{*} 
+\end{document}
