@@ -1,5 +1,11 @@
-\chapter{¿Cómo puedes añadir y referenciar una imagen ?}
-Para añadir una figura en latex debes incluir el siguiente código:
+\chapter{Introducción}
+TEST
+
+En el mundo actual, donde la generación de datos crece exponencialmente, la capacidad para detectar comportamientos anómalos en series temporales se ha convertido en una necesidad crítica para numerosos sectores. Desde la monitorización de redes informáticas hasta el control de sistemas industriales, la identificación temprana de patrones irregulares permite prevenir fallos, optimizar recursos y garantizar la seguridad de infraestructuras críticas.
+
+Las anomalías en series temporales representan desviaciones significativas del comportamiento esperado o normal de un sistema. Estas pueden manifestarse como picos inusuales, cambios bruscos en la tendencia, o alteraciones en la periodicidad de los datos. La detección efectiva de estas irregularidades constituye un desafío considerable, especialmente cuando se trata de sistemas complejos que generan grandes volúmenes de datos en tiempo real.
+
+Durante las últimas décadas, se han desarrollado diversos métodos para abordar este problema, desde técnicas estadísticas tradicionales hasta complejos algoritmos de aprendizaje automático. Más recientemente, los modelos de aprendizaje profundo, como autoencoders y redes neuronales recurrentes, han demostrado un rendimiento destacable en este ámbito, gracias a su capacidad para capturar relaciones no lineales y patrones temporales en los datos \cite{cherdo_time_2023}, [2]. Sin embargo, estos modelos convencionales presentan limitaciones, especialmente en términos de eficiencia computacional y consumo energético, factor crítico en dispositivos con recursos limitados o en aplicaciones que requieren procesamiento en tiempo real [2], [3].
 %Con {verbatim} añadimos textualmente lo que escribimos, sin que latex lo procese
 \begin{verbatim}
 \begin{figure}[1*]
@@ -20,24 +26,23 @@ Para añadir una figura en latex debes incluir el siguiente código:
 \end{itemize}
 
 Nota: Se pueden combinar varias opciones.
-\\
-2* -> Sustituir el 2 por:\\
-\\
-El valor 1 si queremos que el ancho de la imagen se corresponda con el ancho del texto, valores por debajo de 1 harán la imagen mas pequeña y valores por encima de 1 harán la figura mas grande que el ancho del texto.\\
-\\
-3* -> Sustituir el 3 por:\\
-\\
+
+2* -> Sustituir el 2 por:
+
+El valor 1 si queremos que el ancho de la imagen se corresponda con el ancho del texto, valores por debajo de 1 harán la imagen mas pequeña y valores por encima de 1 harán la figura mas grande que el ancho del texto.
+
+3* -> Sustituir el 3 por:
+
 La ruta de la imagen, si se ha añadido correctamente la imagen la ruta será \begin{verbatim}
 Imagenes/nombre_imagen.
 \end{verbatim}
-4* -> Sustituir el 4 por:\\
-\\
-La explicación de la imagen, es decir, si la imagen muestra a Homer Simpson sustituimos el 4 por retrato de Homer Simpson.\\
-\\
-5* -> Sustituir el 5 por:\\
-\\
-La etiqueta de la imagen, sera el ID de la imagen que nos servirá para referenciarla.\\
-\\
+4* -> Sustituir el 4 por:
+
+La explicación de la imagen, es decir, si la imagen muestra a Homer Simpson sustituimos el 4 por retrato de Homer Simpson.
+
+5* -> Sustituir el 5 por:
+
+La etiqueta de la imagen, sera el ID de la imagen que nos servirá para referenciarla.
 %Ejemplo de inclusión de una imagen
 \begin{figure}[!htb]
 	\centering
@@ -45,7 +50,7 @@ La etiqueta de la imagen, sera el ID de la imagen que nos servirá para referenc
   \caption{Retrato de Homer}
   \label{fig:Homer}
 \end{figure}
-\\
+
 Para referenciar una imagen o cualquier elemento con un label usamos el comando \begin{verbatim}\ref{nombre_etiqueta}\end{verbatim} de esta forma la figura de Homer se referencia como la figura \ref{fig:Homer}. Por cierto, que se ha configurado para se coloque en línea. En caso de no caber, intentará colocarla al principio de la página y ,si tampoco cupiera, en la parte de abajo.
 
 
