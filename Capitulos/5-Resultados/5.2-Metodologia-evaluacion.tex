@@ -1,5 +1,8 @@
 \section{Metodología de evaluación}
 
+\subsection{Entorno de ejecución} \label{subsec:entorno}
+ Aunque la máquina dispone de una GPU \textit{ NVIDIA GeForce RTX 4060 (8~GB VRAM)}, no se empleó aceleración por GPU debido a incompatibilidades prácticas entre el entorno Windows y las dependencias (versionado de CUDA/cuDNN y librerías) requeridas. En consecuencia, la totalidad de los entrenamientos se ejecutó en \textbf{CPU}. Esta decisión afecta al coste temporal de entrenamiento, pero no altera la lógica de los algoritmos ni los hiperparámetros establecidos.
+
 \subsection{Métricas de calidad}
 La tarea se evalúa como detección binaria de anomalías (clase positiva: \(\texttt{label} = 1\)). Se reportan métricas por capa (B y C) cuando aplica, y una métrica principal \textbf{best\_f1} definida como \(\max(\text{F1}_B, \text{F1}_C)\) en el modelo híbrido.
 

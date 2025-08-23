@@ -42,21 +42,20 @@ Preprocesado común:
 \begin{itemize}
     \item \textbf{Hardware}:
     \begin{itemize}
-        \item CPU: \textit{[TODO: modelo]}.
-        \item GPU: \textit{[TODO: modelo y VRAM]}.
-        \item RAM: \textit{[TODO: GB]}.
-        \item SO: \textit{[TODO]}.
+        \item CPU: \textit{Intel(R) Core(TM) i7-14700HX}.
+        \item GPU: \textit{NVIDIA GeForce RTX 4060 (8 GB VRAM)}.
+        \item RAM: \textit{32 GB}.
+        \item SO: \textit{Microsoft Windows 11 Pro (Build 26100)}.
     \end{itemize}
     \item \textbf{Software}:
     \begin{itemize}
-        \item Python \textit{[TODO: versión]}, PyTorch \textit{[TODO]}, CUDA/cuDNN \textit{[TODO]}.
-        \item NumPy \textit{[TODO]}, Pandas \textit{[TODO]}.
-        \item Optuna \textit{[TODO]}, Weights \& Biases \textit{[TODO]}.
-        \item BindsNET \textit{[TODO si aplica]}.
+        \item Python \textit{3.10.0}, PyTorch \textit{2.7.1+cpu}.
+        \item NumPy \textit{2.1.3}, Pandas \textit{2.3.1}.
     \end{itemize}
     \item \textbf{Dispositivo}: CPU/GPU seleccionable vía \texttt{--device (cpu|gpu)}.
-    \item \textbf{Reproducibilidad}: commit del código, semillas, y guardado de \texttt{best\_config.json}.
+
 \end{itemize}
+
 
 \subsection{Hiperparámetros y estrategia de búsqueda}
 La SNN híbrida (A--B--C) se optimizó con Optuna (TPE) maximizando F1; en el código se minimiza \texttt{-best\_f1}. Espacios:

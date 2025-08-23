@@ -80,6 +80,7 @@ El modelo híbrido es aplicable a escenarios de edge computing al reducir cómpu
     \item \textbf{Estimación energética indirecta}: No se dispuso de medición real de consumo en hardware neuromórfico (solo estimaciones analíticas de MACs).
     \item \textbf{Escalabilidad multivariante}: Experimentos centrados principalmente en señales univariadas (o pocas variables); falta evaluación en entornos fuertemente multivariados.
     \item \textbf{Número de trials}: \textit{[TODO: indicar n\_trials medio]} puede ser insuficiente para explorar completamente el espacio hiperparamétrico.
+    \item \textbf{GPU}: Uno de los motivos para seleccionar \texttt{BindsNET} fue la posibilidad de aprovechar aceleración GPU; sin embargo, la imposibilidad de disponer de una configuración estable de dicha aceleración (incompatibilidades de dependencias en Windows) incrementó la duración de los entrenamientos y restringió la amplitud de la exploración de hiperparámetros. Esto podría implicar que combinaciones óptimas no hayan sido completamente identificadas. No obstante, dado que todos los modelos se ejecutaron bajo condiciones homogéneas (CPU) y que el preprocesamiento fue uniforme, la validez interna de la comparación se mantiene. Futuros trabajos sobre un entorno Linux con soporte CUDA habilitado permitirán ampliar la búsqueda y evaluar la robustez frente a una exploración más exhaustiva.
 \end{itemize}
 
 \subsection{Amenazas a la validez}
