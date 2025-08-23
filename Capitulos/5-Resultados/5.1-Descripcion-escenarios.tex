@@ -1,0 +1,101 @@
+\section{Descripción de los escenarios experimentales}
+
+En este capítulo se presentan los escenarios, configuraciones y protocolos empleados para evaluar los modelos de detección de anomalías. Se comparan:
+\begin{itemize}
+    \item \textbf{SNN original (A--B)}: implementación base empleada en el trabajo previo.
+    \item \textbf{SNN híbrida (A--B--C)}: modelo propuesto con capa convolucional y búsqueda de hiperparámetros (script \texttt{javi/ejecutar\_experimento\_javi.py}).
+    \item \textbf{Baselines TSFEDL}: modelos seleccionados del repositorio \texttt{@JGS9515/compare\_to\_TSFEDL}\footnote{\url{https://github.com/JGS9515/compare_to_TSFEDL}}.
+\end{itemize}
+
+\subsection{Datasets y particionado}
+% TODO: Rellenar con datos reales de cada dataset (tamaños, % positivos, etc.)
+Se emplearon datasets públicos y/o internos con etiquetas binarias (0: normal, 1: anomalía). Para cada uno:
+\begin{itemize}
+    \item \textbf{IOPS}: KPI de servicios (Input/Output Operations Per Second). 
+    \begin{itemize}
+        \item Observaciones: \textit{[TODO: N]}.
+        \item Frecuencia de muestreo: \textit{[TODO]}.
+        \item Variables: \texttt{value}, \texttt{label}.
+        \item Porcentaje de positivos: \textit{[TODO:\%]}.
+        \item Particionado: 50/50 temporal (primera mitad entrenamiento, segunda mitad prueba), preservando orden temporal para evitar fuga de información.
+    \end{itemize}
+    \item \textbf{CalIt2}: flujos de entrada/salida en el edificio CalIt2 (UCI).
+    \begin{itemize}
+        \item Observaciones: 10.080 (15 semanas, 48 intervalos/día).
+        \item Frecuencia de muestreo: 30 minutos.
+        \item Variables: \texttt{value} (univariado por flujo), \texttt{label}.
+        \item Porcentaje de positivos: \textit{[TODO:\%]}.
+        \item Particionado: 50/50 temporal. 
+    \end{itemize}
+\end{itemize}
+
+Preprocesado común:
+\begin{itemize}
+    \item Tipado de columnas: \texttt{value} en \texttt{float64} y \texttt{label} en \texttt{Int64}.
+    \item Expansión de etiquetas en entrenamiento (\texttt{expansion = 100}) para mitigar desbalanceo temporal.
+    \item Cálculo de cuantiles sobre \textbf{train} únicamente: rango extendido con \texttt{a = 0{,}1} y resolución \texttt{r = 0{,}05}; determina \texttt{snn\_input\_layer\_neurons\_size}.
+    \item Segmentación en ventanas de longitud \texttt{T = 250} y \textit{padding} del conjunto de prueba.
+\end{itemize}
+
+\subsection{Configuración de hardware y software}
+% TODO: Actualizar con la configuración real utilizada
+\begin{itemize}
+    \item \textbf{Hardware}:
+    \begin{itemize}
+        \item CPU: \textit{[TODO: modelo]}.
+        \item GPU: \textit{[TODO: modelo y VRAM]}.
+        \item RAM: \textit{[TODO: GB]}.
+        \item SO: \textit{[TODO]}.
+    \end{itemize}
+    \item \textbf{Software}:
+    \begin{itemize}
+        \item Python \textit{[TODO: versión]}, PyTorch \textit{[TODO]}, CUDA/cuDNN \textit{[TODO]}.
+        \item NumPy \textit{[TODO]}, Pandas \textit{[TODO]}.
+        \item Optuna \textit{[TODO]}, Weights \& Biases \textit{[TODO]}.
+        \item BindsNET \textit{[TODO si aplica]}.
+    \end{itemize}
+    \item \textbf{Dispositivo}: CPU/GPU seleccionable vía \texttt{--device (cpu|gpu)}.
+    \item \textbf{Reproducibilidad}: commit del código, semillas, y guardado de \texttt{best\_config.json}.
+\end{itemize}
+
+\subsection{Hiperparámetros y estrategia de búsqueda}
+La SNN híbrida (A--B--C) se optimizó con Optuna (TPE) maximizando F1; en el código se minimiza \texttt{-best\_f1}. Espacios:
+\begin{itemize}
+    \item \textbf{Parámetros neuronales y STDP}:
+    \begin{itemize}
+        \item \texttt{nu1} \(\in [-0{,}5, 0{,}5]\), \texttt{nu2} \(\in [-0{,}5, 0{,}5]\).
+        \item \texttt{threshold} \(\in [-65, -50]\), \texttt{decay} \(\in [80, 150]\).
+    \end{itemize}
+    \item \textbf{Capa convolucional (si activa)}:
+    \begin{itemize}
+        \item \texttt{kernel\_type} \(\in\) \{gaussian, laplacian, mexican\_hat, box\}.
+        \item \texttt{kernel\_size} \(\in\) \{3,5,7,9\}.
+        \item \texttt{sigma} \(\in [0{,}5, 3{,}0]\), \texttt{norm\_factor} \(\in [0{,}1, 1{,}0]\).
+        \item \texttt{exc\_inh\_balance} \(\in [-0{,}3, 0{,}3]\).
+        \item \texttt{conv\_processing\_type} \(\in\) \{direct, weighted\_sum, max\}.
+    \end{itemize}
+    \item \textbf{Parámetros fijos}: \texttt{T = 250}, \texttt{expansion = 100}, \texttt{a = 0{,}1}, \texttt{r = 0{,}05}, \texttt{snn\_process\_layer\_neurons\_size = 100}, \texttt{use\_conv\_layer = [True|False]}.
+\end{itemize}
+El número de \textit{trials} se controló con \texttt{--n\_trials} y se registró todo en W\&B.
+
+\subsection{Resumen de configuraciones ensayadas}
+% TODO: Añadir filas con los experimentos reales
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{llccccccc}
+\hline\hline
+\textbf{ExpID} & \textbf{Modelo} & \textbf{Dataset} & \textbf{Kernel} & \textbf{K} & \(\sigma\) & \textbf{Proc} & \texttt{T} & \textbf{Device} \\
+\hline
+E0 & SNN (A--B) & IOPS & -- & -- & -- & -- & 250 & \textit{[CPU/GPU]} \\
+E1 & SNN (A--B--C) & IOPS & \textit{[TODO]} & \textit{[3/5/7/9]} & \textit{[TODO]} & \textit{[dir/ws/max]} & 250 & \textit{[CPU/GPU]} \\
+E2 & TSFEDL-\textit{[modelo]} & IOPS & N/A & N/A & N/A & N/A & -- & \textit{[CPU/GPU]} \\
+E3 & SNN (A--B) & CalIt2 & -- & -- & -- & -- & 250 & \textit{[CPU/GPU]} \\
+E4 & SNN (A--B--C) & CalIt2 & \textit{[TODO]} & \textit{[3/5/7/9]} & \textit{[TODO]} & \textit{[dir/ws/max]} & 250 & \textit{[CPU/GPU]} \\
+E5 & TSFEDL-\textit{[modelo]} & CalIt2 & N/A & N/A & N/A & N/A & -- & \textit{[CPU/GPU]} \\
+\hline\hline
+\end{tabular}
+\caption{Resumen de configuraciones ensayadas. K: tamaño de kernel; Proc: modo de procesamiento (direct/weighted\_sum/max).}
+\label{tab:resumen-configuraciones}
+\end{table}

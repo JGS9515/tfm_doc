@@ -13,7 +13,10 @@
 \usepackage{amsmath,amsthm,amssymb,mathrsfs}
 \usepackage[final]{pdfpages}
 \usepackage[]{placeins,flafter}
+
 \usepackage[none]{hyphenat} \sloppy
+
+
 \usepackage{xcolor}
 \usepackage{adjustbox}
 \usepackage{pdfpages}
@@ -24,6 +27,16 @@
 \usepackage{ifthen}
 \usepackage{emptypage} 
 
+%Spacing between parragraphs
+% \usepackage{parskip}
+\setlength{\parskip}{6pt} % Adds a small space between paragraphs
+
+%Tables
+\usepackage{booktabs} 
+\usepackage{tabularx}
+\usepackage{array}
+
+
 \spacing{1.15}
 %	CONFIGURACIÓN DE PÁGINA
 \marginsize{2.5cm}{2.5cm}{2.5cm}{2.5cm}
@@ -33,14 +46,18 @@
 \newcommand{\myref}[1]{\color{red}\bf(\ref{#1})}
 \usepackage[T1]{fontenc}
 %\usepackage[scaled]{uarial}
-\usepackage{helvet} %Tipo de letra Arial
+\usepackage{helvet}
 \renewcommand*\familydefault{\sfdefault}
 \usepackage{fancyhdr} 
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[LO,RE]{Capítulo \thechapter}
-\fancyhead[RO,LE]{Pág \thepage}
+\fancyhead[LE,LO]{{\color{gray} Javier González Santos}}
+% \fancyhead[RE,RO]{{\color{gray}Modelos de Inteligencia Artificial Sostenible para Mantenimiento Predictivo}}
+\fancyfoot[LE,LO]{{\color{gray}Escuela Politécnica Superior de Jaén}}
+\fancyfoot[RE,RO]{{\color{gray}\thepage}}
+\renewcommand{\footrulewidth}{1pt}
+
 \setlength\headheight{15pt}
 
 % CONFIGURACIÓN DE LA PORTADA

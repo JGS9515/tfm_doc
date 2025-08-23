@@ -1,5 +1,0 @@
-\babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {1}¿Cómo puedes añadir y referenciar una imagen ?}{2}{}%
-\contentsline {chapter}{\numberline {2}Negrita, cursiva, subrayada y caracteres es\textbf {}peciales}{4}{}%
-\contentsline {chapter}{\numberline {3}Añadir una Tabla}{5}{}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{8}{}%
