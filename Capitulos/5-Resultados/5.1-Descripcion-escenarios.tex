@@ -56,6 +56,68 @@ Preprocesado común:
 
 \end{itemize}
 
+\subsection{Configuración de hardware y software}
+\label{subsec:config_hw_sw}
+
+En este Trabajo Fin de Máster se han utilizado dos entornos de trabajo principales:  El \textbf{Proyecto SNN} (con dos variantes internas: SNN original (A–B) y SNN híbrida (A–B–C)) y \textbf{Baselines TSFEDL}.
+
+Ambos entornos no se unificaron deliberadamente debido a \textbf{incompatibilidades de versiones}, particularmente relacionadas con PyTorch, NumPy y Pandas. Intentar forzar una convergencia resultaba inviable no era posible encontrar una combinación de versiones que permitiera ejecutar simultáneamente ambos proyectos. A continuación se muestran las restricciones técnicas más relevantes:
+
+\begin{itemize}
+    \item \textbf{Restricción principal}: BindsNET 0.2.7 requiere una versión de PyTorch anterior a la 1.13, lo que lo hace incompatible con la rama 2.x utilizada por TSFEDL.
+    \item \textbf{Efecto cadena}: librerías estrechamente ligadas, como \textit{Torchvision} y \textit{Lightning/torchmetrics}, demandan rangos de versiones distintos de \texttt{torch}, lo que agrava la incompatibilidad.
+    \item \textbf{Cambios estructurales}: tanto NumPy 2.x como Pandas 2.x introducen modificaciones internas que obligarían a un proceso de refactorización antes de poder migrar el entorno SNN de manera estable.
+\end{itemize}
+
+\subsubsection*{Hardware (común a todos los experimentos)}
+\begin{itemize}
+    \item \textbf{CPU}: Intel(R) Core(TM) i7-14700HX
+    \item \textbf{GPU}: NVIDIA GeForce RTX 4060 (8 GB VRAM)
+    \item \textbf{RAM}: 32 GB
+    \item \textbf{Sistema Operativo}: Microsoft Windows 11 Pro (Build 26100)
+    \item \textbf{Dispositivo de cómputo}: Seleccionable mediante parámetro \texttt{--device \{cpu|gpu\}}
+\end{itemize}
+
+\subsubsection*{Comparación de versiones de software}
+La Tabla~\ref{tab:comparativa_sw} resume las principales diferencias entre el entorno de TSFEDL y el del Proyecto SNN (aplicable a ambas variantes SNN: original y con capa convolucional).
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lccc}
+\hline\hline
+\textbf{Librería} & \textbf{TSFEDL} & \textbf{Proyecto SNN} & \textbf{Observación} \\
+\hline
+Python        & 3.10.0     & 3.10.0     & Mismo \\
+PyTorch       & 2.7.1+cpu  & 1.11.0     & Diferencia mayor (API / backend) \\
+Torchvision   & --         & 0.12.0     & Sólo en SNN \\
+NumPy         & 2.1.3      & 1.23.5     & Diferencia relevante (cambios internos) \\
+Pandas        & 2.3.1      & 1.4.3      & Diferencia mayor (funciones depreciadas) \\
+Matplotlib    & --         & 3.5.2      & Sólo en SNN (núcleo) \\
+Scikit-learn  & --         & 1.1.1      & Sólo en SNN \\
+BindsNET      & --         & 0.2.7      & Específico SNN (requiere PyTorch 1.x) \\
+\hline\hline
+\end{tabular}
+\caption{Comparativa principal de versiones de software entre TSFEDL y Proyecto SNN.}
+\label{tab:comparativa_sw}
+\end{table}
+
+
+\subsubsection*{Librerías adicionales del Proyecto SNN}
+Además de las listadas en la tabla, el entorno SNN incluye:
+
+\begin{description}
+    \item[Aprendizaje Profundo / ML:] TensorFlow 2.19.0, Keras 3.10.0, PyTorch Lightning 2.5.2, Torchmetrics 1.7.4
+    \item[Visualización:] Matplotlib 3.9.3 (instalada adicionalmente), Pillow 11.0.0, OpenCV 4.10.0.84
+    \item[Procesamiento de datos:] SciPy 1.14.1, Scikit-image 0.24.0, NetworkX 3.4.2
+    \item[Monitoreo / Logging:] Weights \& Biases (wandb) 0.21.0, TensorBoard 2.19.0, TensorBoardX 2.6.2.2
+    \item[Utilidades:] Pytest 8.3.4, Rich 14.0.0, TQDM 4.67.1, Requests 2.32.3
+    \item[Dominio de señales:] ObsPy 1.4.2 (sísmica), WFDB 4.3.0 (biomédica), SoundFile 0.13.1 (audio)
+\end{description}
+
+
+\subsubsection*{Estrategia de gestión de entornos}
+Se emplearon entornos virtuales independientes utilizando \texttt{venv}. 
 
 \subsection{Hiperparámetros y estrategia de búsqueda}
 La SNN híbrida (A--B--C) se optimizó con Optuna (TPE) maximizando F1; en el código se minimiza \texttt{-best\_f1}. Espacios:
@@ -83,16 +145,16 @@ El número de \textit{trials} se controló con \texttt{--n\_trials} y se registr
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{llccccccc}
+\begin{tabular}{llcccccc}
 \hline\hline
-\textbf{ExpID} & \textbf{Modelo} & \textbf{Dataset} & \textbf{Kernel} & \textbf{K} & \(\sigma\) & \textbf{Proc} & \texttt{T} & \textbf{Device} \\
+\textbf{ExpID} & \textbf{Modelo} & \textbf{Dataset} & \textbf{Kernel} & \textbf{K} & \(\sigma\) & \textbf{Proc} & \texttt{T} \\
 \hline
-E0 & SNN (A--B) & IOPS & -- & -- & -- & -- & 250 & \textit{[CPU/GPU]} \\
-E1 & SNN (A--B--C) & IOPS & \textit{[TODO]} & \textit{[3/5/7/9]} & \textit{[TODO]} & \textit{[dir/ws/max]} & 250 & \textit{[CPU/GPU]} \\
-E2 & TSFEDL-\textit{[modelo]} & IOPS & N/A & N/A & N/A & N/A & -- & \textit{[CPU/GPU]} \\
-E3 & SNN (A--B) & CalIt2 & -- & -- & -- & -- & 250 & \textit{[CPU/GPU]} \\
-E4 & SNN (A--B--C) & CalIt2 & \textit{[TODO]} & \textit{[3/5/7/9]} & \textit{[TODO]} & \textit{[dir/ws/max]} & 250 & \textit{[CPU/GPU]} \\
-E5 & TSFEDL-\textit{[modelo]} & CalIt2 & N/A & N/A & N/A & N/A & -- & \textit{[CPU/GPU]} \\
+E0 & SNN (A--B) & IOPS & -- & -- & -- & -- & 250 \\
+E1 & SNN (A--B--C) & IOPS & \textit{[TODO]} & \textit{[3/5/7/9]} & \textit{[TODO]} & \textit{[dir/ws/max]} & 250 \\
+E2 & TSFEDL-\textit{[modelo]} & IOPS & N/A & N/A & N/A & N/A & -- \\
+E3 & SNN (A--B) & CalIt2 & -- & -- & -- & -- & 250 \\
+E4 & SNN (A--B--C) & CalIt2 & \textit{[TODO]} & \textit{[3/5/7/9]} & \textit{[TODO]} & \textit{[dir/ws/max]} & 250 \\
+E5 & TSFEDL-\textit{[modelo]} & CalIt2 & N/A & N/A & N/A & N/A & -- \\
 \hline\hline
 \end{tabular}
 \caption{Resumen de configuraciones ensayadas. K: tamaño de kernel; Proc: modo de procesamiento (direct/weighted\_sum/max).}
