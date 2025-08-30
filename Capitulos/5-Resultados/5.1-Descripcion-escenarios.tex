@@ -37,25 +37,6 @@ Preprocesado común:
 \end{itemize}
 
 \subsection{Configuración de hardware y software}
-
-\begin{itemize}
-    \item \textbf{Hardware}:
-    \begin{itemize}
-        \item CPU: \textit{Intel(R) Core(TM) i7-14700HX}.
-        \item GPU: \textit{NVIDIA GeForce RTX 4060 (8 GB VRAM)}.
-        \item RAM: \textit{32 GB}.
-        \item SO: \textit{Microsoft Windows 11 Pro (Build 26100)}.
-    \end{itemize}
-    \item \textbf{Software}:
-    \begin{itemize}
-        \item Python \textit{3.10.0}, PyTorch \textit{2.7.1+cpu}.
-        \item NumPy \textit{2.1.3}, Pandas \textit{2.3.1}.
-    \end{itemize}
-    \item \textbf{Dispositivo}: CPU/GPU seleccionable vía \texttt{--device (cpu|gpu)}.
-
-\end{itemize}
-
-\subsection{Configuración de hardware y software}
 \label{subsec:config_hw_sw}
 
 En este Trabajo Fin de Máster se han utilizado dos entornos de trabajo principales:  El \textbf{Proyecto SNN} (con dos variantes internas: SNN original (A–B) y SNN híbrida (A–B–C)) y \textbf{Baselines TSFEDL}.
@@ -63,7 +44,7 @@ En este Trabajo Fin de Máster se han utilizado dos entornos de trabajo principa
 Ambos entornos no se unificaron deliberadamente debido a \textbf{incompatibilidades de versiones}, particularmente relacionadas con PyTorch, NumPy y Pandas. Intentar forzar una convergencia resultaba inviable no era posible encontrar una combinación de versiones que permitiera ejecutar simultáneamente ambos proyectos. A continuación se muestran las restricciones técnicas más relevantes:
 
 \begin{itemize}
-    \item \textbf{Restricción principal}: BindsNET 0.2.7 requiere una versión de PyTorch anterior a la 1.13, lo que lo hace incompatible con la rama 2.x utilizada por TSFEDL.
+    \item \textbf{Restricción principal}: BindsNET 0.2.7 requiere una versión de PyTorch anterior a la 1.13, lo que lo hace incompatible con la versiones 2.x requeridas por TSFEDL.
     \item \textbf{Efecto cadena}: librerías estrechamente ligadas, como \textit{Torchvision} y \textit{Lightning/torchmetrics}, demandan rangos de versiones distintos de \texttt{torch}, lo que agrava la incompatibilidad.
     \item \textbf{Cambios estructurales}: tanto NumPy 2.x como Pandas 2.x introducen modificaciones internas que obligarían a un proceso de refactorización antes de poder migrar el entorno SNN de manera estable.
 \end{itemize}
