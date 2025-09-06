@@ -176,26 +176,36 @@ El diseño adopta un escalado mínimo pero informativo de capacidad (100–400 n
 % Algunas ya pueden corresponder a claves previas (p.ej. noauthor_optuna_nodate).
 
 \subsection{Hiperparámetros y estrategia de búsqueda}
-La SNN híbrida (A--B--C) se optimizó con Optuna (TPE) maximizando F1; en el código se minimiza \texttt{-best\_f1}. Espacios:
+La SNN híbrida (A--B--C) se optimizó con Optuna (TPE) maximizando F1:
 \begin{itemize}
     \item \textbf{Parámetros neuronales y STDP}:
     \begin{itemize}
-        \item \texttt{nu1} \(\in [-0{,}5, 0{,}5]\), \texttt{nu2} \(\in [-0{,}5, 0{,}5]\).
-        \item \texttt{threshold} \(\in [-65, -50]\), \texttt{decay} \(\in [80, 150]\).
+        \item \texttt{nu1} \(\in [-0{,}5, 0{,}5]\)
+        \item \texttt{nu2} \(\in [-0{,}5, 0{,}5]\)
+        \item \texttt{threshold} \(\in [-65, -50]\)
+        \item \texttt{decay} \(\in [80, 150]\)
     \end{itemize}
-    \item \textbf{Capa convolucional (si activa)}:
+    \item \textbf{Capa convolucional}:
     \begin{itemize}
-        \item \texttt{kernel\_type} \(\in\) \{gaussian, laplacian, mexican\_hat, box\}.
-        \item \texttt{kernel\_size} \(\in\) \{3,5,7,9\}.
-        \item \texttt{sigma} \(\in [0{,}5, 3{,}0]\), \texttt{norm\_factor} \(\in [0{,}1, 1{,}0]\).
-        \item \texttt{exc\_inh\_balance} \(\in [-0{,}3, 0{,}3]\).
+        \item \texttt{kernel\_type \(\in\) \{gaussian, laplacian, mexican\_hat, box\}}
+        \item \texttt{kernel\_size \(\in\) \{3,5,7,9\}}
+        \item \texttt{sigma} \(\in [0{,}5, 3{,}0]\)
+        \item \texttt{norm\_factor} \(\in [0{,}1, 1{,}0]\)
+        \item \texttt{exc\_inh\_balance} \(\in [-0{,}3, 0{,}3]\)
         \item \texttt{conv\_processing\_type} \(\in\) \{direct, weighted\_sum, max\}.
     \end{itemize}
-    \item \textbf{Parámetros fijos}: \texttt{T = 250}, \texttt{expansion = 100}, \texttt{a = 0{,}1}, \texttt{r = 0{,}05}, \texttt{snn\_process\_layer\_neurons\_size = 100}, \texttt{use\_conv\_layer = [True|False]}.
+    \item \textbf{Parámetros fijos}: 
+     \begin{itemize}
+        \item  \texttt{T = 250}
+        \item \texttt{expansion = 100}
+        \item \texttt{a = 0{,}1}
+        \item \texttt{r = 0{,}05}
+        \item \texttt{trials = 100}
+    \end{itemize}
 \end{itemize}
-El número de \textit{trials} se controló con \texttt{--n\_trials} y se registró todo en W\&B.
 
-\subsection{Resumen de configuraciones ensayadas}
+
+\subsection{Resumen de configuraciones ensayadas. (POSIBLEMENTE LO VOY A BORRAR)}
 % TODO: Añadir filas con los experimentos reales
 
 \begin{table}[htbp]

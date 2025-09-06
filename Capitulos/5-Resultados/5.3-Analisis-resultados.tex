@@ -17,14 +17,38 @@ En esta sección se presentan y discuten los resultados, comparando la SNN origi
 \small
 \begin{tabular}{lcccccc}
 \hline\hline
-\textbf{Modelo} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{MSE\_B} & \textbf{MSE\_C} & \textbf{Tiempo inf. (ms)} \\
+\textbf{Modelo} & \textbf{N} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{MSE} & \textbf{Tiempo inf. (ms)} \\
 \hline
-SNN (A--B) & -- & -- & -- & -- & N/A & -- \\
-SNN (A--B--C) & -- & -- & -- & -- & -- & -- \\
-TSFEDL-\textit{[modelo]} & -- & -- & -- & N/A & N/A & -- \\
+SNN (A--B) & 100 & -- & -- & -- & -- & -- \\
+SNN (A--B) & 200 & -- & -- & -- & -- & -- \\
+SNN (A--B) & 400 & -- & -- & -- & -- & -- \\
+\hline
+SNN (A--B--C) & 100 & -- & -- & -- & -- & -- \\
+SNN (A--B--C) & 200 & -- & -- & -- & -- & -- \\
+SNN (A--B--C) & 400 & -- & -- & -- & -- & -- \\
 \hline\hline
 \end{tabular}
-\caption{Resultados en IOPS.}
+\caption{Resultados de detección de anomalías en dataset IOPS. N representa el número de neuronas en las capas B y C para los modelos SNN. Se muestran los mejores resultados obtenidos tras optimización con Optuna para cada configuración.}
+\label{tab:resultados-iops-escalabilidad}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\hline\hline
+\textbf{Modelo} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{MSE} & \textbf{Tiempo inf. (ms)} \\
+\hline
+SNN (A--B) & -- & -- & -- & -- & -- \\
+SNN (A--B--C) & -- & -- & -- & -- & -- \\
+TSFEDL-OhShuLih & 0.280 & 0.984 & 0.436 & 0.081 & N/A \\
+TSFEDL-KhanZulfiqar & 0.263 & 0.926 & 0.410 & 0.078 & N/A \\
+TSFEDL-ZhengZhenyu & 0.265 & 0.931 & 0.412 & 0.095 & N/A \\
+TSFEDL-WeiXiaoyan & 0.244 & 0.858 & 0.380 & 0.142 & N/A \\
+\hline\hline
+\end{tabular}
+\caption{Mejores resultados de detección de anomalías en el dataset IOPS. Se muestran las métricas de calidad y eficiencia temporal para cada modelo evaluada.}
 \label{tab:resultados-iops}
 \end{table}
 
@@ -41,15 +65,40 @@ TSFEDL-\textit{[modelo]} & -- & -- & -- & N/A & N/A & -- \\
 \small
 \begin{tabular}{lcccccc}
 \hline\hline
-\textbf{Modelo} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{MSE\_B} & \textbf{MSE\_C} & \textbf{Tiempo inf. (ms)} \\
+\textbf{Modelo} & \textbf{N} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{MSE} & \textbf{Tiempo inf. (ms)} \\
 \hline
-SNN (A--B) & -- & -- & -- & -- & N/A & -- \\
-SNN (A--B--C) & -- & -- & -- & -- & -- & -- \\
-TSFEDL-\textit{[modelo]} & -- & -- & -- & N/A & N/A & -- \\
+SNN (A--B) & 100 & -- & -- & -- & -- & -- \\
+SNN (A--B) & 200 & -- & -- & -- & -- & -- \\
+SNN (A--B) & 400 & -- & -- & -- & -- & -- \\
+\hline
+SNN (A--B--C) & 100 & 0.264 & 0.999 & 0.418 & 0.732 & -- \\
+SNN (A--B--C) & 200 & 0.264 & 1.000 & 0.417 & 0.734 & -- \\
+SNN (A--B--C) & 400 & 0.264 & 0.994 & 0.417 & 0.730 & -- \\
+\hline\hline
 \hline\hline
 \end{tabular}
-\caption{Resultados en CalIt2.}
-\label{tab:resultados-calit2}
+\caption{Resultados de detección de anomalías en dataset CalIt2. N representa el número de neuronas en las capas B y C para los modelos SNN. Se muestran los mejores resultados obtenidos tras optimización con Optuna para cada configuración.}
+\label{tab:resultados-iops-escalabilidad}
+\end{table}
+
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lcccccc}
+\hline\hline
+\textbf{Modelo} & \textbf{Prec} & \textbf{Rec} & \textbf{F1} & \textbf{MSE} & \textbf{Tiempo inf. (ms)} \\
+\hline
+SNN (A--B) & -- & -- & -- & -- & -- \\
+SNN (A--B--C) & -- & -- & -- & -- & -- \\
+TSFEDL-OhShuLih & 0.543 & 1.000 & 0.704 & 0.036 & N/A \\
+TSFEDL-KhanZulfiqar & 0.543 & 1.000 & 0.704 & 0.026 & N/A \\
+TSFEDL-ZhengZhenyu & 0.543 & 1.000 & 0.704 & 0.034 & N/A \\
+TSFEDL-WeiXiaoyan & 0.522 & 0.970 & 0.679 & 0.090 & N/A \\
+\hline\hline
+\end{tabular}
+\caption{Mejores resultados de detección de anomalías en el dataset CalIt2. Se muestran las métricas de calidad y eficiencia temporal para cada modelo evaluada.}
+\label{tab:resultados-iops}
 \end{table}
 
 \subsection{Comparación con modelos TSFEDL}
