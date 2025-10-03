@@ -119,8 +119,8 @@ La elección de una progresión aproximadamente duplicativa (factor $\times 2$) 
 \subsubsection{Protocolo de optimización de hiperparámetros}
 Para cada tamaño $N_B$ ejecutamos \textbf{100 ensayos} (trials) de optimización con \textbf{Optuna} usando:
 \begin{itemize}
-    \item Algoritmo \textbf{TPE} (Tree-structured Parzen Estimator) para búsqueda adaptativa en un espacio mixto continuo y categórico.
-    \item Mecanismo de poda \textbf{ASHA} (Asynchronous Successive Halving) para detener configuraciones no prometedoras tempranamente (mitigando el coste de redes silenciosas).
+    \item Algoritmo \textbf{TPE} para búsqueda adaptativa en un espacio mixto continuo y categórico.
+    \item Mecanismo de poda \textbf{ASHA} para detener configuraciones no prometedoras tempranamente (mitigando el coste de redes silenciosas).
     \item Métrica objetivo: Minimización de $-\max(F1_B, F1_C)$, priorizando la mejor sinergia entre la capa recurrente y la capa convolucional adaptativa.
 \end{itemize}
 
