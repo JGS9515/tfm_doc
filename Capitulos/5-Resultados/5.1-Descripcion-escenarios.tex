@@ -10,7 +10,7 @@ En este capítulo se presentan los escenarios, configuraciones y protocolos que 
 \subsection{Datasets y particionado}
 Usamos datasets públicos con etiquetas binarias (0: normal, 1: anomalía). Para cada uno:
 \begin{itemize}
-    \item \textbf{IOPS}: KPI de servicios (Input/Output Operations Per Second). 
+    \item \textbf{IOPS}: KPI de servicios. 
     \begin{itemize}
         \item Observaciones: \textit{2.788.680 (26 archivos KPI)}.
         \item Frecuencia de muestreo: \textit{1 minuto}.
@@ -18,7 +18,7 @@ Usamos datasets públicos con etiquetas binarias (0: normal, 1: anomalía). Para
         \item Porcentaje de positivos: \textit{1.92\%}.
         \item Particionado: 50/50 temporal (primera mitad entrenamiento, segunda mitad prueba), preservando orden temporal para evitar fuga de información.
     \end{itemize}
-    \item \textbf{CalIt2}: flujos de entrada/salida en el edificio CalIt2 (UCI).
+    \item \textbf{CalIt2}: flujos de entrada/salida en el edificio CalIt2 de la Universidad de California.
     \begin{itemize}
         \item Observaciones: 10.080 (15 semanas, 48 intervalos/día).
         \item Frecuencia de muestreo: 30 minutos.
@@ -39,7 +39,7 @@ Preprocesado común:
 \subsection{Configuración de hardware y software}
 \label{subsec:config_hw_sw}
 
-En este Trabajo Fin de Máster se han utilizado dos entornos de trabajo principales:  El \textbf{Proyecto SNN} (con dos variantes internas: SNN original (A–B) y SNN híbrida (A–B–C)) y \textbf{Baselines TSFEDL}.
+En este TFM se han utilizado dos entornos de trabajo principales:  El Proyecto SNN (con dos variantes internas: SNN original (A–B) y SNN híbrida (A–B–C)) y Baselines TSFEDL.
 
 Ambos entornos no se unificaron deliberadamente debido a \textbf{incompatibilidades de versiones}, particularmente relacionadas con PyTorch, NumPy y Pandas. Intentar forzar una convergencia resultaba inviable no era posible encontrar una combinación de versiones que permitiera ejecutar simultáneamente ambos proyectos. A continuación se muestran las restricciones técnicas más relevantes:
 
@@ -117,10 +117,10 @@ La elección de una progresión aproximadamente duplicativa (factor $\times 2$) 
 \end{enumerate}
 
 \subsubsection{Protocolo de optimización de hiperparámetros}
-Para cada tamaño $N_B$ ejecutamos \textbf{100 ensayos} (trials) de optimización con \textbf{Optuna} usando:
+Para cada tamaño $N_B$ ejecutamos 100 ensayos (trials) de optimización con Optuna usando:
 \begin{itemize}
-    \item Algoritmo \textbf{TPE} para búsqueda adaptativa en un espacio mixto continuo y categórico.
-    \item Mecanismo de poda \textbf{ASHA} para detener configuraciones no prometedoras tempranamente (mitigando el coste de redes silenciosas).
+    \item Algoritmo TPE para búsqueda adaptativa en un espacio mixto continuo y categórico.
+    \item Mecanismo de poda ASHA para detener configuraciones no prometedoras tempranamente (mitigando el coste de redes silenciosas).
     \item Métrica objetivo: Minimización de $-\max(F1_B, F1_C)$, priorizando la mejor sinergia entre la capa recurrente y la capa convolucional adaptativa.
 \end{itemize}
 
@@ -168,7 +168,7 @@ El diseño adopta un escalado mínimo pero informativo de capacidad (100–400 n
 % Algunas ya pueden corresponder a claves previas (p.ej. noauthor_optuna_nodate).
 
 \subsection{Hiperparámetros y estrategia de búsqueda}
-La SNN híbrida (A--B--C) se optimizó con Optuna (TPE) maximizando el F1-score:
+La SNN híbrida (A--B--C) se optimizó con Optuna usando TPE maximizando el F1-score:core:
 \begin{itemize}
     \item \textbf{Parámetros neuronales y STDP}:
     \begin{itemize}
