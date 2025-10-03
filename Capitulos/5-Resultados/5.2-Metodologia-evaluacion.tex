@@ -1,7 +1,7 @@
 \section{Metodología de evaluación}
 
 \subsection{Entorno de ejecución} \label{subsec:entorno}
- Aunque la máquina dispone de una GPU \textit{ NVIDIA GeForce RTX 4060 (8~GB VRAM)}, no se empleó aceleración por GPU debido a incompatibilidades prácticas entre el entorno Windows y las dependencias (versionado de CUDA/cuDNN y librerías) requeridas. En consecuencia, la totalidad de los entrenamientos se ejecutó en \textbf{CPU}. Esta decisión afecta al coste temporal de entrenamiento, pero no altera la lógica de los algoritmos ni los hiperparámetros establecidos.
+ Aunque la máquina dispone de una GPU \textit{ NVIDIA GeForce RTX 4060 (8~GB VRAM)}, no usamos aceleración por GPU debido a incompatibilidades prácticas entre el entorno Windows y las dependencias (versionado de CUDA/cuDNN y librerías) requeridas. Por lo tanto, todos los entrenamientos se ejecutaron en \textbf{CPU}. Esta decisión afecta al tiempo de entrenamiento, pero no altera la lógica de los algoritmos ni los hiperparámetros establecidos.
 
 \subsection{Métricas de calidad}
 La tarea se evalúa como detección binaria de anomalías (clase positiva: \(\texttt{label} = 1\)). Se reportan métricas por capa (B y C) cuando aplica, y una métrica principal \textbf{best\_f1} definida como \(\max(\text{F1}_B, \text{F1}_C)\) en el modelo híbrido.
@@ -30,6 +30,6 @@ Adicionalmente:
 \begin{itemize}
     \item Particionado temporal 50/50 (sin mezcla) para cada dataset.
     \item Optimización de hiperparámetros con Optuna sobre el conjunto de entrenamiento; evaluación en prueba. 
-    \item En todas las configuraciones se utilizó selección basada en validación sobre el conjunto de entrenamiento, evitando contaminación con el conjunto de prueba.
-    \item Semillas pseudoaleatorias: Se emplearon semillas fijas por trial para garantizar reproducibilidad, con un único experimento por configuración de red (sin promediado de corridas múltiples debido a restricciones temporales).
+    \item En todas las configuraciones usamos selección basada en validación sobre el conjunto de entrenamiento, evitando contaminación con el conjunto de prueba.
+    \item Semillas pseudoaleatorias: Usamos semillas fijas por trial para garantizar reproducibilidad, con un único experimento por configuración de red (sin promediado de corridas múltiples debido a restricciones temporales).
 \end{itemize}
