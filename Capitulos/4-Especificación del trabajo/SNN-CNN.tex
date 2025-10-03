@@ -2,14 +2,14 @@
 
 \subsection{ Motivación y diferencias respecto a la SNN original}
 
-La motivación principal para desarrollar este modelo híbrido surge de las limitaciones observadas en la SNN original. Esta red se diseñó para procesar series temporales de datos (como los datasets de IoPS o CalIt2) mediante un enfoque de aprendizaje no supervisado basado en \textbf{STDP}, con el objetivo de detectar anomalías a través de patrones de disparos neuronales. Sin embargo, su estructura fully-connected limita la capacidad para capturar dependencias temporales y espaciales complejas en los datos, lo que resulta en un rendimiento subóptimo en escenarios con ruido o variabilidad alta. Además, carece de mecanismos de optimización sistemática de hiperparámetros y de procesamiento jerárquico, lo que puede llevar a sobreajuste o baja generalización.
+La motivación principal para desarrollar este modelo híbrido surge de las limitaciones observadas en la SNN original. Esta red se diseñó para procesar series temporales de datos (como los datasets de IoPS o CalIt2) mediante un enfoque de aprendizaje no supervisado basado en STDP, con el objetivo de detectar anomalías a través de patrones de disparos neuronales. Sin embargo, su estructura fully-connected limita la capacidad para capturar dependencias temporales y espaciales complejas en los datos, lo que resulta en un rendimiento subóptimo en escenarios con ruido o variabilidad alta. Además, carece de mecanismos de optimización sistemática de hiperparámetros y de procesamiento jerárquico, lo que puede llevar a sobreajuste o baja generalización.
 
 \textbf{Resumen de la arquitectura previa (A--B, 39 LIF + 100 LIF) y sus limitaciones:}
 
 La SNN original consta de dos capas principales:
 \begin{itemize}
     \item \textbf{Capa de entrada (A)}: Compuesta por un número variable de neuronas de entrada (típicamente $\sim$39, determinado por el tamaño de los cuantiles derivados de los datos de entrenamiento, \texttt{snn\_input\_layer\_neurons\_size = len(cuantiles)-1}). Estas neuronas codifican los valores de la serie temporal en impulsos (spikes) basados en rangos cuantificados.
-    \item \textbf{Capa de procesamiento (B)}: Formada por 100 neuronas LIF (Leaky Integrate-and-Fire, \texttt{snn\_process\_layer\_neurons\_size = 100}), conectadas de manera fully-connected a la capa A. Utiliza aprendizaje STDP con tasas de aprendizaje \texttt{nu1} y \texttt{nu2} para ajustar pesos sinápticos. La red se entrena exponiendo secuencias de datos durante un tiempo \texttt{T} (e.g., 100), y los disparos en B se usan para inferir anomalías (e.g., mediante umbrales como \texttt{umbral\_anomalia = np.mean(spikes) + 2 * np.std(spikes)}).
+    \item \textbf{Capa de procesamiento (B)}: Formada por 100 neuronas LIF (\texttt{snn\_process\_layer\_neurons\_size = 100}), conectadas de manera fully-connected a la capa A. Utiliza aprendizaje STDP con tasas de aprendizaje \texttt{nu1} y \texttt{nu2} para ajustar pesos sinápticos. La red se entrena exponiendo secuencias de datos durante un tiempo \texttt{T} (e.g., 100), y los disparos en B se usan para inferir anomalías (e.g., mediante umbrales como \texttt{umbral\_anomalia = np.mean(spikes) + 2 * np.std(spikes)}).
 \end{itemize}
 
 Limitaciones clave:
