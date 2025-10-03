@@ -12,7 +12,7 @@ Este Trabajo Fin de Máster ha abordado el problema de detectar anomalías en se
         \hline\hline
         \textbf{Objetivo} & \textbf{Estado (Sí/Parcial/No)} \\
         \hline
-        O1: Revisión bibliográfica de modelos de Redes Neuronales de Impulsos (SNNs) y su aplicación en detección de anomalías y mantenimiento predictivo. & Sí \\
+        O1: Revisión bibliográfica de modelos de SNNs y su aplicación en detección de anomalías y mantenimiento predictivo. & Sí \\
         O2: Diseño y desarrollo de arquitecturas de SNNs optimizadas para la detección de anomalías en datos de sensores industriales. & Sí \\
         O3: Implementación de modelos de SNNs sostenibles que minimicen el consumo energético sin sacrificar la precisión. & Parcial \\
         O4: Validación de los modelos desarrollados mediante experimentación en conjuntos de datos reales de mantenimiento predictivo. & Sí \\
@@ -68,7 +68,7 @@ El modelo híbrido es aplicable a escenarios de edge computing al reducir cómpu
     \item \textbf{Particionado 50/50}: La falta de validación cruzada temporal podría introducir sesgos en la generalización.
     \item \textbf{Estimación energética indirecta}: No medimos el consumo real en hardware neuromórfico (solo estimaciones analíticas de MACs).
     \item \textbf{Escalabilidad multivariante}: Los experimentos se centraron principalmente en señales univariadas (o pocas variables); falta evaluar en entornos fuertemente multivariados.
-    \item \textbf{GPU}: Uno de los motivos para elegir \texttt{BindsNET} fue poder aprovechar la aceleración GPU; sin embargo, no conseguimos una configuración estable (incompatibilidades de dependencias en Windows), lo que aumentó la duración de los entrenamientos y limitó la exploración de hiperparámetros. Esto podría significar que no identificamos todas las combinaciones óptimas. Aún así, como todos los modelos se ejecutaron bajo condiciones homogéneas (CPU) y el preprocesamiento fue uniforme, la validez interna de la comparación se mantiene. Futuros trabajos en un entorno Linux con soporte CUDA habilitado permitirán ampliar la búsqueda y evaluar la robustez frente a una exploración más exhaustiva.
+    \item \textbf{GPU}: Uno de los motivos para elegir BindsNET fue poder aprovechar la aceleración GPU; sin embargo, no conseguimos una configuración estable (incompatibilidades de dependencias en Windows), lo que aumentó la duración de los entrenamientos y limitó la exploración de hiperparámetros. Esto podría significar que no identificamos todas las combinaciones óptimas. Aún así, como todos los modelos se ejecutaron bajo condiciones homogéneas (CPU) y el preprocesamiento fue uniforme, la validez interna de la comparación se mantiene. Futuros trabajos en un entorno Linux con soporte CUDA habilitado permitirán ampliar la búsqueda y evaluar la robustez frente a una exploración más exhaustiva.
 \end{itemize}
 
 \subsection{Consideraciones de validez}
