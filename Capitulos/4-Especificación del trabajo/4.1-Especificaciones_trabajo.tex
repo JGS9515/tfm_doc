@@ -20,8 +20,8 @@ Los entregables y resultados que se esperan obtener de este trabajo son:
 \subsection{Restricciones}
 Las limitaciones que se presentan para comprobar la hipotesis de partida anterior pueden ser ser intelectuales, temporales o económicas y se presentan las principales a continuación:
 \begin{itemize}
-    \item \textbf{R1.} \textbf{La duración del proyecto:} Este proyecto debe regirse por el limite de tiempo de implican los 12 créditos ECTS de un Trabajo Fin de Máster (TFM), lo que implica un límite de dedicación de aproximadamente 300 horas.
-    \item \textbf{R2.} \textbf{Disponibilidad y calidad de datasets de mantenimiento predictivo:}La disponibilidad de conjuntos de datos reales y etiquetados para detección de anomalías en aplicaciones de mantenimiento predictivo es limitada. Los datasets públicos como \textbf{IOPS} y \textbf{CalIt2} utilizados en experiencias previas requieren preprocesamiento extensivo y pueden no representar completamente la diversidad de escenarios industriales reales.
+    \item \textbf{R1.} \textbf{La duración del proyecto:} Este proyecto debe regirse por el limite de tiempo de implican los 12 créditos ECTS de un TFM, lo que implica un límite de dedicación de aproximadamente 300 horas.
+    \item \textbf{R2.} \textbf{Disponibilidad y calidad de datasets de mantenimiento predictivo:}La disponibilidad de conjuntos de datos reales y etiquetados para detección de anomalías en aplicaciones de mantenimiento predictivo es limitada. Los datasets públicos como IOPS y CalIt2 utilizados en experiencias previas requieren preprocesamiento extensivo y pueden no representar completamente la diversidad de escenarios industriales reales.
     \item \textbf{R3.} \textbf{Limitaciones en la evaluación de eficiencia energética:} La validación experimental de las ventajas energéticas de las SNNs frente a métodos tradicionales requiere hardware especializado neuromórfico o mediciones precisas de consumo energético que no estan disponibles en el entorno de desarrollo.
     \item \textbf{R4.} \textbf{Complejidad en la optimización de hiperparámetros:} Los sistemas SNN presentan una sensibilidad particular a los hiperparámetros debido a la compleja dinámica temporal entre neuronas y impulsos. La optimización de estos parámetros mediante frameworks como Optuna requiere tiempo computacional considerable y está limitada por los recursos disponibles y el tiempo del proyecto.
 \end{itemize}
@@ -35,7 +35,7 @@ Este trabajo propone el desarrollo y una serie de mejoras a un sistema de detecc
     \item Incorporar una arquitectura híbrida que combina las ventajas de las capas convolucionales con la eficiencia energética inherente de las SNNs. Esta arquitectura híbrida SNN-CNN busca aprovechar la capacidad de extracción de características espaciales de las redes convolucionales junto con el procesamiento temporal asíncrono y la eficiencia energética de las SNNs. La capa convolucional que recibe las salidas de la Capa B y aplica un kernel para el filtrado convolucional de los impulsos.
     \item Incorporar Optuna para obtener la mejor configución de cada modelo mediante la hiperparametrización.
     \item Desarrollar algoritmos de preprocesamiento de los datos.
-    \item Evaluar comparando resultados con el modelo (sin la capa convolucional) y con modelos de la librería \textbf{TSFEDL} (Time Series Feature Extraction Deep Learning).
+    \item Evaluar comparando resultados con el modelo (sin la capa convolucional) y con modelos de la librería TSFEDL.
 
 \end{itemize}
     % \item Primero, se realiza una \textbf{traducción automática al inglés} (mediante \textit{GoogleTranslator}). Una vez traducido, se aplica el modelo \textit{Coreferee} en inglés para detectar cadenas de correferencia. Estas cadenas se almacenan en una estructura organizada pensada para facilitar su posterior alineación.
