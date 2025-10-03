@@ -117,7 +117,7 @@ La elección de una progresión aproximadamente duplicativa (factor $\times 2$) 
 \end{enumerate}
 
 \subsubsection{Protocolo de optimización de hiperparámetros}
-Para cada tamaño $N_B$ ejecutamos 100 ensayos (trials) de optimización con Optuna usando:
+Para cada tamaño $N_B$ ejecutamos 100 ensayos (pruebas) de optimización con Optuna usando:
 \begin{itemize}
     \item Algoritmo TPE para búsqueda adaptativa en un espacio mixto continuo y categórico.
     \item Mecanismo de poda ASHA para detener configuraciones no prometedoras tempranamente (mitigando el coste de redes silenciosas).
@@ -125,20 +125,20 @@ Para cada tamaño $N_B$ ejecutamos 100 ensayos (trials) de optimización con Opt
 \end{itemize}
 
 
-\paragraph{Justificación de 100 trials por configuración:}
+\paragraph{Justificación de 100 pruebas por configuración:}
 \begin{enumerate}
     \item \textbf{Convergencia empírica de TPE:} Los estudios de optimización muestran estabilización de mejoras marginales en intervalos de 50--150 evaluaciones en espacios de dimensión efectiva moderada \cite{bergstra_random_2012, akiba_optuna_2019}.
     \item \textbf{Eficiencia con poda:} La integración de ASHA reduce el número de evaluaciones completas necesarias, redirigiendo recursos a configuraciones más prometedoras \cite{li_system_2020, noauthor_efficient_2021}.
     \item \textbf{Sensibilidad SNN:} En SNNs la interacción entre plasticidad y dinámica de fuga/umbral puede generar regiones amplias de bajo disparo; la poda acelera el descarte \cite{firmin_parallel_2024, parsa_bayesian-based_2019}.
-    \item \textbf{Equidad comparativa:} Mantener el mismo presupuesto de 100 trials por cada $N_B$ evita sesgos de sobre-optimización en redes mayores y permite comparar curvas rendimiento/coste de forma homogénea.
-    \item \textbf{Restricciones del proyecto:} 3 escalas de red $\times$ 100 trials = 300 ensayos nominales; con poda, el número de ejecuciones completas efectivas disminuye, manteniéndose dentro del límite temporal (R1) y computacional (R4).
+    \item \textbf{Equidad comparativa:} Mantener el mismo presupuesto de 100 pruebas por cada $N_B$ evita sesgos de sobre-optimización en redes mayores y permite comparar curvas rendimiento/coste de forma homogénea.
+    \item \textbf{Restricciones del proyecto:} 3 escalas de red $\times$ 100 pruebas = 300 ensayos nominales; con poda, el número de ejecuciones completas efectivas disminuye, manteniéndose dentro del límite temporal (R1) y computacional (R4).
 \end{enumerate}
 
-\subsubsection{Salida registrada por trial}
-Para cada ensayo almacenamos: (i) hiperparámetros seleccionados, (ii) métricas $F1_B$, $F1_C$, $\max(F1_B,F1_C)$, (iii) tiempo de ejecución, (iv) identificador de trial y (v) semilla pseudoaleatoria (cuando aplica) para reproducibilidad.
+\subsubsection{Salida registrada por prueba}
+Para cada ensayo almacenamos: (i) hiperparámetros seleccionados, (ii) métricas $F1_B$, $F1_C$, $\max(F1_B,F1_C)$, (iii) tiempo de ejecución, (iv) identificador de prueba y (v) semilla pseudoaleatoria (cuando aplica) para reproducibilidad.
 
 \subsubsection{Criterio de selección final}
-La configuración óptima por cada $N_B$ se define como aquella con mayor $\max(F1_B,F1_C)$ (equivalente a menor valor objetivo interno). Además, conservamos la traza de la curva de mejor valor acumulado (\emph{best-so-far}) para mostrar la estabilización antes del trial 100.
+La configuración óptima por cada $N_B$ se define como aquella con mayor $\max(F1_B,F1_C)$ (equivalente a menor valor objetivo interno). Además, conservamos la traza de la curva de mejor valor acumulado (\emph{best-so-far}) para mostrar la estabilización antes de la prueba 100.
 
 \subsubsection{Resumen estructurado}
 \begin{center}
@@ -147,7 +147,7 @@ La configuración óptima por cada $N_B$ se define como aquella con mayor $\max(
 Parámetro & Config. 1 & Config. 2 & Config. 3 \\
 \hline
 $N_B = N_C$ & 100 & 200 & 400 \\
-Trials (TPE+ASHA) & 100 & 100 & 100 \\
+Pruebas (TPE+ASHA) & 100 & 100 & 100 \\
 Métrica objetivo & \multicolumn{3}{c}{$-\max(F1_B,F1_C)$} \\
 Espacio kernel & \multicolumn{3}{c}{Tipos + tamaño (3--9) + $\sigma$ + balance} \\
 Plasticidad & \multicolumn{3}{c}{$\nu_1,\nu_2 \in [-0.5,0.5]$} \\
@@ -192,6 +192,6 @@ La SNN híbrida (A--B--C) se optimizó con Optuna usando TPE maximizando el F1-s
         \item \texttt{expansion = 100}
         \item \texttt{a = 0{,}1}
         \item \texttt{r = 0{,}05}
-        \item \texttt{trials = 100}
+        \item \texttt{pruebas = 100}
     \end{itemize}
 \end{itemize}
