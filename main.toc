@@ -72,17 +72,17 @@
 \contentsline {subsubsection}{Salida registrada por trial}{45}{section*.34}%
 \contentsline {subsubsection}{Criterio de selección final}{45}{section*.35}%
 \contentsline {subsubsection}{Resumen estructurado}{45}{section*.36}%
-\contentsline {subsubsection}{Síntesis}{45}{section*.37}%
+\contentsline {subsubsection}{Síntesis}{46}{section*.37}%
 \contentsline {subsection}{\numberline {4.1.4}Hiperparámetros y estrategia de búsqueda}{46}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Metodología de evaluación}{46}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Entorno de ejecución}{46}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.2}Metodología de evaluación}{47}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Entorno de ejecución}{47}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Métricas de calidad}{47}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Protocolo de validación}{47}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}Análisis de resultados}{48}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Resultados por dataset}{48}{subsection.4.3.1}%
 \contentsline {subsubsection}{IOPS}{48}{section*.38}%
-\contentsline {subsubsection}{CalIt2}{48}{section*.41}%
-\contentsline {subsection}{\numberline {4.3.2}Comparación con modelos TSFEDL}{49}{subsection.4.3.2}%
+\contentsline {subsubsection}{CalIt2}{49}{section*.41}%
+\contentsline {subsection}{\numberline {4.3.2}Comparación con modelos TSFEDL}{50}{subsection.4.3.2}%
 \contentsline {chapter}{\numberline {5}Conclusiones}{52}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Resumen del trabajo desarrollado}{52}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Grado de cumplimiento de los objetivos}{52}{section.5.2}%
