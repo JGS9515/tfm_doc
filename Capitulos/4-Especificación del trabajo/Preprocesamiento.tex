@@ -12,7 +12,7 @@ La funcionalidad de completado de datos faltantes se implementó mediante el mó
 
 \subsection{Implementación de pipelines para dataset CalIt2}
 
-El dataset CalIt2, que registra flujos de personas en el edificio CalIt2 de UCI, presenta características únicas que requirieron el desarrollo de algoritmos de preprocesamiento especializados \cite{UCI_Calit2_2009}. Este dataset contiene 10,080 observaciones que abarcan 15 semanas con 48 intervalos temporales por día, representando mediciones cada media hora de flujos de entrada y salida de personas \cite{UCI_Calit2_2009}.
+El dataset CalIt2, que registra flujos de personas en el edificio CalIt2 de Universidad de California, presenta características únicas que requirieron el desarrollo de algoritmos de preprocesamiento especializados \cite{UCI_Calit2_2009}. Este dataset contiene 10,080 observaciones que abarcan 15 semanas con 48 intervalos temporales por día, representando mediciones cada media hora de flujos de entrada y salida de personas \cite{UCI_Calit2_2009}.
 
 El módulo \textbf{CalIt2\_transform\_date\_to\_timestamp} implementa la conversión de formatos de fecha a representaciones timestamp uniformes, asegurando compatibilidad con los sistemas de codificación temporal de BindsNET. La verificación de duplicación de datos se realiza mediante \textbf{CalIt2\_check\_every\_row\_is\_repeated\_2\_times}, que confirma la presencia de dos streams de datos por cada timestamp (entrada y salida de personas). 
 
