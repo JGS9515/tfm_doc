@@ -1,14 +1,14 @@
 \section{Descripción de los escenarios experimentales}
 
-En este capítulo se presentan los escenarios, configuraciones y protocolos empleados para evaluar los modelos de detección de anomalías. Se comparan:
+En este capítulo se presentan los escenarios, configuraciones y protocolos que usamos para evaluar los modelos de detección de anomalías. Comparamos:
 \begin{itemize}
-    \item \textbf{SNN original (A--B)}: implementación base empleada en el trabajo previo.
-    \item \textbf{SNN híbrida (A--B--C)}: modelo propuesto con capa convolucional y búsqueda de hiperparámetros
+    \item \textbf{SNN original (A--B)}: implementación base del trabajo previo.
+    \item \textbf{SNN híbrida (A--B--C)}: nuestro modelo propuesto con capa convolucional y búsqueda de hiperparámetros
     \item \textbf{Baselines TSFEDL}: OhShuLih, KhanZulfiqar, ZhengZhenyu, WeiXiaoyan .
 \end{itemize}
 
 \subsection{Datasets y particionado}
-Se emplearon datasets públicos con etiquetas binarias (0: normal, 1: anomalía). Para cada uno:
+Usamos datasets públicos con etiquetas binarias (0: normal, 1: anomalía). Para cada uno:
 \begin{itemize}
     \item \textbf{IOPS}: KPI de servicios (Input/Output Operations Per Second). 
     \begin{itemize}
@@ -103,21 +103,21 @@ Se emplearon entornos virtuales independientes utilizando \texttt{venv}.
 \subsection{Diseño experimental de tamaños de capa y protocolo de optimización}
 \label{subsec:diseno-experimental-neuronas}
 
-Para evaluar el impacto del tamaño de la red sobre el equilibrio rendimiento--coste computacional en la arquitectura híbrida propuesta (Capa B recurrente LIF + Capa C convolucional adaptativa), se definió una rejilla escalonada de tamaños para las capas de procesamiento interno:
+Para evaluar el impacto del tamaño de la red sobre el equilibrio rendimiento--coste computacional en la arquitectura híbrida propuesta (Capa B recurrente LIF + Capa C convolucional adaptativa), definimos una rejilla escalonada de tamaños para las capas de procesamiento interno:
 \[
 N_B \in \{100, 200, 400\}, \quad N_C = N_B
 \]
 La elección de una progresión aproximadamente duplicativa (factor $\times 2$) se justifica por:
 
 \begin{enumerate}
-    \item \textbf{Cobertura de capacidad con pocos puntos:} Se obtiene un rango total de $4\times$ en número de neuronas con sólo tres configuraciones, reduciendo el número de escenarios a optimizar bajo restricciones temporales del TFM (R1) y de coste computacional (R4).
-    \item \textbf{Análisis de escalado:} La complejidad operacional estimada (ver ecuación de MACs en la Sección correspondiente) contiene un término dominante cuadrático en $N_B$ (por $N_B^2$ y el producto $N_A N_B$), permitiendo observar el cambio de régimen en coste con incrementos estructurados.
-    \item \textbf{Zona práctica de capacidad:} Valores por debajo de 100 neuronas tienden a infra-representar patrones temporales en secuencias con variabilidad contextual, mientras que superar 400 aumenta la latencia y memoria de monitores sin garantía de ganancias proporcionales en F1 dado el carácter univariante / baja dimensionalidad de entrada.
-    \item \textbf{Control de estabilidad dinámica:} Tamaños extremadamente grandes elevan el riesgo de configuraciones subóptimas (redes excesivamente silenciosas o saturadas) durante la fase temprana de la búsqueda bayesiana.
+    \item \textbf{Cobertura de capacidad con pocos puntos:} Obtenemos un rango total de $4\times$ en número de neuronas con solo tres configuraciones, reduciendo el número de escenarios a optimizar bajo las restricciones temporales del TFM (R1) y de coste computacional (R4).
+    \item \textbf{Análisis de escalado:} La complejidad operacional estimada (ver ecuación de MACs en la Sección correspondiente) contiene un término dominante cuadrático en $N_B$ (por $N_B^2$ y el producto $N_A N_B$), permitiendo observar cómo cambia el régimen de coste con incrementos estructurados.
+    \item \textbf{Zona práctica de capacidad:} Valores por debajo de 100 neuronas tienden a no representar bien los patrones temporales en secuencias con variabilidad contextual, mientras que superar 400 aumenta la latencia y memoria de monitores sin garantizar ganancias proporcionales en F1 dado el carácter univariante / baja dimensionalidad de entrada.
+    \item \textbf{Control de estabilidad dinámica:} Tamaños extremadamente grandes elevan el riesgo de configuraciones subóptimas (redes muy silenciosas o saturadas) durante la fase temprana de la búsqueda bayesiana.
 \end{enumerate}
 
 \subsubsection{Protocolo de optimización de hiperparámetros}
-Para cada tamaño $N_B$ se ejecutaron \textbf{100 ensayos} (trials) de optimización con \textbf{Optuna} empleando:
+Para cada tamaño $N_B$ ejecutamos \textbf{100 ensayos} (trials) de optimización con \textbf{Optuna} usando:
 \begin{itemize}
     \item Algoritmo \textbf{TPE} (Tree-structured Parzen Estimator) para búsqueda adaptativa en un espacio mixto continuo y categórico.
     \item Mecanismo de poda \textbf{ASHA} (Asynchronous Successive Halving) para detener configuraciones no prometedoras tempranamente (mitigando el coste de redes silenciosas).
@@ -127,18 +127,18 @@ Para cada tamaño $N_B$ se ejecutaron \textbf{100 ensayos} (trials) de optimizac
 
 \paragraph{Justificación de 100 trials por configuración:}
 \begin{enumerate}
-    \item \textbf{Convergencia empírica de TPE:} Estudios de optimización muestran estabilización de mejoras marginales en intervalos de 50--150 evaluaciones en espacios de dimensión efectiva moderada \cite{bergstra_random_2012, akiba_optuna_2019}.
-    \item \textbf{Eficiencia con poda:} La integración de ASHA reduce el número de evaluaciones completas necesarias, redirigiendo recursos a configuraciones prometedoras \cite{li_system_2020, noauthor_efficient_2021}.
+    \item \textbf{Convergencia empírica de TPE:} Los estudios de optimización muestran estabilización de mejoras marginales en intervalos de 50--150 evaluaciones en espacios de dimensión efectiva moderada \cite{bergstra_random_2012, akiba_optuna_2019}.
+    \item \textbf{Eficiencia con poda:} La integración de ASHA reduce el número de evaluaciones completas necesarias, redirigiendo recursos a configuraciones más prometedoras \cite{li_system_2020, noauthor_efficient_2021}.
     \item \textbf{Sensibilidad SNN:} En SNNs la interacción entre plasticidad y dinámica de fuga/umbral puede generar regiones amplias de bajo disparo; la poda acelera el descarte \cite{firmin_parallel_2024, parsa_bayesian-based_2019}.
-    \item \textbf{Equidad comparativa:} Mantener igual presupuesto de 100 trials por cada $N_B$ evita sesgos de sobre-optimización en redes mayores y permite comparar curvas rendimiento/coste de forma homogénea.
+    \item \textbf{Equidad comparativa:} Mantener el mismo presupuesto de 100 trials por cada $N_B$ evita sesgos de sobre-optimización en redes mayores y permite comparar curvas rendimiento/coste de forma homogénea.
     \item \textbf{Restricciones del proyecto:} 3 escalas de red $\times$ 100 trials = 300 ensayos nominales; con poda, el número de ejecuciones completas efectivas disminuye, manteniéndose dentro del límite temporal (R1) y computacional (R4).
 \end{enumerate}
 
 \subsubsection{Salida registrada por trial}
-Para cada ensayo se almacenaron: (i) hiperparámetros seleccionados, (ii) métricas $F1_B$, $F1_C$, $\max(F1_B,F1_C)$, (iii) tiempo de ejecución, (iv) identificador de trial y (v) semilla pseudoaleatoria (cuando aplica) para reproducibilidad.
+Para cada ensayo almacenamos: (i) hiperparámetros seleccionados, (ii) métricas $F1_B$, $F1_C$, $\max(F1_B,F1_C)$, (iii) tiempo de ejecución, (iv) identificador de trial y (v) semilla pseudoaleatoria (cuando aplica) para reproducibilidad.
 
 \subsubsection{Criterio de selección final}
-La configuración óptima por cada $N_B$ se define como aquella con mayor $\max(F1_B,F1_C)$ (equivalente a menor valor objetivo interno). Además, se conservó la traza de la curva de mejor valor acumulado (\emph{best-so-far}) para evidenciar la estabilización antes del trial 100.
+La configuración óptima por cada $N_B$ se define como aquella con mayor $\max(F1_B,F1_C)$ (equivalente a menor valor objetivo interno). Además, conservamos la traza de la curva de mejor valor acumulado (\emph{best-so-far}) para mostrar la estabilización antes del trial 100.
 
 \subsubsection{Resumen estructurado}
 \begin{center}
@@ -158,7 +158,7 @@ Fusión & \multicolumn{3}{c}{direct / weighted\_sum / max} \\
 \end{center}
 
 \subsubsection{Síntesis}
-El diseño adopta un escalado mínimo pero informativo de capacidad (100–400 neuronas) y un presupuesto de 100 evaluaciones por escala sustentado por evidencia de convergencia de métodos bayesianos con poda. Esto habilita el análisis comparativo rendimiento / coste y prepara la extensión futura hacia hardware neuromórfico (ver Sección \ref{subsec:trabajo-futuro-neuromorfico}).
+El diseño adopta un escalado mínimo pero informativo de capacidad (100–400 neuronas) y un presupuesto de 100 evaluaciones por escala que se justifica por evidencia de convergencia de métodos bayesianos con poda. Esto permite el análisis comparativo rendimiento / coste y prepara la extensión futura hacia hardware neuromórfico (ver Sección \ref{subsec:trabajo-futuro-neuromorfico}).
 
 % ======================== FIN NUEVA SUBSECCIÓN ========================
 
@@ -168,7 +168,7 @@ El diseño adopta un escalado mínimo pero informativo de capacidad (100–400 n
 % Algunas ya pueden corresponder a claves previas (p.ej. noauthor_optuna_nodate).
 
 \subsection{Hiperparámetros y estrategia de búsqueda}
-La SNN híbrida (A--B--C) se optimizó con Optuna (TPE) maximizando F1:
+La SNN híbrida (A--B--C) se optimizó con Optuna (TPE) maximizando el F1-score:
 \begin{itemize}
     \item \textbf{Parámetros neuronales y STDP}:
     \begin{itemize}
