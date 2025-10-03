@@ -8,7 +8,7 @@ La motivación principal para desarrollar este modelo híbrido surge de las limi
 
 La SNN original consta de dos capas principales:
 \begin{itemize}
-    \item \textbf{Capa de entrada (A)}: Compuesta por un número variable de neuronas de entrada (típicamente $\sim$39, determinado por el tamaño de los cuantiles derivados de los datos de entrenamiento, \texttt{snn\_input\_layer\_neurons\_size = len(cuantiles)-1}). Estas neuronas codifican los valores de la serie temporal en impulsos (spikes) basados en rangos cuantificados.
+    \item \textbf{Capa de entrada (A)}: Compuesta por un número variable de neuronas de entrada (típicamente $\sim$39, determinado por el tamaño de los cuantiles derivados de los datos de entrenamiento, \texttt{snn\_input\_layer\_neurons\_size = len(cuantiles)-1}). Estas neuronas codifican los valores de la serie temporal en impulsos basados en rangos cuantificados.
     \item \textbf{Capa de procesamiento (B)}: Formada por 100 neuronas LIF (\texttt{snn\_process\_layer\_neurons\_size = 100}), conectadas de manera fully-connected a la capa A. Utiliza aprendizaje STDP con tasas de aprendizaje \texttt{nu1} y \texttt{nu2} para ajustar pesos sinápticos. La red se entrena exponiendo secuencias de datos durante un tiempo \texttt{T} (e.g., 100), y los disparos en B se usan para inferir anomalías (e.g., mediante umbrales como \texttt{umbral\_anomalia = np.mean(spikes) + 2 * np.std(spikes)}).
 \end{itemize}
 
@@ -18,10 +18,10 @@ Limitaciones clave:
     \item \textbf{Sensibilidad a hiperparámetros}: Valores fijos o manuales para \texttt{nu1}, \texttt{nu2}, \texttt{threshold} y \texttt{decay} limitan la adaptabilidad, sin optimización automatizada.
     \item \textbf{Rendimiento en datasets ruidosos}: En datasets como IoPS, la red puede generar falsos positivos debido a la ausencia de procesamiento convolucional para filtrar ruido temporal.
     \item \textbf{Eficiencia computacional}: No incorpora capas especializadas para reducir dimensionalidad, lo que aumenta el costo en datasets grandes.
-    \item \textbf{Criterio de alerta simple}: Basado únicamente en estadísticas de disparos en B (e.g., suma de spikes > umbral), sin rutas alternativas para refinamiento.
+    \item \textbf{Criterio de alerta simple}: Basado únicamente en estadísticas de disparos en B (e.g., suma de impulsos > umbral), sin rutas alternativas para refinamiento.
 \end{itemize}
 
-El nuevo modelo híbrido aborda estas limitaciones integrando una capa convolucional (C) después de B, creando una arquitectura híbrida (SNN + convolucional). Esto permite una extracción de características más robusta, similar a las CNN tradicionales, pero adaptada a spikes. La motivación es mejorar la detección de anomalías en series temporales mediante:
+El nuevo modelo híbrido aborda estas limitaciones integrando una capa convolucional (C) después de B, creando una arquitectura híbrida (SNN + convolucional). Esto permite una extracción de características más robusta, similar a las CNN tradicionales, pero adaptada a impulsos. La motivación es mejorar la detección de anomalías en series temporales mediante:
 \begin{itemize}
     \item \textbf{Procesamiento jerárquico}: La capa C aplica convoluciones sobre los disparos de B para capturar patrones locales (usando kernels gaussiano).
     \item \textbf{Optimización con Optuna}: Hiperparámetros se optimizan automáticamente para maximizar métricas como F1-score.
@@ -444,63 +444,3 @@ donde $s$ es el número de spikes generados en la capa B por instante (estimado 
 \end{equation}
 
 lo cual resulta en un rango estimado de $10^6$--$10^7$ operaciones MAC por inferencia.
-
-% Añadir esto en el capítulo de resultados
-% \subsubsection{Estimación de MACs para redes tradicionales}
-
-% Para modelos ANN con capas densas, convolucionales y LSTM se ha considerado:
-
-% \begin{itemize}
-%     \item \textbf{Capas densas}: producto entre neuronas de entrada y salida:
-%     \begin{equation}
-%         MAC_{\text{dense}} = N_A \times N_B + N_B^2
-%     \end{equation}
-    
-%     \item \textbf{Capas convolucionales}:
-%     \begin{equation}
-%         MAC_{\text{conv}} = K^2 \times C_{in} \times C_{out} \times O
-%     \end{equation}
-%     donde $K$ es el tamaño del kernel, $C_{in}$ y $C_{out}$ los canales de entrada/salida y $O$ el tamaño de la salida.
-    
-%     \item \textbf{Capas LSTM}: estimación según PyTorch:
-%     \begin{equation}
-%         MAC_{\text{LSTM}} = 4 \times T \times (m^2 + m \times c)
-%     \end{equation}
-%     siendo $m$ el número de neuronas y $c$ el número de características (e.g., $c = 1$ en series univariadas).
-% \end{itemize}
-
-% Se han descartado términos de \textit{bias} y funciones de activación, por su impacto menor en el cómputo global.
-
-
-% Añadir esto en el capítulo de resultados
-% \subsubsection{Comparación vs. modelo previo}
-
-% Para un modelo ANN típico, el coste computacional sería:
-
-% \begin{equation}
-%     MAC_{ANN} \approx T \times (N_A N_B + N_B^2 + K^2 C_{in} C_{out} O)
-% \end{equation}
-
-% Comparado con la SNN, se obtiene:
-
-% \begin{equation}
-%     \frac{MAC_{SNN}}{MAC_{ANN}} \approx \frac{s}{N_B}
-% \end{equation}
-
-% Con valores típicos ($s \approx 5$--$10$, $N_B = 100$), esto supone una reducción de $\times10$--$\times20$ en cómputo. En experimentos con datasets como IOPS, las SNN procesan una secuencia en $0.1$--$1$ s frente a >5 s en modelos ANN (ver ejecución en \texttt{ejecutar\_red}).
-
-% \subsubsection{Reducción energética y latencia}
-
-% Se estima que las SNN permiten una reducción de energía de entre $\times100$ y $\times1000$ en hardware neuromórfico, debido a la \textit{sparsity}. Para este proyecto, con 5--10\% de \textit{spikes}, se estima:
-
-% \[
-% \text{Consumo SNN} \approx 1\text{--}10\,\mu\text{J} \quad \text{vs.} \quad \text{Consumo ANN} \approx 1\text{--}10\,\text{mJ}
-% \]
-
-% La latencia en CPU/GPU se encuentra entre $50$--$200$ ms, lo que representa una mejora de $\times2$--$\times5$ respecto a ANN, siendo adecuado para aplicaciones en tiempo real.
-
-
-    
-% \subsection{Integración en BindsNET/PyTorch}
-% 	•	Envoltorio de la CNN como módulo externo en BindsNET.
-	% •	Sincronización de tiempos de simulación (Δt = 1 ms) y paso de gradientes mixtos.
