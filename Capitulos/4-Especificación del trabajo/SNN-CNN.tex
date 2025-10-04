@@ -298,7 +298,7 @@ Valores altos (3.0): Kernels más anchos, filtrado global.
     
 \subsection{Esquema general}
 
-A continuación se presenta el esquema global de la arquitectura híbrida SNN–CNN, integrando tres dominios diferenciados: \textbf{codificación y preprocesado}, \textbf{arquitectura SNN} (capas A,B) y bloque convolucional híbrido (capa C). El diagrama muestra cómo fluye la información desde la señal de entrada hasta la inferencia final, destacando las rutas paralelas de procesamiento y los puntos de monitorización clave.
+A continuación se presenta el esquema global de la arquitectura híbrida SNN–CNN, integrando tres dominios diferenciados: codificación y preprocesado, arquitectura SNN (capas A,B) y bloque convolucional híbrido (capa C). El diagrama muestra cómo fluye la información desde la señal de entrada hasta la inferencia final, destacando las rutas paralelas de procesamiento y los puntos de monitorización clave.
 
 En el primer dominio, la señal de serie temporal es previamente procesada y codificada en impulsos espiga (spikes) a través de cuantización y batching temporal. Este bloque prepara los trenes de spikes que alimentan el núcleo SNN. A continuación, en el segundo dominio, la capa A recibe estas espigas y las transmite a la capa B, donde se aplica dinámica recurrente LIF con aprendizaje STDP. La salida de B se bifurca: una ruta va directamente a la fase de inferencia sobre spikes de B, y la otra alimenta el bloque convolucional.
 
@@ -330,7 +330,7 @@ La incorporación de una capa convolucional híbrida representa una de las innov
 
 \subsubsection {Posicionamiento arquitectural}
 
-La capa convolucional híbrida se posiciona estratégicamente después de la \textbf{capa B} de procesamiento, recibiendo directamente los trenes de spikes generados por las neuronas LIF recurrentes. Esta ubicación permite que la capa procese patrones temporales ya refinados por la dinámica recurrente de la SNN base, aprovechando la información codificada en los tiempos de disparo de los spikes.
+La capa convolucional híbrida se posiciona estratégicamente después de la capa B de procesamiento, recibiendo directamente los trenes de spikes generados por las neuronas LIF recurrentes. Esta ubicación permite que la capa procese patrones temporales ya refinados por la dinámica recurrente de la SNN base, aprovechando la información codificada en los tiempos de disparo de los spikes.
 
 La decisión arquitectural de posicionar la capa convolucional en este punto específico se fundamenta en evidencia experimental que demuestra que las arquitecturas híbridas SNN-CNN alcanzan un rendimiento superior cuando combinan el procesamiento temporal asíncrono de las SNNs con las operaciones de convolución espacial \cite{sanaullah_hybrid_2024}. Esta configuración permite que los trenes de spikes de la capa B mantengan su estructura temporal intrínseca mientras son procesados por kernels convolucionales especializados.
 
@@ -348,7 +348,7 @@ La figura \ref{fig:Arquitectura detallada SNN} ilustra el flujo específico de p
 
 \subsubsection {Tipos de kernels implementados}
 
-La selección de kernels convolucionales para el procesamiento de spikes requirió una aproximación diferenciada de las CNNs tradicionales. Tras la evaluación sistemática de múltiples configuraciones, se determinó que los \textbf{kernels 1D con tamaños entre 3 y 7 elementos} proporcionan el equilibrio óptimo entre capacidad de captura de patrones temporales y eficiencia computacional.
+La selección de kernels convolucionales para el procesamiento de spikes requirió una aproximación diferenciada de las CNNs tradicionales. Tras la evaluación sistemática de múltiples configuraciones, se determinó que los kernels 1D con tamaños entre 3 y 7 elementos proporcionan el equilibrio óptimo entre capacidad de captura de patrones temporales y eficiencia computacional.
 
 El uso de un kernel gaussiano para la convolución responde a la necesidad de preservar la estructura temporal, a la vez que se suavizan posibles fluctuaciones debidas a la naturaleza discreta de los spikes individuales. Este tipo de kernel es ampliamente utilizado en procesamiento de señales neuronales precisamente por su capacidad para aproximar la respuesta postsináptica biológica y facilitar el análisis cuantitativo.
 
@@ -405,7 +405,7 @@ Este procedimiento es fundamental para poder comparar, analizar y visualizar las
     
 \subsection{Complejidad computacional}
 
-En esta subsección, se analiza la complejidad computacional del modelo propuesto basado en SNN. Se proporcionan ecuaciones para el cálculo de operaciones Multiply-Accumulate (\textbf{MACs}) en cada sub-bloque de la arquitectura.
+En esta subsección, se analiza la complejidad computacional del modelo propuesto basado en SNN. Se proporcionan ecuaciones para el cálculo de operaciones MACs en cada sub-bloque de la arquitectura.
 
 \subsubsection{Estimación del número de operaciones MAC ejecutadas}
 
