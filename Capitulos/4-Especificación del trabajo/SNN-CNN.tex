@@ -227,13 +227,13 @@ Valores altos (3.0): Kernels más anchos, filtrado global.
             conv\_spikes = spikes[C].float().sum(dim=2).transpose(0, 1)
         \end{lstlisting}
         
-        Usa directamente los spikes de la capa \textbf{C}
+        Usa directamente los spikes de la capa C
     \item \textbf{weighted\_sum}:
         \begin{lstlisting}
             conv\_spikes = 0.3 * b\_spikes\_sum + 0.7 * c\_spikes\_sum
         \end{lstlisting}
         
-        Combinación ponderada de capas \textbf{B} y \textbf{C}. Mayor peso (0.7) a la capa convolucional, aprovechando el filtrado.
+        Combinación ponderada de capas B y C. Mayor peso (0.7) a la capa convolucional, aprovechando el filtrado.
     \item \textbf{max}:
         \begin{lstlisting}
             conv\_spikes = torch.maximum(b\_spikes\_sum, c\_spikes\_sum)
