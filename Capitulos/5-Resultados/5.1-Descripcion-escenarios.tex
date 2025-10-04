@@ -32,7 +32,7 @@ Preprocesado común:
 \begin{itemize}
     \item Tipado de columnas: \texttt{value} en \texttt{float64} y \texttt{label} en \texttt{Int64}.
     \item Expansión de etiquetas en entrenamiento (\texttt{expansion = 100}) para mitigar desbalanceo temporal.
-    \item Cálculo de cuantiles sobre \textbf{train} únicamente: rango extendido con \texttt{a = 0{,}1} y resolución \texttt{r = 0{,}05}; determina \texttt{snn\_input\_layer\_neurons\_size}.
+    \item Cálculo de cuantiles sobre train únicamente: rango extendido con \texttt{a = 0{,}1} y resolución \texttt{r = 0{,}05}; determina \texttt{snn\_input\_layer\_neurons\_size}.
     \item Segmentación en ventanas de longitud \texttt{T = 250} y \textit{padding} del conjunto de prueba.
 \end{itemize}
 
@@ -41,7 +41,7 @@ Preprocesado común:
 
 En este TFM se han utilizado dos entornos de trabajo principales:  El Proyecto SNN (con dos variantes internas: SNN original (A–B) y SNN híbrida (A–B–C)) y Baselines TSFEDL.
 
-Ambos entornos no se unificaron deliberadamente debido a \textbf{incompatibilidades de versiones}, particularmente relacionadas con PyTorch, NumPy y Pandas. Intentar forzar una convergencia resultaba inviable no era posible encontrar una combinación de versiones que permitiera ejecutar simultáneamente ambos proyectos. A continuación se muestran las restricciones técnicas más relevantes:
+Ambos entornos no se unificaron deliberadamente debido a incompatibilidades de versiones, particularmente relacionadas con PyTorch, NumPy y Pandas. Intentar forzar una convergencia resultaba inviable no era posible encontrar una combinación de versiones que permitiera ejecutar simultáneamente ambos proyectos. A continuación se muestran las restricciones técnicas más relevantes:
 
 \begin{itemize}
     \item \textbf{Restricción principal}: BindsNET 0.2.7 requiere una versión de PyTorch anterior a la 1.13, lo que lo hace incompatible con la versiones 2.x requeridas por TSFEDL.
