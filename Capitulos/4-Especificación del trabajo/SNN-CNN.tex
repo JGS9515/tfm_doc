@@ -9,7 +9,7 @@ La motivación principal para desarrollar este modelo híbrido surge de las limi
 La SNN original consta de dos capas principales:
 \begin{itemize}
     \item \textbf{Capa de entrada (A)}: Compuesta por un número variable de neuronas de entrada (típicamente $\sim$39, determinado por el tamaño de los cuantiles derivados de los datos de entrenamiento, \texttt{snn\_input\_layer\_neurons\_size = len(cuantiles)-1}). Estas neuronas codifican los valores de la serie temporal en impulsos basados en rangos cuantificados.
-    \item \textbf{Capa de procesamiento (B)}: Formada por 100 neuronas LIF (\texttt{snn\_process\_layer\_neurons\_size = 100}), conectadas de manera fully-connected a la capa A. Utiliza aprendizaje STDP con tasas de aprendizaje \texttt{nu1} y \texttt{nu2} para ajustar pesos sinápticos. La red se entrena exponiendo secuencias de datos durante un tiempo \texttt{T} (e.g., 100), y los disparos en B se usan para inferir anomalías (e.g., mediante umbrales como \texttt{umbral\_anomalia = np.mean(spikes) + 2 * np.std(spikes)}).
+    \item \textbf{Capa de procesamiento (B)}: Formada por 100 neuronas LIF (\texttt{snn\_process\_layer\_neurons\_size = 100}), conectadas de manera fully-connected a la capa A. Utiliza aprendizaje STDP con tasas de aprendizaje \texttt{nu1} y \texttt{nu2} para ajustar pesos sinápticos. La red se entrena exponiendo secuencias de datos durante un tiempo \texttt{T} (e.g., 100), y los disparos en B se usan para inferir anomalías (e.g., mediante umbrales como \texttt{umbral\_anomalia = np.mean(impulsos) + 2 * np.std(impulsos)}).
 \end{itemize}
 
 Limitaciones clave:
@@ -121,9 +121,9 @@ Kernels adaptativos con balance excitatorio-inhibitorio. \\
 \textbf{Aspecto} & \textbf{SNN Original (A--B)} & \textbf{Modelo Híbrido (A--B--C)} \\
 \hline
 \textbf{Criterio de alerta} & 
-Basado en umbral estadístico en spikes de B.  
+Basado en umbral estadístico en impulsos de B.  
 Métricas: Precisión, Recall, F1. & 
-Evaluación dual: Spikes de B y C.  
+Evaluación dual: Impulsos de B y C.  
 Optimización: Maximiza \texttt{max(F1\_B, F1\_C)}.  
 Métricas: MSE, F1, Precisión, Recall para ambas capas. \\
 \hline
@@ -205,7 +205,7 @@ Valores altos (3.0): Kernels más anchos, filtrado global.
 
 
 % Modalidades de Fusión
-% direct: Usa directamente los spikes de la capa C
+% direct: Usa directamente los impulsos de la capa C
 
 % Python
 % conv_spikes = spikes["C"].float().sum(dim=2).transpose(0, 1)
@@ -227,7 +227,7 @@ Valores altos (3.0): Kernels más anchos, filtrado global.
             conv\_spikes = spikes[C].float().sum(dim=2).transpose(0, 1)
         \end{lstlisting}
         
-        Usa directamente los spikes de la capa C
+        Usa directamente los impulsos de la capa C
     \item \textbf{weighted\_sum}:
         \begin{lstlisting}
             conv\_spikes = 0.3 * b\_spikes\_sum + 0.7 * c\_spikes\_sum
@@ -300,9 +300,9 @@ Valores altos (3.0): Kernels más anchos, filtrado global.
 
 A continuación se presenta el esquema global de la arquitectura híbrida SNN–CNN, integrando tres dominios diferenciados: codificación y preprocesado, arquitectura SNN (capas A,B) y bloque convolucional híbrido (capa C). El diagrama muestra cómo fluye la información desde la señal de entrada hasta la inferencia final, destacando las rutas paralelas de procesamiento y los puntos de monitorización clave.
 
-En el primer dominio, la señal de serie temporal es previamente procesada y codificada en impulsos espiga (spikes) a través de cuantización y batching temporal. Este bloque prepara los trenes de spikes que alimentan el núcleo SNN. A continuación, en el segundo dominio, la capa A recibe estas espigas y las transmite a la capa B, donde se aplica dinámica recurrente LIF con aprendizaje STDP. La salida de B se bifurca: una ruta va directamente a la fase de inferencia sobre spikes de B, y la otra alimenta el bloque convolucional.
+En el primer dominio, la señal de serie temporal es previamente procesada y codificada en impulsos a través de cuantización y batching temporal. Este bloque prepara los trenes de impulsos que alimentan el núcleo SNN. A continuación, en el segundo dominio, la capa A recibe estos impulsos y los transmite a la capa B, donde se aplica dinámica recurrente LIF con aprendizaje STDP. La salida de B se bifurca: una ruta va directamente a la fase de inferencia sobre impulsos de B, y la otra alimenta el bloque convolucional.
 
-El tercer dominio corresponde a la capa C, que aplica convoluciones 1D sobre los spikes de la capa B utilizando kernels configurables (Gaussianos, Laplacianos, etc.). Esta capa aporta filtrado adaptativo y extracción de características locales antes de enviar su salida al mecanismo de decisión dual. Finalmente, el sistema evalúa ambas rutas (B y C) según métricas de clasificación y MSE, seleccionando automáticamente la representación más informativa.
+El tercer dominio corresponde a la capa C, que aplica convoluciones 1D sobre los impulsos de la capa B utilizando kernels configurables (Gaussianos, Laplacianos, etc.). Esta capa aporta filtrado adaptativo y extracción de características locales antes de enviar su salida al mecanismo de decisión dual. Finalmente, el sistema evalúa ambas rutas (B y C) según métricas de clasificación y MSE, seleccionando automáticamente la representación más informativa.
 
 % La figura ilustra de forma unificada este flujo de datos y las interfaces entre bloques. Más adelante, cada sección del diagrama será ampliada (“zoom in”) para detallar su funcionamiento interno y su correspondencia con los apartados específicos de este documento.
 
@@ -315,7 +315,7 @@ El tercer dominio corresponde a la capa C, que aplica convoluciones 1D sobre los
 
 \subsubsection{Codificación y preprocesado de la señal}
 
-En este bloque inicial la serie temporal bruta se divide en conjuntos de entrenamiento y prueba, se reinician los índices y se expanden las etiquetas para balancear clases. A continuación, se calculan los valores mínimos, máximos y cuantiles sobre el conjunto de entrenamiento, determinando el número de neuronas de la capa A. Finalmente, los datos se fragmentan en secuencias de longitud T y se aplica padding al conjunto de prueba para ajustarlo a múltiplos de T. Esta cadena de operaciones garantiza que las entradas al modelo estén normalizadas, codificadas por cuantiles y empaquetadas en batches temporales listos para generar trenes de spikes.
+En este bloque inicial la serie temporal bruta se divide en conjuntos de entrenamiento y prueba, se reinician los índices y se expanden las etiquetas para balancear clases. A continuación, se calculan los valores mínimos, máximos y cuantiles sobre el conjunto de entrenamiento, determinando el número de neuronas de la capa A. Finalmente, los datos se fragmentan en secuencias de longitud T y se aplica padding al conjunto de prueba para ajustarlo a múltiplos de T. Esta cadena de operaciones garantiza que las entradas al modelo estén normalizadas, codificadas por cuantiles y empaquetadas en batches temporales listos para generar trenes de impulsos.
 
 \begin{figure}[!htb]
     \centering
@@ -330,41 +330,41 @@ La incorporación de una capa convolucional híbrida representa una de las innov
 
 \subsubsection {Posicionamiento arquitectural}
 
-La capa convolucional híbrida se posiciona estratégicamente después de la capa B de procesamiento, recibiendo directamente los trenes de spikes generados por las neuronas LIF recurrentes. Esta ubicación permite que la capa procese patrones temporales ya refinados por la dinámica recurrente de la SNN base, aprovechando la información codificada en los tiempos de disparo de los spikes.
+La capa convolucional híbrida se posiciona estratégicamente después de la capa B de procesamiento, recibiendo directamente los trenes de impulsos generados por las neuronas LIF recurrentes. Esta ubicación permite que la capa procese patrones temporales ya refinados por la dinámica recurrente de la SNN base, aprovechando la información codificada en los tiempos de disparo de los impulsos.
 
-La decisión arquitectural de posicionar la capa convolucional en este punto específico se fundamenta en evidencia experimental que demuestra que las arquitecturas híbridas SNN-CNN alcanzan un rendimiento superior cuando combinan el procesamiento temporal asíncrono de las SNNs con las operaciones de convolución espacial \cite{sanaullah_hybrid_2024}. Esta configuración permite que los trenes de spikes de la capa B mantengan su estructura temporal intrínseca mientras son procesados por kernels convolucionales especializados.
+La decisión arquitectural de posicionar la capa convolucional en este punto específico se fundamenta en evidencia experimental que demuestra que las arquitecturas híbridas SNN-CNN alcanzan un rendimiento superior cuando combinan el procesamiento temporal asíncrono de las SNNs con las operaciones de convolución espacial \cite{sanaullah_hybrid_2024}. Esta configuración permite que los trenes de impulsos de la capa B mantengan su estructura temporal intrínseca mientras son procesados por kernels convolucionales especializados.
 
 \subsubsection{Detalle arquitectural de la capa convolucional híbrida}
 
 \begin{figure}[!htb]
     \centering
     \includegraphics[width=1.0\textwidth]{Imagenes/Arquitectura detallada SNN.png}
-    \caption{Arquitectura detallada de la capa convolucional híbrida mostrando el flujo desde los spikes de la capa B hacia el procesamiento convolucional con kernels adaptativos. Fuente: Elaboración propia.}
+    \caption{Arquitectura detallada de la capa convolucional híbrida mostrando el flujo desde los impulsos de la capa B hacia el procesamiento convolucional con kernels adaptativos. Fuente: Elaboración propia.}
     \label{fig:Arquitectura detallada SNN}
 \end{figure}
 
-La figura \ref{fig:Arquitectura detallada SNN} ilustra el flujo específico de procesamiento dentro del núcleo SNN, destacando cómo los trenes de spikes generados por las neuronas LIF de la capa B son procesados por kernels convolucionales especializados antes de generar las salidas de la capa C. Este procesamiento incluye la aplicación de diferentes tipos de kernels (Gaussiano, Laplaciano, etc.) y los modos de fusión (direct, weighted\_sum, max) que permiten la extracción optimizada de características temporales.
+La figura \ref{fig:Arquitectura detallada SNN} ilustra el flujo específico de procesamiento dentro del núcleo SNN, destacando cómo los trenes de impulsos generados por las neuronas LIF de la capa B son procesados por kernels convolucionales especializados antes de generar las salidas de la capa C. Este procesamiento incluye la aplicación de diferentes tipos de kernels (Gaussiano, Laplaciano, etc.) y los modos de fusión (direct, weighted\_sum, max) que permiten la extracción optimizada de características temporales.
 
 
 \subsubsection {Tipos de kernels implementados}
 
-La selección de kernels convolucionales para el procesamiento de spikes requirió una aproximación diferenciada de las CNNs tradicionales. Tras la evaluación sistemática de múltiples configuraciones, se determinó que los kernels 1D con tamaños entre 3 y 7 elementos proporcionan el equilibrio óptimo entre capacidad de captura de patrones temporales y eficiencia computacional.
+La selección de kernels convolucionales para el procesamiento de impulsos requirió una aproximación diferenciada de las CNNs tradicionales. Tras la evaluación sistemática de múltiples configuraciones, se determinó que los kernels 1D con tamaños entre 3 y 7 elementos proporcionan el equilibrio óptimo entre capacidad de captura de patrones temporales y eficiencia computacional.
 
-El uso de un kernel gaussiano para la convolución responde a la necesidad de preservar la estructura temporal, a la vez que se suavizan posibles fluctuaciones debidas a la naturaleza discreta de los spikes individuales. Este tipo de kernel es ampliamente utilizado en procesamiento de señales neuronales precisamente por su capacidad para aproximar la respuesta postsináptica biológica y facilitar el análisis cuantitativo.
+El uso de un kernel gaussiano para la convolución responde a la necesidad de preservar la estructura temporal, a la vez que se suavizan posibles fluctuaciones debidas a la naturaleza discreta de los impulsos individuales. Este tipo de kernel es ampliamente utilizado en procesamiento de señales neuronales precisamente por su capacidad para aproximar la respuesta postsináptica biológica y facilitar el análisis cuantitativo.
 
-Los kernels implementados operan sobre ventanas temporales deslizantes, donde cada kernel \( K_i \) de tamaño \( k \) procesa secuencias de spikes según:
+Los kernels implementados operan sobre ventanas temporales deslizantes, donde cada kernel \( K_i \) de tamaño \( k \) procesa secuencias de impulsos según:
 \begin{equation}
     S_{\text{conv}}(t) = \sum_{j=0}^{k-1} K_i(j) \cdot S_{\text{input}}(t-j)
 \end{equation}
-donde \( S_{\text{input}}(t) \) representa el tren de spikes de entrada y \( S_{\text{conv}}(t) \) la salida convolucionada.
+donde \( S_{\text{input}}(t) \) representa el tren de impulsos de entrada y \( S_{\text{conv}}(t) \) la salida convolucionada.
 
 % \subsubsection{Ventana temporal adaptativa}
 
-% La implementación de ventanas temporales adaptativas constituye una característica distintiva del modelo. A diferencia de las ventanas fijas tradicionales, el sistema emplea ventanas que se ajustan dinámicamente según la frecuencia de \textit{spikes} detectada, permitiendo una mejor captura de patrones temporales irregulares, típicos en datos de anomalías.
+% La implementación de ventanas temporales adaptativas constituye una característica distintiva del modelo. A diferencia de las ventanas fijas tradicionales, el sistema emplea ventanas que se ajustan dinámicamente según la frecuencia de impulsos detectada, permitiendo una mejor captura de patrones temporales irregulares, típicos en datos de anomalías.
 
 % La ventana temporal $W(t)$ se define como:
 % \begin{equation}
-%     W(t) = W_{base} + \alpha \cdot f_{spike}(t-\tau)
+%     W(t) = W_{base} + \alpha \cdot f_{impulso}(t-\tau)
 % \end{equation}
 
 % donde:
@@ -372,19 +372,20 @@ donde \( S_{\text{input}}(t) \) representa el tren de spikes de entrada y \( S_{
 % \begin{itemize}
 %     \item $W_{base}$ es la ventana base,
 %     \item $\alpha$ es un factor de adaptabilidad,
-%     \item $f_{spike}$ es la frecuencia local de \textit{spikes},
+%     \item $f_{impulso}$ es la frecuencia local de impulsos,
 %     \item $\tau$ representa el retardo temporal.
 % \end{itemize}
 
-\subsubsection {Conversión Spike-to-Tensor y Gradientes}
+\subsubsection {Conversión de Impulsos a Tensor y Gradientes}
 Mecanismo de Conversión
-La conversión de trenes de spikes discretos a representaciones tensoriales continuas se implementa mediante :
+La conversión de trenes de impulsos discretos a representaciones tensoriales continuas se implementa mediante :
 
 \begin{verbatim}
 conv_spikes = F.conv1d(b_spikes_sum, kernel, padding='same')
 \end{verbatim}
 
 Esta operación toma como entrada la suma temporal de los spikes generados por la capa B de la red y aplica dicho kernel gaussiano. El resultado es una señal continua, suavizada, que preserva tanto la información temporal como la amplitud relativa de de spikes. La elección del padding 'same' asegura que la longitud de la señal de salida coincida con la original, facilitando comparaciones directas.
+Esta operación toma como entrada la suma temporal de los impulsos generados por la capa B de la red y aplica dicho kernel gaussiano. El resultado es una señal continua, suavizada, que preserva tanto la información temporal como la amplitud relativa de impulsos. La elección del padding 'same' asegura que la longitud de la señal de salida coincida con la original, facilitando comparaciones directas.
 
 Este procedimiento es fundamental para poder comparar, analizar y visualizar las salidas de SNN en términos equivalentes a los de modelos tradicionales de (ANNs) con los que serán comparados.
 
@@ -413,7 +414,7 @@ El número de operaciones MAC (Multiplicación y Acumulación) ejecutadas por un
 
 \subsubsection{Estimación de MACs para SNNs}
 
-Las SNNs realizan operaciones MAC cuando los voltajes neuronales se actualizan o cuando se emite un \textit{spike}. Por tanto, en cada paso temporal se ejecutan:
+Las SNNs realizan operaciones MAC cuando los voltajes neuronales se actualizan o cuando se emite un impulso. Por tanto, en cada paso temporal se ejecutan:
 
 \begin{itemize}
     \item Operaciones MAC proporcionales al número total de neuronas: $N_A + N_B + N_C$, siendo:
