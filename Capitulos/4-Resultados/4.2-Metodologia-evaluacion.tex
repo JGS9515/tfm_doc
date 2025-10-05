@@ -1,0 +1,82 @@
+\section{Metodología de evaluación}
+
+\subsection{Entorno de ejecución} \label{subsec:entorno}
+ Aunque la máquina dispone de una GPU NVIDIA GeForce RTX 4060 (8~GB VRAM), no usamos aceleración por GPU debido a incompatibilidades prácticas entre el entorno Windows y las dependencias (versionado de CUDA/cuDNN y librerías) requeridas. Por lo tanto, todos los entrenamientos se ejecutaron en CPU. Esta decisión afecta al tiempo de entrenamiento, pero no altera la lógica de los algoritmos ni los hiperparámetros establecidos.
+
+\subsection{Métricas de calidad}
+La tarea se evalúa como detección binaria de anomalías (clase positiva: \(\texttt{label} = 1\)). Se reportan métricas por capa (B y C) cuando aplica, y una métrica principal best\_f1 definida como \(\max(\text{F1}_B, \text{F1}_C)\) en el modelo híbrido.
+
+Definiciones:
+\begin{itemize}
+    \item Precisión: \(\mathrm{Prec} = \frac{TP}{TP + FP}\).
+    \item Recall: \(\mathrm{Rec} = \frac{TP}{TP + FN}\).
+    \item F1-score: \(\mathrm{F1} = \frac{2 \cdot \mathrm{Prec} \cdot \mathrm{Rec}}{\mathrm{Prec} + \mathrm{Rec}}\).
+\end{itemize}
+
+Adicionalmente:
+\begin{itemize}
+    \item \textbf{MSE} por capa (B y C) sobre la señal procesada.
+\end{itemize}
+
+% \subsection{Métricas de eficiencia}
+% Se cuantifican:
+% \begin{itemize}
+%     \item \textbf{Tiempo de entrenamiento}: por \textit{trial} y total del estudio (según \texttt{start\_time/end\_time} y \texttt{duration\_seconds}).
+%     \item \textbf{Tiempo de inferencia}: medio y desviación por ventana de longitud \(T=250\) y por segundo de señal.
+%     \item \textbf{Uso de memoria}: pico de RAM/VRAM (si disponible).
+% \end{itemize}
+
+% \subsection{Proceso de optimización de hiperparámetros}
+
+% Uno de los aspectos críticos de este trabajo fue la optimización exhaustiva de hiperparámetros tanto del modelo base SNN como del modelo híbrido propuesto. Esta decisión metodológica responde a dos objetivos fundamentales:
+
+% \begin{enumerate}
+%     \item \textbf{Garantizar comparaciones justas}: Para validar que las mejoras del modelo híbrido no se debían simplemente a una mejor configuración, se optimizó también el modelo base de referencia, asegurando que ambos operaran en sus configuraciones óptimas.
+%     \item \textbf{Alcanzar competitividad con baselines}: Dado que los modelos SNN presentan una sensibilidad particular a sus hiperparámetros debido a la compleja dinámica temporal entre neuronas y la plasticidad sináptica STDP, se dedicó un esfuerzo considerable a encontrar configuraciones que permitieran resultados comparables con métodos estado del arte.
+% \end{enumerate}
+
+% \subsubsection{Framework de optimización: Optuna}
+
+% Se empleó el framework Optuna \cite{noauthor_adaptation_nodate}, que implementa optimización bayesiana mediante Tree-structured Parzen Estimator (TPE). Este enfoque permite una exploración eficiente del espacio de hiperparámetros al modelar la distribución de probabilidad de configuraciones prometedoras basándose en trials previos, reduciendo significativamente el coste computacional frente a métodos como búsqueda en cuadrícula.
+
+% \subsubsection{Hiperparámetros optimizados}
+
+% Los rangos de búsqueda se definieron tras exploración preliminar y considerando las características de las SNNs:
+
+% \textbf{Modelo base (SNN A--B):}
+% \begin{itemize}
+%     \item \texttt{nu1}, \texttt{nu2} (tasas de aprendizaje STDP): $[-0.5, 0.5]$
+%     \item \texttt{threshold} (umbral de disparo): $[-65, -50]$ mV
+%     \item \texttt{decay} (constante de decaimiento): $[80, 150]$ ms
+%     \item \texttt{snn\_process\_layer\_neurons\_size}: $[50, 200]$ neuronas
+% \end{itemize}
+
+% \textbf{Modelo híbrido (SNN A--B--C):}
+% \begin{itemize}
+%     \item Todos los anteriores, más:
+%     \item \texttt{kernel\_size} (tamaño del kernel convolucional): $[3, 5, 7, 9]$ (valores impares)
+%     \item \texttt{sigma} (parámetro gaussiano): $[0.5, 3.0]$
+%     \item \texttt{norm\_factor} (normalización kernel): $[0.1, 1.0]$
+%     \item \texttt{kernel\_type}: Gaussian, Laplacian, Mexican Hat, Box
+%     \item \texttt{conv\_processing\_method}: weighted\_sum, max, mean
+% \end{itemize}
+
+% \subsubsection{Estrategia y recursos}
+
+% Se ejecutaron múltiples estudios de optimización con las siguientes características:
+% \begin{itemize}
+%     \item \textbf{Número de trials}: Entre 50 y 100 por estudio, dependiendo del modelo y dataset.
+%     \item \textbf{Métrica objetivo}: Maximización del F1-score en el conjunto de entrenamiento (para el modelo híbrido, se usó $\max(\text{F1}_B, \text{F1}_C)$).
+%     \item \textbf{Criterio de parada}: Basado en número de trials sin mejora (patience) o límite temporal.
+%     \item \textbf{Tiempo dedicado}: Aproximadamente 60-80 horas de tiempo de cómputo distribuidas a lo largo del proyecto.
+% \end{itemize}
+
+% Esta inversión en optimización fue esencial para garantizar que las conclusiones sobre la efectividad del modelo híbrido se basaran en comparaciones rigurosas con el baseline optimizado, y no en configuraciones subóptimas del modelo de referencia.
+
+\subsection{Protocolo de validación}
+\begin{itemize}
+    \item Particionado temporal 50/50 (sin mezcla) para cada dataset.
+    \item Optimización de hiperparámetros con Optuna sobre el conjunto de entrenamiento; evaluación en prueba. 
+    \item En todas las configuraciones usamos selección basada en validación sobre el conjunto de entrenamiento, evitando contaminación con el conjunto de prueba.
+    \item Semillas pseudoaleatorias: Usamos semillas fijas por prueba para garantizar reproducibilidad, con un único experimento por configuración de red (sin promediado de corridas múltiples debido a restricciones temporales).
+\end{itemize}
