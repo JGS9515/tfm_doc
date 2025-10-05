@@ -395,7 +395,7 @@ Este procedimiento es fundamental para poder comparar, analizar y visualizar las
 % 	•	Vector de estado global que alimenta la decisión de alerta.
     
 % \subsection{Cabeza de decisión y umbral adaptativo}
-% 	•	Función de salida: soft-rate vs. frecuencia de spikes.
+% 	•	Función de salida: soft-rate vs. frecuencia de impulsos.
 % 	•	Algoritmo de auto-ajuste del umbral según percentil 95 de actividad normal.
     
 % \subsection{Optimización de hiperparámetros con Optuna}
@@ -424,10 +424,10 @@ Las SNNs realizan operaciones MAC cuando los voltajes neuronales se actualizan o
         \item $N_C$: neuronas en la capa C (igual a $N_B$).
     \end{itemize}
     
-    \item Operaciones inducidas por \textit{spikes}:
+    \item Operaciones inducidas por impulsos:
     \begin{itemize}
-        \item $N_B$ operaciones por spike en la entrada A.
-        \item $N_B$ operaciones por cada spike en la capa B (conexiones recurrentes).
+        \item $N_B$ operaciones por impulso en la entrada A.
+        \item $N_B$ operaciones por cada impulso en la capa B (conexiones recurrentes).
         \item $K \times N_B$ operaciones adicionales si se usa la capa C, siendo $K$ el tamaño del \textit{kernel}.
     \end{itemize}
 \end{itemize}
@@ -438,7 +438,7 @@ En conjunto, el número total de operaciones por instante temporal es:
     MAC_{SNN} = (N_A + N_B + N_C) + s \times (N_A \times N_B + N_B^2 + K \times N_B)
 \end{equation}
 
-donde $s$ es el número de spikes generados en la capa B por instante (estimado entre 5--10\% de $N_B$). Si $T$ es la longitud temporal (e.g., $T = 250$), entonces:
+donde $s$ es el número de impulsos generados en la capa B por instante (estimado entre 5--10\% de $N_B$). Si $T$ es la longitud temporal (e.g., $T = 250$), entonces:
 
 \begin{equation}
     MAC^{\text{seq}}_{SNN} = T \times MAC_{SNN}
