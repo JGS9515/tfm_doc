@@ -1,0 +1,322 @@
+\begin{thebibliography}{10}
+
+\bibitem{cherdo_time_2023}
+Yann Cherdo, Benoit Miramond, and Alain Pegatoquet.
+\newblock Time series prediction and anomaly detection with recurrent spiking
+  neural networks.
+\newblock In {\em 2023 International Joint Conference on Neural Networks
+  ({IJCNN})}, pages 1--10.
+\newblock {ISSN}: 2161-4407.
+
+\bibitem{kshirasagar_auditory_2024}
+Shreya Kshirasagar, Benjamin Cramer, Andre Guntoro, and Christian Mayr.
+\newblock Auditory anomaly detection using recurrent spiking neural networks.
+\newblock In {\em 2024 {IEEE} 6th International Conference on {AI} Circuits and
+  Systems ({AICAS})}, pages 278--281.
+\newblock {ISSN}: 2834-9857.
+
+\bibitem{plummer_2d_2025}
+Douglas~Z. Plummer, Emily D’Alessandro, Aidan Burrowes, Joshua Fleischer,
+  Alexander~M. Heard, and Yingying Wu.
+\newblock 2d spintronics for neuromorphic computing with scalability and energy
+  efficiency.
+\newblock 15(2):16.
+\newblock Number: 2 Publisher: Multidisciplinary Digital Publishing Institute.
+
+\bibitem{lv_efficient_2024}
+Changze Lv, Yansen Wang, Dongqi Han, Xiaoqing Zheng, Xuanjing Huang, and
+  Dongsheng Li.
+\newblock Efficient and effective time-series forecasting with spiking neural
+  networks.
+
+\bibitem{yusob_anomaly_2018}
+Bariah Yusob, Zuriani Mustaffa, and Junaida Sulaiman.
+\newblock Anomaly detection in time series data using spiking neural network.
+\newblock 24(10):7572--7576.
+
+\bibitem{basler_unsupervised_2022}
+Dennis Bäßler, Tobias Kortus, and Gabriele Gühring.
+\newblock Unsupervised anomaly detection in multivariate time series with
+  online evolving spiking neural networks.
+\newblock 111(4):1377--1408.
+
+\bibitem{Talent.com_2024}
+{Talent.com}.
+\newblock Salario.
+
+\bibitem{shewhart_economic_1931}
+W.~A. Shewhart.
+\newblock {\em Economic control of quality of manufactured product}.
+\newblock Economic control of quality of manufactured product. Van Nostrand.
+\newblock Pages: 515.
+
+\bibitem{page_continuous_1954}
+E.~S. Page.
+\newblock Continuous inspection schemes.
+\newblock 41(1):100--115.
+\newblock Publisher: [Oxford University Press, Biometrika Trust].
+
+\bibitem{gualandi_worst-case_2023}
+Gabriele Gualandi and Alessandro~V. Papadopoulos.
+\newblock Worst-case impact assessment of multi-alarm stealth attacks against
+  control systems with {CUSUM}-based anomaly detection.
+\newblock In {\em 2023 {IEEE} International Conference on Autonomic Computing
+  and Self-Organizing Systems ({ACSOS})}, pages 117--126.
+
+\bibitem{gualandi_optimization-based_2022}
+Gabriele Gualandi, Martina Maggio, and Alessandro Vittorio~Papadopoulos.
+\newblock Optimization-based attack against control systems with {CUSUM}-based
+  anomaly detection.
+\newblock In {\em 2022 30th Mediterranean Conference on Control and Automation
+  ({MED})}, pages 896--901.
+\newblock {ISSN}: 2473-3504.
+
+\bibitem{morissette_k-means_2013}
+Laurence Morissette and Sylvain Chartier.
+\newblock The k-means clustering technique: General considerations and
+  implementation in mathematica.
+\newblock 9(1):15--24.
+
+\bibitem{cleveland_stl_1990}
+{RB} {CLEVELAND}.
+\newblock {STL} : A seasonal-trend decomposition procedure based on loess.
+\newblock 6:3--73.
+
+\bibitem{hafen_syndromic_2009}
+Ryan~P. Hafen, David~E. Anderson, William~S. Cleveland, Ross Maciejewski,
+  David~S. Ebert, Ahmad Abusalah, Mohamed Yakout, Mourad Ouzzani, and Shaun~J.
+  Grannis.
+\newblock Syndromic surveillance: {STL} for modeling, visualizing, and
+  monitoring disease counts.
+\newblock 9(1):21.
+
+\bibitem{hinton_reducing_2006}
+G.~E. Hinton and R.~R. Salakhutdinov.
+\newblock Reducing the dimensionality of data with neural networks.
+\newblock 313(5786):504--507.
+\newblock Publisher: American Association for the Advancement of Science.
+
+\bibitem{hochreiter_long_1997}
+Sepp Hochreiter and Jürgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock 9(8):1735--1780.
+
+\bibitem{xia_novel_2024}
+Qi~Xia, Badjie Ansu, Jianbin Gao, Mupoyi~Ntuala Grace, Hu~Xia, and Obiri~Isaac
+  Amankona.
+\newblock A novel time series approach to anomaly detection and correction for
+  complex blockchain transaction networks.
+\newblock In {\em 2024 {IEEE} 23rd International Conference on Trust, Security
+  and Privacy in Computing and Communications ({TrustCom})}, pages 674--682.
+\newblock {ISSN}: 2324-9013.
+
+\bibitem{kingma_auto-encoding_2022-1}
+Diederik~P. Kingma and Max Welling.
+\newblock Auto-encoding variational bayes.
+
+\bibitem{zhang_rethinking_2024}
+Xiao Zhang, Shuqing Xu, Huashan Chen, Zekai Chen, Fuzhen Zhuang, Hui Xiong, and
+  Dongxiao Yu.
+\newblock Rethinking robust multivariate time series anomaly detection: A
+  hierarchical spatio-temporal variational perspective.
+\newblock 36(12):9136--9149.
+
+\bibitem{yang_h-vgrae_2020}
+Chenming Yang, Liang Zhou, Hui Wen, Zhiheng Zhou, and Yue Wu.
+\newblock H-{VGRAE}: A hierarchical stochastic spatial-temporal embedding
+  method for robust anomaly detection in dynamic networks.
+
+\bibitem{zhang_skip-step_2024}
+Kexin Zhang, Qingsong Wen, Chaoli Zhang, Liang Sun, and Yong Liu.
+\newblock Skip-step contrastive predictive coding for time series anomaly
+  detection.
+\newblock In {\em {ICASSP} 2024 - 2024 {IEEE} International Conference on
+  Acoustics, Speech and Signal Processing ({ICASSP})}, pages 7065--7069.
+\newblock {ISSN}: 2379-190X.
+
+\bibitem{lavin_evaluating_2015}
+Alexander Lavin and Subutai Ahmad.
+\newblock Evaluating real-time anomaly detection algorithms – the numenta
+  anomaly benchmark.
+\newblock In {\em 2015 {IEEE} 14th International Conference on Machine Learning
+  and Applications ({ICMLA})}, pages 38--44.
+
+\bibitem{wu_current_2023}
+Renjie Wu and Eamonn~J. Keogh.
+\newblock Current time series anomaly detection benchmarks are flawed and are
+  creating the illusion of progress.
+\newblock 35(3):2421--2429.
+
+\bibitem{skatchkovsky_bayesian_2022}
+Nicolas Skatchkovsky, Hyeryung Jang, and Osvaldo Simeone.
+\newblock Bayesian continual learning via spiking neural networks.
+\newblock 16.
+\newblock Publisher: Frontiers.
+
+\bibitem{haddad_comparative_2024}
+Hatem Haddad, Feres Jerbi, and Issam Smaali.
+\newblock Comparative analysis of off-the-shelf methods for energy consumption
+  anomaly detection.
+\newblock In {\em 2024 10th International Conference on Automation, Robotics
+  and Applications ({ICARA})}, pages 392--396.
+\newblock {ISSN}: 2767-7745.
+
+\bibitem{mali_comparison_2024}
+Barasha Mali.
+\newblock Comparison of the statistical and autoencoder approach for anomaly
+  detection in big data.
+\newblock In {\em 2024 5th International Conference on Big Data Analytics and
+  Practices ({IBDAP})}, pages 22--25.
+
+\bibitem{jang_bisnn_2021}
+Hyeryung Jang, Nicolas Skatchkovsky, and Osvaldo Simeone.
+\newblock {BiSNN}: Training spiking neural networks with binary weights via
+  bayesian learning.
+\newblock In {\em 2021 {IEEE} Data Science and Learning Workshop ({DSLW})},
+  pages 1--6.
+
+\bibitem{maddula_ai-driven_2024}
+Srujana Maddula, Himanshu Gupta, and Shaik Mohammad~Jani Basha.
+\newblock {AI}-driven neuromorphic computing for energy-efficient anomaly
+  detection in {IoT} networks.
+\newblock 8(3).
+
+\bibitem{islam_benchmarking_2024}
+Riadul Islam, Patrick Majurski, Jun Kwon, Anurag Sharma, and Sri Ranga
+  Sai~Krishna Tummala.
+\newblock Benchmarking artificial neural network architectures for
+  high-performance spiking neural networks.
+\newblock 24(4):1329.
+\newblock Number: 4 Publisher: Multidisciplinary Digital Publishing Institute.
+
+\bibitem{firmin_parallel_2024}
+Thomas Firmin, Pierre Boulet, and El-Ghazali Talbi.
+\newblock Parallel hyperparameter optimization of spiking neural network.
+
+\bibitem{parsa_bayesian-based_2019}
+Maryam Parsa, J.~Parker Mitchell, Catherine~D. Schuman, Robert~M. Patton,
+  Thomas~E. Potok, and Kaushik Roy.
+\newblock Bayesian-based hyperparameter optimization for spiking neuromorphic
+  systems.
+\newblock In {\em 2019 {IEEE} International Conference on Big Data (Big Data)},
+  pages 4472--4478. {IEEE}.
+
+\bibitem{Hazan2018_BindsNET}
+Hananel Hazan, Daniel~J. Saunders, Hassaan Khan, Devdhar Patel, Darpan~T.
+  Sanghavi, Hava~T. Siegelmann, and Robert Kozma.
+\newblock Bindsnet: A machine learning‑oriented spiking neural networks
+  library in python.
+\newblock {\em Frontiers in Neuroinformatics}, 12:89, 2018.
+
+\bibitem{bindsnet_docs}
+BindsNET Contributors.
+\newblock Bindsnet documentation.
+\newblock \url{https://bindsnet-docs.readthedocs.io/}, 2024.
+\newblock Accessed: 2025-07-12.
+
+\bibitem{deadsnakes2025}
+{deadsnakes}.
+\newblock deadsnakes github organization.
+\newblock \url{https://github.com/deadsnakes}, 2025.
+\newblock Accessed: 2025-07-12.
+
+\bibitem{sanaullah_hybrid_2024}
+Sanaullah Sanaullah.
+\newblock A hybrid spiking-convolutional neural network approach for advancing
+  machine learning models.
+\newblock In {\em Proceedings of the 5th Northern Lights Deep Learning
+  Conference (\{{NLDL}\})}, pages 220--227. {PMLR}.
+\newblock {ISSN}: 2640-3498.
+
+\bibitem{milvus2025anomaly}
+{Milvus}.
+\newblock What preprocessing techniques are used in anomaly detection?
+\newblock
+  \url{https://milvus.io/ai-quick-reference/what-preprocessing-techniques-are-used-in-anomaly-detection/},
+  2025.
+\newblock Consultado el 12 de julio de 2025.
+
+\bibitem{UCI_Calit2_2009}
+{UCI Machine Learning Repository}.
+\newblock Calit2 building people counts data set, 2009.
+\newblock Accessed: 2025-07-12.
+
+\bibitem{bergstra_random_2012}
+James Bergstra and Yoshua Bengio.
+\newblock Random search for hyper-parameter optimization.
+\newblock {\em Journal of Machine Learning Research}, 13(Feb):281--305, 2012.
+
+\bibitem{akiba_optuna_2019}
+Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta, and Masanori Koyama.
+\newblock Optuna: A next-generation hyperparameter optimization framework.
+\newblock In {\em Proceedings of the 25th ACM SIGKDD International Conference
+  on Knowledge Discovery \& Data Mining}, KDD '19, pages 2623--2631, New York,
+  NY, USA, 2019. ACM.
+
+\bibitem{li_system_2020}
+Richard Liaw, Eric Liang, Tristan Liaw, William Dram{\'e}, Robert Nishihara,
+  Philipp Moritz, Ken Goldberg, and Ion Stoica.
+\newblock A system for massively parallel hyperparameter tuning.
+\newblock In {\em Proceedings of Machine Learning and Systems}, volume~2, pages
+  230--246, 2020.
+
+\bibitem{oord_representation_2018}
+Aaron van~den Oord, Yazhe Li, and Oriol Vinyals.
+\newblock Representation learning with contrastive predictive coding.
+
+\bibitem{holland_adaptation_1992}
+John~H. Holland.
+\newblock {\em Adaptation in Natural and Artificial Systems: An Introductory
+  Analysis with Applications to Biology, Control, and Artificial Intelligence}.
+\newblock MIT Press, Cambridge, MA, USA, 2nd edition, 1992.
+
+\bibitem{snoek_practical_2012}
+Jasper Snoek, H.~Larochelle, and Ryan~P. Adams.
+\newblock Practical bayesian optimization of machine learning algorithms.
+
+\bibitem{yang_cnts_2023}
+Jinsheng Yang, Yuanhai Shao, and Chun-Na Li.
+\newblock {CNTS}: Cooperative network for time series.
+\newblock 11:31941--31950.
+
+\bibitem{maass_networks_1997}
+Wolfgang Maass.
+\newblock Networks of spiking neurons: The third generation of neural network
+  models.
+\newblock 10(9):1659--1671.
+
+\bibitem{markram_history_2011}
+Henry Markram, Wulfram Gerstner, and Per~Jesper Sjöström.
+\newblock A history of spike-timing-dependent plasticity.
+\newblock 3:4.
+
+\bibitem{indiveri_neuromorphic_2011}
+Giacomo Indiveri, Bernabe Linares-Barranco, Tara~Julia Hamilton, André van
+  Schaik, Ralph Etienne-Cummings, Tobi Delbruck, Shih-Chii Liu, Piotr Dudek,
+  Philipp Häfliger, Sylvie Renaud, Johannes Schemmel, Gert Cauwenberghs, John
+  Arthur, Kai Hynna, Fopefolu Folowosele, Sylvain Saïghi, Teresa
+  Serrano-Gotarredona, Jayawan Wijekoon, Yingxue Wang, and Kwabena Boahen.
+\newblock Neuromorphic silicon neuron circuits.
+\newblock 5.
+\newblock Publisher: Frontiers.
+
+\bibitem{lee_robust_2022}
+Wo~Jae Lee, Karim Helwani, A.~Krishnaswamy, and S.~Tenneti.
+\newblock Robust audio anomaly detection.
+
+\bibitem{liu_sparsity-aware_2024}
+Ying Liu, Zhiyuan Chen, Wentao Zhao, Tianhao Zhao, Tianyu Jia, Zhixuan Wang,
+  Ru~Huang, Le~Ye, and Yufei Ma.
+\newblock Sparsity-aware in-memory neuromorphic computing unit with
+  configurable topology of hybrid spiking and artificial neural network.
+\newblock 71(6):2660--2673.
+
+\bibitem{kaushik_optuna_2024}
+Dhrubajyoti Kaushik.
+\newblock Optuna: The smarter way to optimize your machine learning models.
+
+\bibitem{broutonlab_efficient_2021}
+{BroutonLab}.
+\newblock Efficient hyperparameter optimization with optuna framework.
+
+\end{thebibliography}
