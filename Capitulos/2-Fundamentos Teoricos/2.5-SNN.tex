@@ -2,11 +2,11 @@
 
 \subsection{¿Qué es una Red Neuronal de Impulsos?}
 
-Las redes neuronales que conocemos —las ANNs tradicionales— procesan información usando números continuos. Cada neurona recibe valores como 0.87 o 0.34, los procesa, y produce otro número continuo. Esto funciona bien, pero no es como trabaja el cerebro real.
+Las redes neuronales que conocemos, las ANNs tradicionales, procesan información usando números continuos. Cada neurona recibe valores como 0.87 o 0.34, los procesa, y produce otro número continuo. Pero así no es como trabaja el cerebro real.
 
-Las Redes Neuronales de Impulsos funcionan de manera diferente. En lugar de transmitir valores numéricos continuos, estas redes se comunican mediante pulsos breves de actividad eléctrica llamados impulsos igual que las neuronas biológicas. Un impulso es un evento discreto: la neurona dispara o no dispara.
+Las SNNs funcionan de manera diferente. En lugar de transmitir valores numéricos continuos, estas redes se comunican mediante impulsos breves de actividad eléctrica llamados impulsos igual que las neuronas biológicas. Un impulso es un evento discreto: la neurona dispara o no dispara.
 
-Pensemos en una analogía: una ANN tradicional se parece a un termostato analógico que ajusta gradualmente la temperatura en un rango continuo de valores. Una SNN, en cambio, funciona más como un sistema de código Morse: transmite información mediante pulsos discretos que ocurren en momentos específicos del tiempo. El mensaje no está solo en si hay pulso o no, sino también en \textbf{cuándo} ocurre ese pulso.
+Pensemos en una analogía: una ANN tradicional se parece a un termostato analógico que ajusta gradualmente la temperatura en un rango continuo de valores. Una SNN, en cambio, funciona más como un sistema de código Morse: transmite información mediante impulsos discretos que ocurren en momentos específicos del tiempo. El mensaje no está solo en si hay impulso o no, sino también en cuándo ocurre.
 
 \subsubsection{Diferencias fundamentales con las ANNs tradicionales}
 
@@ -18,15 +18,14 @@ La tabla \ref{tab:ann-vs-snn} resume las diferencias principales entre ambos par
 \hline\hline
 \textbf{Aspecto} & \textbf{ANN Tradicional} & \textbf{SNN} \\
 \hline
-Comunicación entre neuronas & Valores continuos (0.0 - 1.0) & Pulsos discretos (\textit{spike}/no \textit{spike}) \\
+Comunicación entre neuronas & Valores continuos (0.0 - 1.0) & Pulsos discretos (impulso/no impulso) \\
 \hline
-Información temporal & El momento exacto no importa & El TIEMPO del \textit{spike} es información \\
+Información temporal & El momento exacto no importa & El TIEMPO del impulso es información \\
 \hline
-Activación & Cada neurona procesa en cada paso & Solo procesa cuando recibe un \textit{spike} \\
+Activación & Cada neurona procesa en cada paso & Solo procesa cuando recibe un impulso \\
 \hline
 Operaciones & Multiplicaciones intensivas & Sumas y comparaciones \\
-\hline
-Inspiración & Matemática abstracta & Neuronas biológicas reales \\
+
 \hline\hline
 \end{tabular}
 \caption{Comparación entre ANNs tradicionales y SNNs}
@@ -45,9 +44,9 @@ En una SNN con la misma topología, el flujo es diferente:
 \texttt{Neurona A (spike en t=3) → Neurona B (spike en t=5) → Neurona C (sin spike)}
 \end{center}
 
-Aquí las neuronas se comunican mediante eventos discretos que ocurren en momentos específicos. La neurona A dispara un \textit{spike} en el instante $t=3$, lo cual causa que la neurona B acumule carga y eventualmente dispare en $t=5$. La neurona C, en cambio, no alcanza el umbral necesario para disparar. Esta dinámica temporal es esencial para entender cómo operan las SNNs.
+Aquí las neuronas se comunican mediante eventos discretos que ocurren en momentos específicos. La neurona A dispara un impulso en el instante $t=3$, lo cual causa que la neurona B acumule carga y eventualmente dispare en $t=5$. La neurona C, en cambio, no alcanza el umbral necesario para disparar. Esta dinámica temporal es esencial para entender cómo operan las SNNs.
 
-La consecuencia más importante de este diseño es que las SNNs son \textbf{impulsadas por eventos} (\textit{event-driven}). La mayoría de las neuronas están inactivas la mayor parte del tiempo, despertándose solo cuando reciben un \textit{spike}. Esto contrasta con las ANNs, donde todas las neuronas calculan activamente en cada paso temporal, consuman o no esa información.
+La consecuencia más importante de este diseño es que las SNNs son impulsadas por eventos. La mayoría de las neuronas están inactivas la mayor parte del tiempo, despertándose solo cuando reciben un impulso. Esto contrasta con las ANNs, donde todas las neuronas calculan activamente en cada paso temporal, consuman o no esa información.
 
 \subsection{Componentes básicos de una SNN}
 
@@ -55,20 +54,20 @@ Ahora que entendemos el concepto general, veamos las piezas que conforman una SN
 
 \subsubsection{La neurona de impulsos: modelo LIF}
 
-El tipo de neurona más común en SNNs se llama \textbf{LIF} (\textit{Leaky Integrate-and-Fire}, o integración con fuga y disparo). El nombre parece complicado, pero describe exactamente lo que hace:
+El tipo de neurona más común en SNNs se llama LIF. A continuación se explican los componentes clave de este modelo:
 
 \begin{itemize}
-    \item \textbf{Integrate (Integrar):} La neurona acumula las señales eléctricas que recibe. Cada vez que llega un \textit{spike} desde otra neurona, el voltaje de membrana aumenta.
-    \item \textbf{Leaky (Con fuga):} El voltaje no se mantiene indefinidamente. Si la neurona no recibe más entradas, el voltaje decae gradualmente con el tiempo, como si hubiera una "fuga" de carga.
-    \item \textbf{Fire (Disparar):} Cuando el voltaje acumulado supera un umbral determinado, la neurona emite su propio \textit{spike} y su voltaje se reinicia a un valor de reposo.
+    \item \textbf{Fuga:} El voltaje no se mantiene indefinidamente. Si la neurona no recibe más entradas, el voltaje decae gradualmente con el tiempo, como si hubiera una fuga de carga.
+    \item \textbf{Integración:} La neurona acumula las señales eléctricas que recibe. Cada vez que llega un impulso desde otra neurona, el voltaje de membrana aumenta.
+    \item \textbf{Disparo:} Cuando el voltaje acumulado supera un umbral determinado, la neurona emite su propio impulso y su voltaje se reinicia a un valor de reposo.
 \end{itemize}
 
 Podemos expresar esta dinámica con una ecuación simple:
 \begin{equation}
-    V(t+1) = V(t) \times \text{decay} + \sum (\text{spikes\_recibidos} \times \text{pesos})
+    V(t+1) = V(t) \times \text{decay} + \text{impulso\_recibidos}
 \end{equation}
 
-Si $V(t+1) \geq \text{threshold}$, entonces la neurona dispara un \textit{spike} y $V$ se reinicia a $V_{\text{rest}}$.
+Si $V(t+1) \geq \text{threshold}$, entonces la neurona dispara un impulso y $V$ se reinicia a $V_{\text{rest}}$.
 
 Los parámetros clave son:
 \begin{itemize}
@@ -85,7 +84,7 @@ Un ejemplo concreto ayuda a visualizar el proceso. Supongamos una neurona LIF co
     \item decay $= 0.95$
 \end{itemize}
 
-En $t=0$, la neurona está en reposo: $V(0) = -65$ mV. En $t=1$, recibe un \textit{spike} con peso $+8$ mV, así que:
+En $t=0$, la neurona está en reposo: $V(0) = -65$ mV. En $t=1$, recibe un impulso con peso $+8$ mV, así que:
 \[
 V(1) = -65 \times 0.95 + 8 = -61.75 + 8 = -53.75 \text{ mV}
 \]
@@ -95,12 +94,12 @@ El voltaje subió, pero aún está por debajo del umbral ($-50$ mV), así que no
 V(2) = -53.75 \times 0.95 = -51.06 \text{ mV}
 \]
 
-El voltaje decae lentamente. Si en $t=3$ recibe otro \textit{spike} de $+5$ mV:
+El voltaje decae lentamente. Si en $t=3$ recibe otro impulso de $+5$ mV:
 \[
 V(3) = -51.06 \times 0.95 + 5 = -48.51 + 5 = -43.51 \text{ mV}
 \]
 
-¡Ahora $V(3) > -50$ mV! La neurona supera el umbral, emite un \textit{spike}, y su voltaje se reinicia: $V(3) \rightarrow -65$ mV.
+¡Ahora $V(3) > -50$ mV! La neurona supera el umbral, emite un impulso, y su voltaje se reinicia: $V(3) \rightarrow -65$ mV.
 
 Este ciclo se repite continuamente. El diagrama temporal del voltaje mostraría algo así:
 
@@ -122,7 +121,7 @@ La simplicidad del modelo LIF es una de sus mayores ventajas. Captura la dinámi
 
 \subsubsection{Sinapsis: las conexiones entre neuronas}
 
-Cuando una neurona dispara un \textit{spike}, este no llega automáticamente a todas las demás neuronas. Viaja a través de \textbf{sinapsis}, las conexiones entre neuronas. Cada sinapsis tiene un \textbf{peso sináptico} que determina cuánto impacto tiene el \textit{spike} en la neurona receptora.
+Cuando una neurona dispara un impulso, este no llega automáticamente a todas las demás neuronas. Viaja a través de \textbf{sinapsis}, las conexiones entre neuronas. Cada sinapsis tiene un \textbf{peso sináptico} que determina cuánto impacto tiene el impulso en la neurona receptora.
 
 Los pesos pueden ser de dos tipos:
 \begin{itemize}
@@ -130,7 +129,7 @@ Los pesos pueden ser de dos tipos:
     \item \textbf{Negativos (inhibitorios):} Disminuyen el voltaje, haciendo menos probable que dispare.
 \end{itemize}
 
-Veamos un ejemplo concreto. Supón que la neurona A dispara un \textit{spike} y está conectada a la neurona B mediante una sinapsis con peso $+0.5$. Cuando el \textit{spike} llega, la neurona B recibe un incremento de voltaje de $+0.5$ mV. Si esa misma sinapsis tuviera un peso de $-0.3$, la neurona B experimentaría una disminución de $-0.3$ mV en su voltaje.
+Veamos un ejemplo concreto. Supón que la neurona A dispara un impulso y está conectada a la neurona B mediante una sinapsis con peso $+0.5$. Cuando el impulso llega, la neurona B recibe un incremento de voltaje de $+0.5$ mV. Si esa misma sinapsis tuviera un peso de $-0.3$, la neurona B experimentaría una disminución de $-0.3$ mV en su voltaje.
 
 Esta interacción entre excitación e inhibición es fundamental. Las neuronas excitatorias activan a otras neuronas, propagando información. Las neuronas inhibitorias, en cambio, actúan como "frenos", evitando que la red se sature con actividad descontrolada. El balance entre ambas determina la estabilidad y el comportamiento de la red.
 
@@ -154,16 +153,16 @@ Es intuitivo: más valor, más disparos. Pero tiene un inconveniente: se necesit
 
 \paragraph{2. Codificación temporal (\textit{Temporal Coding})}
 
-Aquí la información está en el \textbf{momento exacto} en que ocurre el \textit{spike}. Los valores altos disparan temprano, los valores bajos disparan tarde (o viceversa, según la convención).
+Aquí la información está en el \textbf{momento exacto} en que ocurre el impulso. Los valores altos disparan temprano, los valores bajos disparan tarde (o viceversa, según la convención).
 
 Ejemplo:
 \begin{itemize}
-    \item Temperatura = 30°C → \textit{spike} en $t=5$ ms
-    \item Temperatura = 10°C → \textit{spike} en $t=25$ ms
+    \item Temperatura = 30°C → impulso en $t=5$ ms
+    \item Temperatura = 10°C → impulso en $t=25$ ms
 \end{itemize}
 
-Esta codificación es más rápida, porque la información está disponible desde el primer \textit{spike}. No hace falta esperar a contar cuántos disparos ocurren. Las neuronas biológicas usan ambas estrategias dependiendo del contexto, y las SNNs artificiales pueden hacer lo mismo.
+Esta codificación es más rápida, porque la información está disponible desde el primer impulso. No hace falta esperar a contar cuántos disparos ocurren. Las neuronas biológicas usan ambas estrategias dependiendo del contexto, y las SNNs artificiales pueden hacer lo mismo.
 
-En el contexto de detección de anomalías en series temporales, otra técnica común es la \textbf{codificación por cuantiles}. Los valores de entrada se dividen en rangos basados en cuantiles estadísticos, y cada rango se asigna a una neurona de entrada específica. Cuando un valor cae dentro de un rango, la neurona correspondiente dispara un \textit{spike}. Este método será detallado en el Capítulo 3, donde se describe la arquitectura específica implementada en este trabajo.
+En el contexto de detección de anomalías en series temporales, otra técnica común es la \textbf{codificación por cuantiles}. Los valores de entrada se dividen en rangos basados en cuantiles estadísticos, y cada rango se asigna a una neurona de entrada específica. Cuando un valor cae dentro de un rango, la neurona correspondiente dispara un impulso. Este método será detallado en el Capítulo 3, donde se describe la arquitectura específica implementada en este trabajo.
 
 La elección del método de codificación depende de la aplicación. Para sistemas que requieren respuesta rápida, la codificación temporal puede ser preferible. Para aplicaciones donde importa más la precisión que la velocidad, la codificación por frecuencia puede ser más adecuada.
