@@ -1,0 +1,23 @@
+\chapter{Manual de Instalación y Configuración Técnica}
+\label{anexo:manual-instalacion}
+
+\section{Instalación y configuración de BindsNET}
+
+La instalación y configuración de BindsNET presentó desafíos técnicos significativos relacionados con la gestión de dependencias y compatibilidad de versiones. Este anexo documenta los problemas encontrados y las estrategias de resolución implementadas para facilitar la reproducibilidad del entorno de desarrollo.
+
+\subsection{Problemas de compatibilidad y configuración del entorno}
+
+El problema principal surgió con los requisitos de versión de Python, donde BindsNET 0.3.2 requería Python >= 3.9 y < 3.12, mientras que el entorno de desarrollo inicial utilizaba Python 3.8.10.
+
+Los conflictos de dependencias se extendieron a la gestión de paquetes, particularmente con problemas en la versión de pip que impedían la instalación correcta del framework. El error específico ImportError: cannot import name 'html5lib' from 'pip.\_vendor' indicaba incompatibilidades en el sistema de gestión de paquetes que requerían resolución antes de proceder con la instalación de BindsNET.
+
+\subsection{Estrategias de resolución implementadas}
+
+La estrategia implementada consistió en la desinstalación y reinstalación de WSL, proporcionando un entorno limpio y controlado para la instalación de BindsNET.
+
+El proceso de resolución incluyó la actualización de repositorios de paquetes mediante la adición del PPA de deadsnakes \cite{deadsnakes2025}, permitiendo acceso a versiones específicas de Python compatibles con BindsNET. La instalación de herramientas de desarrollo necesarias, incluyendo python3.10 y herramientas de compilación, se realizó de manera secuencial para evitar conflictos adicionales.
+
+La verificación de la instalación se realizó mediante la ejecución de casos de prueba incluidos en la documentación de BindsNET, confirmando la funcionalidad correcta del framework en el nuevo entorno.
+
+Los experimentos definitivos se consolidaron con BindsNET 0.2.7 sobre PyTorch 1.11.0 debido a la estabilidad de las dependencias y a la necesidad de reproducibilidad exacta. Todas las métricas reportadas en este trabajo para SNN provienen de esa combinación de versiones.
+
