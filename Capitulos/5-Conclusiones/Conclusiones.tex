@@ -69,14 +69,14 @@ El modelo híbrido es aplicable a escenarios de edge computing al reducir cómpu
     \item \textbf{Estimación energética indirecta}: No medimos el consumo real en hardware neuromórfico (solo estimaciones analíticas de MACs).
     \item \textbf{Escalabilidad multivariante}: Los experimentos se centraron principalmente en señales univariadas (o pocas variables); falta evaluar en entornos fuertemente multivariados.
     \item \textbf{GPU}: Uno de los motivos para elegir BindsNET fue poder aprovechar la aceleración GPU; sin embargo, no conseguimos una configuración estable (incompatibilidades de dependencias en Windows), lo que aumentó la duración de los entrenamientos y limitó la exploración de hiperparámetros. Esto podría significar que no identificamos todas las combinaciones óptimas. Aún así, como todos los modelos se ejecutaron bajo condiciones homogéneas (CPU) y el preprocesamiento fue uniforme, la validez interna de la comparación se mantiene. Futuros trabajos en un entorno Linux con soporte CUDA habilitado permitirán ampliar la búsqueda y evaluar la robustez frente a una exploración más exhaustiva.
-\end{itemize>
+\end{itemize}
 
 \subsection{Consideraciones de validez}
 \begin{itemize}
     \item \textbf{Interna}: La expansión de etiquetas podría inflar artificialmente el recall si no se aplica de forma consistente en inferencia.
     \item \textbf{Externa}: Los datasets (IOPS, CalIt2) puede que no representen toda la diversidad industrial (ciclos estacionales largos, variabilidad contextual).
     \item \textbf{Baselines}: Las comparaciones con TSFEDL se limitaron a cuatro modelos específicos (OhShuLih, KhanZulfiqar, ZhengZhenyu, WeiXiaoyan), sin acceso a mediciones de consumo energético de los baselines.
-\end{itemize>
+\end{itemize}
 
 \section{Conclusiones finales}
 En resumen, este trabajo ha demostrado que las arquitecturas híbridas SNN-CNN, aunque no superan consistentemente a los métodos de deep learning tradicionales en términos de F1-score, ofrecen un equilibrio interesante entre rendimiento y eficiencia computacional. La arquitectura propuesta logró F1-scores de 0.417 en CalIt2, manteniéndose competitiva en datasets moderadamente balanceados, mientras que en IOPS mostró mejoras notables respecto al modelo SNN base (4.6x) pero sigue teniendo limitaciones frente a métodos tradicionales en escenarios de desbalanceo extremo.
@@ -114,7 +114,7 @@ Integración específica para sistemas SNN en producción:
     \item \textbf{Re-calibración de umbrales}: Ajuste automático de umbrales neuronales basado en la distribución reciente de impulsos para mantener sensitividad sin re-entrenar completamente.
     \item \textbf{Despliegue edge}: Empaquetado optimizado para microcontroladores con soporte SNN nativo (e.g. neuromorphic inference engines) incluyendo cuantización de parámetros sinápticos.
     \item \textbf{Pipeline neuromórfico}: Versionado de topologías de red y pesos sinápticos con herramientas específicas para arquitecturas basadas en impulsos.
-\end{itemize>
+\end{itemize}
 
 % \subsection{Aplicabilidad práctica}
 % \begin{itemize}
