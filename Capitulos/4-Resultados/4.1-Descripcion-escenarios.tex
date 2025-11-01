@@ -2,7 +2,7 @@
 
 En este capítulo se presentan los escenarios, configuraciones y protocolos que usamos para evaluar los modelos de detección de anomalías. Comparamos:
 \begin{itemize}
-    \item \textbf{SNN original (A--B)}: implementación base del trabajo previo.
+    \item \textbf{Modelo SNN base (A--B)}: implementación base del trabajo previo.
     \item \textbf{SNN híbrida (A--B--C)}: nuestro modelo propuesto con capa convolucional y búsqueda de hiperparámetros.
     \item \textbf{Baselines TSFEDL}: OhShuLih, KhanZulfiqar, ZhengZhenyu, WeiXiaoyan.
 \end{itemize}
@@ -39,7 +39,7 @@ Preprocesado común:
 \subsection{Configuración de hardware y software}
 \label{subsec:config_hw_sw}
 
-En este TFM se han utilizado dos entornos de trabajo principales:  El Proyecto SNN (con dos variantes internas: SNN original (A–B) y SNN híbrida (A–B–C)) y Baselines TSFEDL.
+En este TFM se han utilizado dos entornos de trabajo principales: El Proyecto SNN (con dos variantes internas: modelo SNN base (A–B) y SNN híbrida (A–B–C)) y Baselines TSFEDL.
 
 Ambos entornos no se unificaron deliberadamente debido a incompatibilidades de versiones, particularmente relacionadas con PyTorch, NumPy y Pandas. Intentar forzar una convergencia resultaba inviable no era posible encontrar una combinación de versiones que permitiera ejecutar simultáneamente ambos proyectos. A continuación se muestran las restricciones técnicas más relevantes:
 
