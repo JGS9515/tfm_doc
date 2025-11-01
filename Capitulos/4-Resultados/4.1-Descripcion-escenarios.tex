@@ -128,7 +128,7 @@ Para cada tamaño $N_B$ ejecutamos 100 ensayos (pruebas) de optimización con Op
 \paragraph{Justificación de 100 pruebas por configuración:}
 \begin{enumerate}
     \item \textbf{Convergencia empírica de TPE:} Los estudios de optimización muestran estabilización de mejoras marginales en intervalos de 50--150 evaluaciones en espacios de dimensión efectiva moderada \cite{bergstra_random_2012, akiba_optuna_2019}.
-    \item \textbf{Eficiencia con poda:} La integración de ASHA reduce el número de evaluaciones completas necesarias, redirigiendo recursos a configuraciones más prometedoras \cite{li_system_2020, noauthor_efficient_2021}.
+    \item \textbf{Eficiencia con poda:} La integración de ASHA reduce el número de evaluaciones completas necesarias, redirigiendo recursos a configuraciones más prometedoras \cite{li_system_2020, broutonlab_efficient_2021}.
     \item \textbf{Sensibilidad SNN:} En SNNs la interacción entre plasticidad y dinámica de fuga/umbral puede generar regiones amplias de bajo disparo; la poda acelera el descarte \cite{firmin_parallel_2024, parsa_bayesian-based_2019}.
     \item \textbf{Equidad comparativa:} Mantener el mismo presupuesto de 100 pruebas por cada $N_B$ evita sesgos de sobre-optimización en redes mayores y permite comparar curvas rendimiento/coste de forma homogénea.
     \item \textbf{Restricciones del proyecto:} 3 escalas de red $\times$ 100 pruebas = 300 ensayos nominales; con poda, el número de ejecuciones completas efectivas disminuye, manteniéndose dentro del límite temporal (R1) y computacional (R4).
