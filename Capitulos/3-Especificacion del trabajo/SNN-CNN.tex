@@ -2,34 +2,25 @@
 
 \subsection{Motivación y diferencias respecto al modelo SNN base}
 
-La motivación principal para desarrollar este modelo híbrido surge de las limitaciones observadas en la SNN original. Esta red se diseñó para procesar series temporales de datos (como los datasets de IoPS o CalIt2) mediante un enfoque de aprendizaje no supervisado basado en STDP, con el objetivo de detectar anomalías a través de patrones de disparos neuronales. Sin embargo, su estructura fully-connected limita la capacidad para capturar dependencias temporales y espaciales complejas en los datos, lo que resulta en un rendimiento subóptimo en escenarios con ruido o variabilidad alta. Además, carece de mecanismos de optimización sistemática de hiperparámetros y de procesamiento jerárquico, lo que puede llevar a sobreajuste o baja generalización.
+Como se describió en la Sección 2.5.3 del Capítulo 2, el modelo SNN base para detección de anomalías consta de una arquitectura bicapa (A-B) donde la capa de entrada emplea codificación por cuantiles y la capa de procesamiento contiene neuronas LIF con conexiones recurrentes entrenadas mediante STDP modificado. Si bien esta arquitectura demuestra la viabilidad de aplicar SNNs a la detección de anomalías en series temporales, se identificaron varias limitaciones fundamentales que motivan el desarrollo de un modelo mejorado.
 
-\textbf{Resumen de la arquitectura previa (A--B, 39 LIF + 100 LIF) y sus limitaciones:}
+La motivación principal para desarrollar este modelo híbrido surge directamente de las limitaciones expuestas en el Capítulo 2. Específicamente, la ausencia de mecanismos de optimización automatizada de hiperparámetros y de procesamiento jerárquico puede conducir a un rendimiento subóptimo en escenarios con ruido o alta variabilidad.
 
-La SNN original consta de dos capas principales:
+El modelo híbrido propuesto aborda estas limitaciones mediante las siguientes innovaciones arquitecturales:
+
 \begin{itemize}
-    \item \textbf{Capa de entrada (A)}: Compuesta por un número variable de neuronas de entrada (típicamente $\sim$39, determinado por el tamaño de los cuantiles derivados de los datos de entrenamiento, \texttt{snn\_input\_layer\_neurons\_size = len(cuantiles)-1}). Estas neuronas codifican los valores de la serie temporal en impulsos basados en rangos cuantificados.
-    \item \textbf{Capa de procesamiento (B)}: Formada por 100 neuronas LIF (\texttt{snn\_process\_layer\_neurons\_size = 100}), conectadas de manera fully-connected a la capa A. Utiliza aprendizaje STDP con tasas de aprendizaje \texttt{nu1} y \texttt{nu2} para ajustar pesos sinápticos. La red se entrena exponiendo secuencias de datos durante un tiempo \texttt{T} (e.g., 100), y los disparos en B se usan para inferir anomalías (e.g., mediante umbrales como \texttt{umbral\_anomalia = np.mean(impulsos) + 2 * np.std(impulsos)}).
+    \item Procesamiento jerárquico: Se integra una capa convolucional (C) después de la capa B, creando una arquitectura híbrida SNN-CNN. La capa C aplica convoluciones sobre los impulsos de B para capturar patrones locales utilizando kernels configurables (Gaussiano, Laplaciano, Mexican Hat, Box).
+    
+    \item Optimización automatizada con Optuna: Los hiperparámetros ($\nu1$, $\nu2$, umbral, decaimiento, parámetros de kernel) se optimizan automáticamente para maximizar métricas como F1-score, eliminando la necesidad de ajuste manual.
+    
+    \item Rutas duales de procesamiento: El sistema permite evaluar las salidas de las capas B y C en paralelo, seleccionando automáticamente la representación más informativa según criterios de MSE y métricas de clasificación.
+    
+    \item Filtrado adaptativo de ruido: Las convoluciones en la capa C actúan como filtros temporales que suavizan fluctuaciones espurias, mejorando la robustez en conjuntos de datos ruidosos.
+    
+    \item Mejora en generalización: Soporte para múltiples conjuntos de datos (IoPS, CalIt2) con técnicas de expansión de etiquetas y padding para manejar secuencias de longitud variable.
 \end{itemize}
 
-Limitaciones clave:
-\begin{itemize}
-    \item \textbf{Falta de extracción de características jerárquicas}: La conexión fully-connected no captura patrones locales o temporales de manera eficiente, lo que es crítico en series temporales con anomalías sutiles (e.g., picos o cambios graduales).
-    \item \textbf{Sensibilidad a hiperparámetros}: Valores fijos o manuales para \texttt{nu1}, \texttt{nu2}, \texttt{threshold} y \texttt{decay} limitan la adaptabilidad, sin optimización automatizada.
-    \item \textbf{Rendimiento en datasets ruidosos}: En datasets como IoPS, la red puede generar falsos positivos debido a la ausencia de procesamiento convolucional para filtrar ruido temporal.
-    \item \textbf{Eficiencia computacional}: No incorpora capas especializadas para reducir dimensionalidad, lo que aumenta el costo en datasets grandes.
-    \item \textbf{Criterio de alerta simple}: Basado únicamente en estadísticas de disparos en B (e.g., suma de impulsos > umbral), sin rutas alternativas para refinamiento.
-\end{itemize}
-
-El nuevo modelo híbrido aborda estas limitaciones integrando una capa convolucional (C) después de B, creando una arquitectura híbrida (SNN + convolucional). Esto permite una extracción de características más robusta, similar a las CNN tradicionales, pero adaptada a impulsos. La motivación es mejorar la detección de anomalías en series temporales mediante:
-\begin{itemize}
-    \item \textbf{Procesamiento jerárquico}: La capa C aplica convoluciones sobre los disparos de B para capturar patrones locales (usando kernels gaussiano).
-    \item \textbf{Optimización con Optuna}: Hiperparámetros se optimizan automáticamente para maximizar métricas como F1-score.
-    \item \textbf{Rutas duales de datos}: Permite procesar salidas de B y C en paralelo, con criterios de alerta basados en MSE y métricas de clasificación.
-    \item \textbf{Mejora en generalización}: Soporte para datasets como IoPS y CalIt2, con expansión de etiquetas y padding para manejar secuencias variables.
-\end{itemize}
-
-Diferencias clave incluyen la adición de monitores para la capa C (\texttt{conv\_monitor}), opciones de procesamiento convolucional (e.g., 'weighted\_sum' o 'max'), y métricas duales (para B y C). Esto resulta en un modelo más flexible y efectivo, con un F1-score potencialmente superior en pruebas.
+En términos de implementación, las diferencias clave incluyen la adición de monitores específicos para la capa C, tres modos de procesamiento convolucional (direct, weighted\_sum, max) que serán explicados en la Sección 3.3.5, y evaluación dual de métricas tanto para la capa B como para la capa C. Esta arquitectura híbrida resulta en un modelo más flexible, manteniendo la eficiencia computacional inherente a las SNNs mientras incorpora las capacidades de extracción de características de las redes convolucionales.
 
 
 \subsection{Análisis de Variables Modificables del Modelo Híbrido}
