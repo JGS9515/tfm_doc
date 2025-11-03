@@ -57,11 +57,6 @@ En CalIt2, Optuna seleccionó repetidamente kernels \texttt{mexican\_hat} y \tex
 \subsection{Implicaciones prácticas}
 El modelo híbrido desarrollado tiene potencial para aplicaciones reales de mantenimiento predictivo y monitorización IoT, especialmente en entornos con restricciones energéticas. La arquitectura basada en impulsos discretos es naturalmente compatible con hardware neuromórfico de bajo consumo y su naturaleza dispersa sugiere que podría procesarse de forma eficiente, aunque habría que hacer mediciones específicas de rendimiento temporal para validar su viabilidad en aplicaciones de tiempo real. En mantenimiento predictivo, el alto recall observado (99.9\% en CalIt2) es crucial para evitar fallos no detectados, aunque la baja precisión requiere sistemas de post-procesado para reducir falsas alarmas.
 
-El modelo híbrido es aplicable a escenarios de edge computing al reducir cómputo mediante dispersidad, siempre que se complemente con:
-\begin{itemize}
-    \item Módulos ligeros de post-procesado para consolidar alertas.
-    \item Ajustes de umbrales adaptativos según la distribución reciente de actividad neuronal.
-\end{itemize}
 
 \section{Limitaciones y consideraciones de validez}
 \subsection{Limitaciones experimentales}
