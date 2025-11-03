@@ -403,7 +403,7 @@ En esta subsección, se analiza la complejidad computacional del modelo propuest
 
 \subsubsection{Estimación del número de operaciones MAC ejecutadas}
 
-El número de operaciones MAC (Multiplicación y Acumulación) ejecutadas por un modelo es un parámetro clave para la estimación de su eficiencia energética, aspecto cada vez más relevante debido al alto consumo que presentan los modelos actuales de Deep Learning. En este documento, se han realizado estimaciones adaptadas a la arquitectura implementada (capas A, B y C en \texttt{crear\_red} de \texttt{utils.py}).
+El número de operaciones MAC (Multiplicación y Acumulación) ejecutadas por un modelo es un parámetro clave para la estimación de su eficiencia energética.
 
 \subsubsection{Estimación de MACs para SNNs}
 
@@ -413,13 +413,13 @@ Las SNNs realizan operaciones MAC cuando los voltajes neuronales se actualizan o
     \item Operaciones MAC proporcionales al número total de neuronas: $N_A + N_B + N_C$, siendo:
     \begin{itemize}
         \item $N_A$: número de neuronas en la capa de entrada (igual a \texttt{snn\_input\_layer\_neurons\_size}).
-        \item $N_B$: neuronas en la capa LIF (por ejemplo, 100).
+        \item $N_B$: neuronas en la capa LIF (100, 200, 400).
         \item $N_C$: neuronas en la capa C (igual a $N_B$).
     \end{itemize}
     
     \item Operaciones inducidas por impulsos:
     \begin{itemize}
-        \item $N_B$ operaciones por impulso en la entrada A.
+        \item $N_A$ operaciones por impulso en la entrada A.
         \item $N_B$ operaciones por cada impulso en la capa B (conexiones recurrentes).
         \item $K \times N_B$ operaciones adicionales si se usa la capa C, siendo $K$ el tamaño del \textit{kernel}.
     \end{itemize}
