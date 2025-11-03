@@ -11,7 +11,7 @@ El modelo híbrido propuesto aborda estas limitaciones mediante las siguientes i
 \begin{itemize}
     \item Procesamiento jerárquico: Se integra una capa convolucional (C) después de la capa B, creando una arquitectura híbrida SNN-CNN. La capa C aplica convoluciones sobre los impulsos de B para capturar patrones locales utilizando kernels configurables (Gaussiano, Laplaciano, Mexican Hat, Box).
     
-    \item Optimización automatizada con Optuna: Los hiperparámetros ($\nu1$, $\nu2$, umbral, decaimiento, parámetros de kernel) se optimizan automáticamente para maximizar métricas como F1-score, eliminando la necesidad de ajuste manual.
+    \item Optimización automatizada con Optuna: Los hiperparámetros (nu1, nu2, umbral, decaimiento, parámetros de kernel) se optimizan automáticamente para maximizar métricas como F1-score, eliminando la necesidad de ajuste manual.
     
     \item Rutas duales de procesamiento: El sistema permite evaluar las salidas de las capas B y C en paralelo, seleccionando automáticamente la representación más informativa según criterios de MSE y métricas de clasificación.
     
