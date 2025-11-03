@@ -261,6 +261,13 @@ El modelo SNN base consta de dos capas principales, denominadas A y B:
     \item Conexiones recurrentes dentro de la propia capa B: las neuronas están interconectadas entre sí, permitiendo que los impulsos generados en esta capa influyan en el estado de las demás neuronas del mismo nivel. Estas conexiones recurrentes son fundamentales para capturar dependencias temporales en los datos.
 \end{itemize}
 
+\begin{figure}[!htb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Imagenes/Diagrama de capas de SNN Base.png}
+    \caption{Diagrama de la arquitectura bicapa de la SNN base. Fuente: Iago.}
+    \label{fig:arquitectura-bicapa-snn}
+\end{figure}
+
 \subsubsection{Codificación por cuantiles}
 
 Para convertir valores continuos de series temporales en impulsos discretos, se emplea una estrategia de codificación basada en cuantiles estadísticos. Este método divide el rango de valores observados en el conjunto de entrenamiento en intervalos disjuntos, donde cada intervalo corresponde a una neurona de la capa A.
