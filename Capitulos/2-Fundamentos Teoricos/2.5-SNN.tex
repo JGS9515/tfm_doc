@@ -240,7 +240,7 @@ Esta interacción entre excitación e inhibición es fundamental. Las neuronas e
 
 % \subsection{Arquitectura SNN base para detección de anomalías en series temporales}
 
-% Una vez comprendidos los fundamentos de las SNNs, en esta sección se describe la arquitectura SNN base, específicamente diseñada para la detección de anomalías en series temporales, que constituye el punto de partida para la solución propuesta en el Capítulo \ref{chap:especificacion}.
+% Una vez comprendidos los fundamentos de las SNNs, en esta sección se describe la arquitectura SNN base, específicamente diseñada para la detección de anomalías en series temporales, que constituye el punto de partida para la solución propuesta en el \hyperref[chap:especificacion]{Capítulo 3}.
 
 % \subsubsection{Motivación y principio de funcionamiento}
 
@@ -328,7 +328,7 @@ Esta interacción entre excitación e inhibición es fundamental. Las neuronas e
 %     \item Criterio de alerta simple: la decisión de anomalía se basa únicamente en estadísticas agregadas de impulsos en la capa B, sin aprovechar potencialmente múltiples representaciones o rutas de procesamiento paralelo.
 % \end{itemize}
 
-% Estas limitaciones serán abordadas en el Capítulo 3 mediante la introducción de una arquitectura híbrida que combina la eficiencia de las SNNs con capacidades de procesamiento convolucional, optimización automatizada de hiperparámetros y estrategias de decisión más sofisticadas.
+% Estas limitaciones serán abordadas en el \hyperref[chap:especificacion]{Capítulo 3} mediante la introducción de una arquitectura híbrida que combina la eficiencia de las SNNs con capacidades de procesamiento convolucional, optimización automatizada de hiperparámetros y estrategias de decisión más sofisticadas.
 
 
 % \subsubsection{Codificación de información en spikes}
@@ -361,6 +361,6 @@ Esta interacción entre excitación e inhibición es fundamental. Las neuronas e
 
 % Esta codificación es más rápida, porque la información está disponible desde el primer impulso. No hace falta esperar a contar cuántos disparos ocurren. Las neuronas biológicas usan ambas estrategias dependiendo del contexto, y las SNNs artificiales pueden hacer lo mismo.
 
-% En el contexto de detección de anomalías en series temporales, otra técnica común es la \textbf{codificación por cuantiles}. Los valores de entrada se dividen en rangos basados en cuantiles estadísticos, y cada rango se asigna a una neurona de entrada específica. Cuando un valor cae dentro de un rango, la neurona correspondiente dispara un impulso. Este método será detallado en el Capítulo 3, donde se describe la arquitectura específica implementada en este trabajo.
+% En el contexto de detección de anomalías en series temporales, otra técnica común es la \textbf{codificación por cuantiles}. Los valores de entrada se dividen en rangos basados en cuantiles estadísticos, y cada rango se asigna a una neurona de entrada específica. Cuando un valor cae dentro de un rango, la neurona correspondiente dispara un impulso. Este método será detallado en el \hyperref[chap:especificacion]{Capítulo 3}, donde se describe la arquitectura específica implementada en este trabajo.
 
 % La elección del método de codificación depende de la aplicación. Para sistemas que requieren respuesta rápida, la codificación temporal puede ser preferible. Para aplicaciones donde importa más la precisión que la velocidad, la codificación por frecuencia puede ser más adecuada.
