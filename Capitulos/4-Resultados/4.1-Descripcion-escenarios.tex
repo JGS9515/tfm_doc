@@ -111,7 +111,7 @@ La elección de una progresión aproximadamente duplicativa (factor $\times 2$) 
 
 \begin{enumerate}
     \item \textbf{Cobertura de capacidad con pocos puntos:} Obtenemos un rango total de $4\times$ en número de neuronas con solo tres configuraciones, reduciendo el número de escenarios a optimizar bajo las restricciones temporales del TFM (R1) y de coste computacional (R4).
-    \item \textbf{Análisis de escalado:} La complejidad operacional estimada (ver ecuación de MACs en la Sección correspondiente) contiene un término dominante cuadrático en $N_B$ (por $N_B^2$ y el producto $N_A N_B$), permitiendo observar cómo cambia el régimen de coste con incrementos estructurados.
+    \item \textbf{Análisis de escalado:} La complejidad operacional estimada (ver ecuación de MACs en la \hyperref[subsec:complejidad-computacional]{Sección 3.5.8}) contiene un término dominante cuadrático en $N_B$ (por $N_B^2$ y el producto $N_A N_B$), permitiendo observar cómo cambia el régimen de coste con incrementos estructurados.
     \item \textbf{Zona práctica de capacidad:} Valores por debajo de 100 neuronas tienden a no representar bien los patrones temporales en secuencias con variabilidad contextual, mientras que superar 400 aumenta la latencia y memoria de monitores sin garantizar ganancias proporcionales en F1 dado el carácter univariante / baja dimensionalidad de entrada.
     \item \textbf{Control de estabilidad dinámica:} Tamaños extremadamente grandes elevan el riesgo de configuraciones subóptimas (redes muy silenciosas o saturadas) durante la fase temprana de la búsqueda bayesiana.
 \end{enumerate}
