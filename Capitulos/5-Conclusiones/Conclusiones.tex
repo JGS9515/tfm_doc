@@ -51,7 +51,7 @@ Los resultados del análisis experimental muestran que:
 \end{itemize}
 
 \subsection{Interpretación técnica}
-Los patrones que observamos en la selección de kernels sugieren preferencias específicas según las características del dataset:
+Los patrones observados en la selección de kernels sugieren preferencias específicas según las características del dataset:
 En CalIt2, Optuna seleccionó repetidamente kernels \texttt{mexican\_hat} y \texttt{gaussian} con tamaños intermedios (5-7), lo que indica que el suavizado espacial y la detección de transiciones graduales funcionan mejor que la detección de bordes abruptos para este tipo de señales de flujo de edificios. El kernel \texttt{mexican\_hat}, al combinar un componente central positivo con anillos negativos, permite detectar cambios locales sin perder el contexto temporal, mientras que el kernel \texttt{gaussian} atenúa el ruido impulsivo manteniendo las características principales de la señal.
 
 \subsection{Implicaciones prácticas}
