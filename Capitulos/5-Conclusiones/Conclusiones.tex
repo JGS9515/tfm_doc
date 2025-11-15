@@ -35,7 +35,7 @@ Este TFM ha abordado el problema de detectar anomalías en series temporales usa
 % Lista breve de aportaciones técnicas / metodológicas.
 \begin{enumerate}
     \item Propuesta e implementación de una arquitectura híbrida SNN-CNN con capa convolucional parametrizable (kernels gaussiano, laplaciano, mexican hat, box) y modos de fusión (direct, weighted\_sum, max), desarrollada mediante optimización bayesiana (Optuna TPE) sobre parámetros neuronales (threshold, decay), de plasticidad (nu1, nu2).
-    \item Pipeline de preprocesamiento reproducible: cuantización dinámica por cuantiles expandidos, expansión de etiquetas para mejorar la cobertura de eventos anómalos, y segmentación temporal en ventanas de longitud.
+    \item Flujo de preprocesamiento reproducible: cuantización dinámica por cuantiles expandidos, expansión de etiquetas para mejorar la cobertura de eventos anómalos, y segmentación temporal en ventanas de longitud.
     \item Comparativa empírica contra el modelo base (SNN A--B) y contra baselines de \texttt{TSFEDL} mostrando que, aunque los modelos TSFEDL tienen mejor rendimiento (F1=0.436 vs 0.277 en IOPS, F1=0.704 vs 0.417 en CalIt2), las SNN mantienen ventajas en eficiencia y potencial para computación neuromórfica.
     \item Análisis preliminar de complejidad computacional, sentando bases para evaluación energética futura en hardware neuromórfico.
     \item Almacenamiento estructurado de configuraciones para reproducibilidad.
@@ -79,7 +79,7 @@ En resumen, este trabajo ha demostrado que las arquitecturas híbridas SNN-CNN, 
 
 La optimización bayesiana con Optuna demostró ser una herramienta fundamental para ajustar bien las arquitecturas SNN complejas, permitiendo explorar sistemáticamente el espacio de hiperparámetros neuronales y convolucionales. El modelo presenta características arquitecturales que sugieren potencial para aplicaciones de edge computing, especialmente cuando se despliegue en hardware neuromórfico dedicado donde las ventajas energéticas pueden aprovecharse plenamente, aunque hace falta hacer mediciones específicas de rendimiento temporal en futuros trabajos.
 
-La metodología desarrollada sienta bases sólidas para trabajos futuros en detección de anomalías con SNNs, proporcionando un pipeline reproducible de preprocesamiento, optimización y evaluación que se puede extender a otros dominios y arquitecturas neuromórficas más avanzadas.
+La metodología desarrollada sienta bases sólidas para trabajos futuros en detección de anomalías con SNNs, proporcionando un flujo reproducible de preprocesamiento, optimización y evaluación que se puede extender a otros dominios y arquitecturas neuromórficas más avanzadas.
 Estos hallazgos apoyan la hipótesis de que integrar mecanismos convolucionales y optimización sistemática reduce la brecha entre SNN y enfoques ANN tradicionales para detección de anomalías en series temporales.
 
 \section{Trabajos futuros}
@@ -108,7 +108,7 @@ Integración específica para sistemas SNN en producción:
     \item \textbf{Monitorización de dispersidad}: Seguimiento continuo de patrones de actividad neuronal para detectar degradación de eficiencia o deriva del comportamiento.
     \item \textbf{Re-calibración de umbrales}: Ajuste automático de umbrales neuronales basado en la distribución reciente de impulsos para mantener sensitividad sin re-entrenar completamente.
     \item \textbf{Despliegue edge}: Empaquetado optimizado para microcontroladores con soporte SNN nativo (e.g. neuromorphic inference engines) incluyendo cuantización de parámetros sinápticos.
-    \item \textbf{Pipeline neuromórfico}: Versionado de topologías de red y pesos sinápticos con herramientas específicas para arquitecturas basadas en impulsos.
+    \item \textbf{Flujo neuromórfico}: Versionado de topologías de red y pesos sinápticos con herramientas específicas para arquitecturas basadas en impulsos.
 \end{itemize}
 
 % \subsection{Aplicabilidad práctica}
