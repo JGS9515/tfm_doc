@@ -292,7 +292,7 @@ Valores altos (3.0): Kernels más anchos, filtrado global.
 
 A continuación se presenta el esquema global de la arquitectura híbrida SNN–CNN, integrando tres dominios diferenciados: codificación y preprocesado, arquitectura SNN (capas A,B) y bloque convolucional híbrido (capa C). El diagrama muestra cómo fluye la información desde la señal de entrada hasta la inferencia final, destacando las rutas paralelas de procesamiento y los puntos de monitorización clave.
 
-En el primer dominio, la señal de serie temporal es previamente procesada y codificada en impulsos a través de cuantización y batching temporal. Este bloque prepara los trenes de impulsos que alimentan el núcleo SNN. A continuación, en el segundo dominio, la capa A recibe estos impulsos y los transmite a la capa B, donde se aplica dinámica recurrente LIF con aprendizaje STDP. La salida de B se bifurca: una ruta va directamente a la fase de inferencia sobre impulsos de B, y la otra alimenta el bloque convolucional.
+En el primer dominio, la señal de serie temporal es previamente procesada y codificada en impulsos a través de cuantización y agrupamiento temporal. Este bloque prepara los trenes de impulsos que alimentan el núcleo SNN. A continuación, en el segundo dominio, la capa A recibe estos impulsos y los transmite a la capa B, donde se aplica dinámica recurrente LIF con aprendizaje STDP. La salida de B se bifurca: una ruta va directamente a la fase de inferencia sobre impulsos de B, y la otra alimenta el bloque convolucional.
 
 El tercer dominio corresponde a la capa C, que aplica convoluciones 1D sobre los impulsos de la capa B utilizando kernels configurables (Gaussianos, Laplacianos, etc.). Esta capa aporta filtrado adaptativo y extracción de características locales antes de enviar su salida al mecanismo de decisión dual. Finalmente, el sistema evalúa ambas rutas (B y C) según métricas de clasificación y MSE, seleccionando automáticamente la representación más informativa.
 
@@ -403,7 +403,7 @@ En esta subsección, se analiza la complejidad computacional del modelo propuest
 
 \subsubsection{Estimación del número de operaciones MAC ejecutadas}
 
-El número de operaciones MAC (Multiplicación y Acumulación) ejecutadas por un modelo es un parámetro clave para la estimación de su eficiencia energética.
+El número de operaciones MAC ejecutadas por un modelo es un parámetro clave para la estimación de su eficiencia energética.
 
 \subsubsection{Estimación de MACs para SNNs}
 
