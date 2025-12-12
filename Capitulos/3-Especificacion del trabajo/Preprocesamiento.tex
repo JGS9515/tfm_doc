@@ -4,7 +4,7 @@ En primer lugar, se buscó desarrollar flujos de preprocesamiento estandarizados
 
 \subsection{Implementación de flujos de preprocesamiento para dataset IOPS}
 
-El desarrollo de flujos de preprocesamiento para el dataset IOPS contiene indicadores clave de rendimiento (KPIs) de diferentes servicios, presenta patrones temporales heterogéneos que incluyen comportamientos cíclicos, estables e inestables. 
+El dataset IOPS contiene indicadores clave de rendimiento (KPIs) de diferentes servicios y presenta patrones temporales heterogéneos que incluyen comportamientos cíclicos, estables e inestables, por lo que el desarrollo de flujos de preprocesamiento se centró en abordar esta heterogeneidad. 
 
 La implementación se estructuró en módulos especializados que abordan cada aspecto del preprocesamiento de manera independiente pero coordinada. El módulo \texttt{iops\_check\_different\_KPIs} fue diseñado para identificar y catalogar los diferentes tipos de KPIs presentes en el dataset, reconociendo que cada métrica requiere estrategias de normalización específicas debido a sus rangos de valores y características estadísticas particulares. El módulo \texttt{create\_new\_dataset\_per\_every\_different\_kpi} implementa la segregación de datos por tipo de KPI, facilitando el procesamiento paralelo y la optimización específica para cada métrica. 
 
