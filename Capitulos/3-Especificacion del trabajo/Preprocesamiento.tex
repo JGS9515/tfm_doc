@@ -20,7 +20,7 @@ El algoritmo de detección y etiquetado de anomalías implementado en \texttt{Ca
 
 \subsection{Algoritmos de normalización temporal}
 
-La implementación de algoritmos de normalización temporal, incluyendo completado de gaps temporales se implementó utilizando estrategias adaptativas que consideran el contexto local de cada serie temporal. Para gaps de corta duración (menos de 3 observaciones consecutivas), se aplicó interpolación lineal, mientras que para gaps más extensos se utilizó imputación basada en patrones estacionales identificados en la serie. Esta aproximación híbrida demostró ser efectiva para mantener la coherencia temporal necesaria para el entrenamiento de modelos SNN con STDP.
+Los algoritmos de normalización temporal, incluyendo el completado de gaps temporales, se implementaron utilizando estrategias adaptativas que consideran el contexto local de cada serie temporal. Para gaps de corta duración (menos de 3 observaciones consecutivas), se aplicó interpolación lineal, mientras que para gaps más extensos se utilizó imputación basada en patrones estacionales identificados en la serie. Esta aproximación híbrida demostró ser efectiva para mantener la coherencia temporal necesaria para el entrenamiento de modelos SNN con STDP.
 
 \subsection{Arquitectura modular y reutilizable del código}
 
