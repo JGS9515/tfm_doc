@@ -320,11 +320,11 @@ En este bloque inicial la serie temporal bruta se divide en conjuntos de entrena
 
 La incorporación de una capa convolucional híbrida representa una de las innovaciones más significativas del modelo propuesto, fusionando la eficiencia energética de las SNNs con las capacidades de extracción de características espaciales de las redes neuronales convolucionales. Esta arquitectura híbrida surge tras una exhaustiva exploración de múltiples configuraciones arquitecturales, buscando optimizar tanto el rendimiento predictivo como la viabilidad computacional.
 
-\subsubsection {Posicionamiento arquitectural}
+\subsubsection{Ubicación de la capa convolucional en la arquitectura}
 
-La capa convolucional híbrida se posiciona estratégicamente después de la capa B de procesamiento, recibiendo directamente los trenes de impulsos generados por las neuronas LIF recurrentes. Esta ubicación permite que la capa procese patrones temporales ya refinados por la dinámica recurrente de la SNN base, aprovechando la información codificada en los tiempos de disparo de los impulsos.
+La capa convolucional híbrida se sitúa justo después de la capa B, donde recibe los trenes de impulsos que generan las neuronas LIF recurrentes. De esta forma, puede trabajar con patrones temporales que ya han sido refinados por la dinámica recurrente de la SNN base.
 
-La decisión arquitectural de posicionar la capa convolucional en este punto específico se fundamenta en evidencia experimental que demuestra que las arquitecturas híbridas SNN-CNN alcanzan un rendimiento superior cuando combinan el procesamiento temporal asíncrono de las SNNs con las operaciones de convolución espacial \cite{sanaullah_hybrid_2024}. Esta configuración permite que los trenes de impulsos de la capa B mantengan su estructura temporal intrínseca mientras son procesados por kernels convolucionales especializados.
+La evidencia experimental respalda esta decisión, las arquitecturas híbridas SNN-CNN obtienen mejores resultados cuando combinan el procesamiento temporal asíncrono de las SNNs con operaciones de convolución espacial \cite{sanaullah_hybrid_2024}. Además, esta configuración preserva la estructura temporal de los impulsos mientras los kernels convolucionales extraen características relevantes.
 
 \subsubsection{Detalle arquitectural de la capa convolucional híbrida}
 
