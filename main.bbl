@@ -1,5 +1,19 @@
 \begin{thebibliography}{10}
 
+\bibitem{vazquez_vacuum_2024}
+I.~X. V{\'a}zquez, J.~Sedano, M.~Afzal, and A.~M. Garc{\'i}a-Vico.
+\newblock Vacuum spiker: A spiking neural network-based model for efficient
+  anomaly detection in time series.
+\newblock \url{https://arxiv.org/abs/2510.06910}, 2024.
+\newblock arXiv:2510.06910 [cs.NE].
+
+\bibitem{mali_comparison_2024}
+Barasha Mali.
+\newblock Comparison of the statistical and autoencoder approach for anomaly
+  detection in big data.
+\newblock In {\em 2024 5th International Conference on Big Data Analytics and
+  Practices ({IBDAP})}, pages 22--25.
+
 \bibitem{cherdo_time_2023}
 Yann Cherdo, Benoit Miramond, and Alain Pegatoquet.
 \newblock Time series prediction and anomaly detection with recurrent spiking
@@ -40,9 +54,17 @@ Dennis Bäßler, Tobias Kortus, and Gabriele Gühring.
   online evolving spiking neural networks.
 \newblock 111(4):1377--1408.
 
+\bibitem{AGUILERAMARTOS2023223}
+Ignacio Aguilera-Martos, {\'A}ngel~M. Garc{\'i}a-Vico, Juli{\'a}n Luengo,
+  Sergio Damas, Francisco~J. Melero, Jos{\'e}~Javier Valle-Alonso, and
+  Francisco Herrera.
+\newblock {TSFEDL}: A python library for time series spatio-temporal feature
+  extraction and prediction using deep learning.
+\newblock {\em Neurocomputing}, 517:223--228, 2023.
+
 \bibitem{Talent.com_2024}
 {Talent.com}.
-\newblock Salario.
+\newblock Salario, 2024.
 
 \bibitem{shewhart_economic_1931}
 W.~A. Shewhart.
@@ -126,6 +148,10 @@ Chenming Yang, Liang Zhou, Hui Wen, Zhiheng Zhou, and Yue Wu.
 \newblock H-{VGRAE}: A hierarchical stochastic spatial-temporal embedding
   method for robust anomaly detection in dynamic networks.
 
+\bibitem{oord_representation_2018}
+Aaron van~den Oord, Yazhe Li, and Oriol Vinyals.
+\newblock Representation learning with contrastive predictive coding.
+
 \bibitem{zhang_skip-step_2024}
 Kexin Zhang, Qingsong Wen, Chaoli Zhang, Liang Sun, and Yong Liu.
 \newblock Skip-step contrastive predictive coding for time series anomaly
@@ -134,18 +160,17 @@ Kexin Zhang, Qingsong Wen, Chaoli Zhang, Liang Sun, and Yong Liu.
   Acoustics, Speech and Signal Processing ({ICASSP})}, pages 7065--7069.
 \newblock {ISSN}: 2379-190X.
 
-\bibitem{lavin_evaluating_2015}
-Alexander Lavin and Subutai Ahmad.
-\newblock Evaluating real-time anomaly detection algorithms – the numenta
-  anomaly benchmark.
-\newblock In {\em 2015 {IEEE} 14th International Conference on Machine Learning
-  and Applications ({ICMLA})}, pages 38--44.
+\bibitem{gerstner2014neuronal}
+Wulfram Gerstner, Werner~M. Kistler, Richard Naud, and Liam Paninski.
+\newblock {\em Neuronal Dynamics: From Single Neurons to Networks and Models of
+  Cognition}.
+\newblock Cambridge University Press, Cambridge, UK, 2014.
 
-\bibitem{wu_current_2023}
-Renjie Wu and Eamonn~J. Keogh.
-\newblock Current time series anomaly detection benchmarks are flawed and are
-  creating the illusion of progress.
-\newblock 35(3):2421--2429.
+\bibitem{dayan2001theoretical}
+Peter Dayan and Laurence~F. Abbott.
+\newblock {\em Theoretical Neuroscience: Computational and Mathematical
+  Modeling of Neural Systems}.
+\newblock MIT Press, Cambridge, MA, 2001.
 
 \bibitem{skatchkovsky_bayesian_2022}
 Nicolas Skatchkovsky, Hyeryung Jang, and Osvaldo Simeone.
@@ -160,13 +185,6 @@ Hatem Haddad, Feres Jerbi, and Issam Smaali.
 \newblock In {\em 2024 10th International Conference on Automation, Robotics
   and Applications ({ICARA})}, pages 392--396.
 \newblock {ISSN}: 2767-7745.
-
-\bibitem{mali_comparison_2024}
-Barasha Mali.
-\newblock Comparison of the statistical and autoencoder approach for anomaly
-  detection in big data.
-\newblock In {\em 2024 5th International Conference on Big Data Analytics and
-  Practices ({IBDAP})}, pages 22--25.
 
 \bibitem{jang_bisnn_2021}
 Hyeryung Jang, Nicolas Skatchkovsky, and Osvaldo Simeone.
@@ -189,9 +207,24 @@ Riadul Islam, Patrick Majurski, Jun Kwon, Anurag Sharma, and Sri Ranga
 \newblock 24(4):1329.
 \newblock Number: 4 Publisher: Multidisciplinary Digital Publishing Institute.
 
+\bibitem{kaushik_optuna_2024}
+Dhrubajyoti Kaushik.
+\newblock Optuna: The smarter way to optimize your machine learning models.
+
+\bibitem{akiba_optuna_2019}
+Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta, and Masanori Koyama.
+\newblock Optuna: A next-generation hyperparameter optimization framework.
+\newblock In {\em Proceedings of the 25th ACM SIGKDD International Conference
+  on Knowledge Discovery \& Data Mining}, KDD '19, pages 2623--2631, New York,
+  NY, USA, 2019. ACM.
+
 \bibitem{firmin_parallel_2024}
 Thomas Firmin, Pierre Boulet, and El-Ghazali Talbi.
 \newblock Parallel hyperparameter optimization of spiking neural network.
+
+\bibitem{broutonlab_efficient_2021}
+{BroutonLab}.
+\newblock Efficient hyperparameter optimization with optuna framework.
 
 \bibitem{parsa_bayesian-based_2019}
 Maryam Parsa, J.~Parker Mitchell, Catherine~D. Schuman, Robert~M. Patton,
@@ -212,12 +245,6 @@ Hananel Hazan, Daniel~J. Saunders, Hassaan Khan, Devdhar Patel, Darpan~T.
 BindsNET Contributors.
 \newblock Bindsnet documentation.
 \newblock \url{https://bindsnet-docs.readthedocs.io/}, 2024.
-\newblock Accessed: 2025-07-12.
-
-\bibitem{deadsnakes2025}
-{deadsnakes}.
-\newblock deadsnakes github organization.
-\newblock \url{https://github.com/deadsnakes}, 2025.
 \newblock Accessed: 2025-07-12.
 
 \bibitem{sanaullah_hybrid_2024}
@@ -241,17 +268,39 @@ Sanaullah Sanaullah.
 \newblock Calit2 building people counts data set, 2009.
 \newblock Accessed: 2025-07-12.
 
+\bibitem{OHSHU2022}
+Shu~Lih Oh, Eddie Y.~K. Ng, Ru~San~Tan, and U.~Rajendra Acharya.
+\newblock Automated diagnosis of arrhythmia using combination of cnn and lstm
+  techniques with variable length heart beats.
+\newblock {\em Computers in Biology and Medicine}, 102:278--287, 2018.
+\newblock Implementado en librería TSFEDL.
+
+\bibitem{KHAN2022}
+M.~Sajjad, Z.~A. Khan, A.~Ullah, T.~Hussain, W.~Ullah, M.~Y. Lee, and S.~W.
+  Baik.
+\newblock A novel cnn-gru-based hybrid approach for short-term residential load
+  forecasting.
+\newblock {\em IEEE Access}, 8:143759--143768, 2020.
+\newblock Implementado en librería TSFEDL.
+
+\bibitem{ZHENG2022}
+Z.~Zheng, Z.~Chen, F.~Hu, J.~Zhu, Q.~Tang, and Y.~Liang.
+\newblock An automatic diagnosis of arrhythmias using a combination of cnn and
+  lstm technology.
+\newblock {\em Electronics}, 9(1):121, 2020.
+\newblock Implementado en librería TSFEDL.
+
+\bibitem{WEI2022}
+Xiaoyan Wei, Limeng Zhou, Zhenghua Chen, and Luping Zhang.
+\newblock Early prediction of epileptic seizures using a long-term recurrent
+  convolutional network.
+\newblock {\em Journal of Neuroscience Methods}, 327:108395, 2019.
+\newblock Implementado en librería TSFEDL.
+
 \bibitem{bergstra_random_2012}
 James Bergstra and Yoshua Bengio.
 \newblock Random search for hyper-parameter optimization.
 \newblock {\em Journal of Machine Learning Research}, 13(Feb):281--305, 2012.
-
-\bibitem{akiba_optuna_2019}
-Takuya Akiba, Shotaro Sano, Toshihiko Yanase, Takeru Ohta, and Masanori Koyama.
-\newblock Optuna: A next-generation hyperparameter optimization framework.
-\newblock In {\em Proceedings of the 25th ACM SIGKDD International Conference
-  on Knowledge Discovery \& Data Mining}, KDD '19, pages 2623--2631, New York,
-  NY, USA, 2019. ACM.
 
 \bibitem{li_system_2020}
 Richard Liaw, Eric Liang, Tristan Liaw, William Dram{\'e}, Robert Nishihara,
@@ -260,9 +309,11 @@ Richard Liaw, Eric Liang, Tristan Liaw, William Dram{\'e}, Robert Nishihara,
 \newblock In {\em Proceedings of Machine Learning and Systems}, volume~2, pages
   230--246, 2020.
 
-\bibitem{oord_representation_2018}
-Aaron van~den Oord, Yazhe Li, and Oriol Vinyals.
-\newblock Representation learning with contrastive predictive coding.
+\bibitem{deadsnakes2025}
+{deadsnakes}.
+\newblock deadsnakes github organization.
+\newblock \url{https://github.com/deadsnakes}, 2025.
+\newblock Accessed: 2025-07-12.
 
 \bibitem{holland_adaptation_1992}
 John~H. Holland.
@@ -311,12 +362,17 @@ Ying Liu, Zhiyuan Chen, Wentao Zhao, Tianhao Zhao, Tianyu Jia, Zhixuan Wang,
   configurable topology of hybrid spiking and artificial neural network.
 \newblock 71(6):2660--2673.
 
-\bibitem{kaushik_optuna_2024}
-Dhrubajyoti Kaushik.
-\newblock Optuna: The smarter way to optimize your machine learning models.
+\bibitem{lavin_evaluating_2015}
+Alexander Lavin and Subutai Ahmad.
+\newblock Evaluating real-time anomaly detection algorithms – the numenta
+  anomaly benchmark.
+\newblock In {\em 2015 {IEEE} 14th International Conference on Machine Learning
+  and Applications ({ICMLA})}, pages 38--44.
 
-\bibitem{broutonlab_efficient_2021}
-{BroutonLab}.
-\newblock Efficient hyperparameter optimization with optuna framework.
+\bibitem{wu_current_2023}
+Renjie Wu and Eamonn~J. Keogh.
+\newblock Current time series anomaly detection benchmarks are flawed and are
+  creating the illusion of progress.
+\newblock 35(3):2421--2429.
 
 \end{thebibliography}

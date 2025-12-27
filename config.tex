@@ -90,15 +90,15 @@
 \begin{textblock*}{17.8cm}(1.5cm,19.9cm) 
 \centering\fontfamily{phv}\selectfont\large
 #8 \\  %Fecha
-\vspace{0.45cm}\footnotesize
-Licencia: #9  \\ %Licencia
-\vspace{0.55cm}
-\ifthenelse{\equal{#9}{CC-BY}}{\includesvg[width=3cm]{Licencias/cc_by_icon}}{%
-    \ifthenelse{\equal{#9}{CC-BY-SA}}{\includesvg[width=3cm]{Licencias/cc_by_sa_icon}}{%
-        \ifthenelse{\equal{#9}{CC-BY-NC}}{\includesvg[width=3cm]{Licencias/cc_by-nc_icon}}{%
-            \ifthenelse{\equal{#9}{CC-BY-NC-ND}}{\includesvg[width=3cm]{Licencias/cc_by-nc-nd_icon}}{%
-                \ifthenelse{\equal{#9}{CC-BY-ND}}{\includesvg[width=3cm]{Licencias/cc_by-nd_icon}}{%
-                    \ifthenelse{\equal{#9}{CC-BY-NC-SA}}{\includesvg[width=3cm]{Licencias/cc-by-nc-sa_icon}}{}
+\vspace{0.45cm}
+
+\hspace{15pt}%
+\ifthenelse{\equal{#9}{CC-BY}}{\includegraphics[width=3cm]{Licencias/cc_by_icon}}{%
+    \ifthenelse{\equal{#9}{CC-BY-SA}}{\includegraphics[width=3cm]{Licencias/cc_by_sa_icon}}{%
+        \ifthenelse{\equal{#9}{CC-BY-NC}}{\includegraphics[width=3cm]{Licencias/cc_by-nc_icon}}{%
+            \ifthenelse{\equal{#9}{CC-BY-NC-ND}}{\includegraphics[width=3cm]{Licencias/cc_by-nc-nd_icon}}{%
+                \ifthenelse{\equal{#9}{CC-BY-ND}}{\includegraphics[width=3cm]{Licencias/cc_by-nd_icon}}{%
+                    \ifthenelse{\equal{#9}{CC-BY-NC-SA}}{\includegraphics[width=3cm]{Licencias/width_550.png}}{}
                 }
             }
         }

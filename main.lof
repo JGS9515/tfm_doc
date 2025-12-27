@@ -2,11 +2,13 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Diagrama de Gantt del proyecto. Fuente: Elaboración propia.}}{10}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Evolución de la detección de anomalía. Fuente: Elaboración propia.}}{21}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Ejemplo ilustrativo de una neurona LIF. Fuente: Elaboración propia.}}{18}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagrama de la arquitectura bicapa de la SNN base. Inspirado en \cite {vazquez_vacuum_2024}.}}{23}{figure.caption.18}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Flujo de datos y arquitectura SNN. Fuente: Elaboración propia.}}{35}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Codificación y preprocesado de la señal. Fuente: Elaboración propia.}}{36}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura detallada de la capa convolucional híbrida mostrando el flujo desde los impulsos de la capa B hacia el procesamiento convolucional con kernels adaptativos. Fuente: Elaboración propia.}}{37}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flujo de datos y arquitectura SNN. Fuente: Elaboración propia.}}{35}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Codificación y preprocesado de la señal. Fuente: Elaboración propia.}}{36}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Arquitectura detallada de la capa convolucional híbrida mostrando el flujo desde los impulsos de la capa B hacia el procesamiento convolucional con kernels adaptativos. Fuente: Elaboración propia.}}{37}{figure.caption.30}%
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

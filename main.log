@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.26)  5 OCT 2025 22:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.26)  15 DEC 2025 14:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1338,57 +1338,29 @@ Classes and packages should only be loaded at the top level
 
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-
-Package svg Warning: You didn't enable `shell escape' (or `write18')
-(svg)                so it wasn't possible to launch the Inkscape export
-(svg)                for `Licencias/cc-by-nc-sa_icon.svg' on input line 28.
-
-
-! Package svg Error: File `cc-by-nc-sa_icon_svg-tex.pdf' is missing.
-
-See the svg package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 {CC-BY-NC-SA}
-                   %opciones: CC-BY, CC-BY-SA, CC-BY-NC, CC-BY-NC-ND, CC-BY-...
-
-Did you run the export with Inkscape? There's no file
-`./svg-inkscape/cc-by-nc-sa_icon_svg-tex.pdf'
-although `Licencias/cc-by-nc-sa_icon.svg' was found.
+<Licencias/width_550.png, id=166, 551.05875pt x 192.72pt>
+File: Licencias/width_550.png Graphic file (type png)
+<use Licencias/width_550.png>
+Package pdftex.def Info: Licencias/width_550.png  used on input line 28.
+(pdftex.def)             Requested size: 85.35826pt x 29.8507pt.
 
 
-! Package svg Error: File `cc-by-nc-sa_icon_svg-tex.pdf_tex' is missing.
-
-See the svg package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 {CC-BY-NC-SA}
-                   %opciones: CC-BY, CC-BY-SA, CC-BY-NC, CC-BY-NC-ND, CC-BY-...
-
-Did you run the export with Inkscape? There's no file
-`./svg-inkscape/cc-by-nc-sa_icon_svg-tex.pdf_tex'
-although `Licencias/cc-by-nc-sa_icon.svg' was found.
-
-
-
-pdfTeX warning: pdflatex.exe (file ./PDF/PortadaTFM.pdf): PDF inclusion: found 
-PDF version <1.7>, but at most version <1.5> allowed
-<PDF/PortadaTFM.pdf, id=162, 597.19112pt x 845.19763pt>
+pdfTeX warning: pdflatex (file ./PDF/PortadaTFM.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<PDF/PortadaTFM.pdf, id=168, 597.19112pt x 845.19763pt>
 File: PDF/PortadaTFM.pdf Graphic file (type pdf)
 <use PDF/PortadaTFM.pdf>
 Package pdftex.def Info: PDF/PortadaTFM.pdf  used on input line 28.
 (pdftex.def)             Requested size: 597.18967pt x 845.19557pt.
 
 
-pdfTeX warning: pdflatex.exe (file ./PDF/PortadaTFM.pdf): PDF inclusion: found 
-PDF version <1.7>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file ./PDF/PortadaTFM.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
 
 
-pdfTeX warning: pdflatex.exe (file ./PDF/PortadaTFM.pdf): PDF inclusion: found 
-PDF version <1.7>, but at most version <1.5> allowed
-<PDF/PortadaTFM.pdf, id=164, page=1, 597.19112pt x 845.19763pt>
+pdfTeX warning: pdflatex (file ./PDF/PortadaTFM.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<PDF/PortadaTFM.pdf, id=170, page=1, 597.19112pt x 845.19763pt>
 File: PDF/PortadaTFM.pdf Graphic file (type pdf)
 <use PDF/PortadaTFM.pdf, page 1>
 Package pdftex.def Info: PDF/PortadaTFM.pdf , page1 used on input line 28.
@@ -1415,7 +1387,8 @@ Package pdftex.def Info: PDF/PortadaTFM.pdf , page1 used on input line 28.
 
 
 {C:/Users/Javier/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program F
-iles/MiKTeX/fonts/enc/dvips/base/8r.enc} <./PDF/PortadaTFM.pdf>]
+iles/MiKTeX/fonts/enc/dvips/base/8r.enc} <./PDF/PortadaTFM.pdf> <./Licencias/wi
+dth_550.png>]
 
 [2
 
@@ -1491,18 +1464,6 @@ Underfull \hbox (badness 1675) in paragraph at lines 6--6
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 8--8
- [][] [][][]\T1/phv/m/n/12 Comparación en-tre SNN ori-gi-nal y mo-de-lo hí-bri-
-do ^^V Par-te 1: 
- []
-
-
-Underfull \hbox (badness 2635) in paragraph at lines 9--9
- [][] [][][]\T1/phv/m/n/12 Comparación en-tre SNN ori-gi-nal y mo-de-lo hí-bri-
-do ^^V Par-te 2: 
- []
-
-
 Underfull \hbox (badness 1314) in paragraph at lines 11--11
  [][] [][][]\T1/phv/m/n/12 Comparativa prin-ci-pal de ver-sio-nes de soft-wa-re
  en-tre TS-FEDL y 
@@ -1574,33 +1535,15 @@ Underfull \hbox (badness 2707) in paragraph at lines 64--65
 )
 
 [12] (Capitulos/0-Resumen/1-Resumen.tex
-Underfull \hbox (badness 3333) in paragraph at lines 8--9
-\T1/phv/m/n/12 de-tec-tar ano-ma-lías en se-ries tem-po-ra-les. El fo-co es-tá 
-en la sos-te-ni-bi-li-dad
+Underfull \hbox (badness 1655) in paragraph at lines 9--10
+\T1/phv/m/n/12 má-xi-mo). El ob-je-ti-vo es com-bi-nar la ex-trac-ción es-pa-ci
+al pro-pia de las re-des
  []
 
 
-Underfull \hbox (badness 2426) in paragraph at lines 12--13
-\T1/phv/m/n/12 Op-tu-na TPE (Tree-structured Par-zen Es-ti-ma-tor), eje-cu-tan-
-do 100 prue-bas por
- []
-
-
-Underfull \hbox (badness 2753) in paragraph at lines 12--13
-\T1/phv/m/n/12 con-fi-gu-ra-ción en tres ta-ma-ños de red di-fe-ren-tes (100, 2
-00, 400 neu-ro-nas).
- []
-
-
-Underfull \hbox (badness 6542) in paragraph at lines 12--13
-\T1/phv/m/n/12 Im-ple-men-ta-mos un pi-pe-li-ne de pre-pro-ce-sa-mien-to re-pro
--du-ci-ble que in-clu-ye:
- []
-
-
-Underfull \hbox (badness 2205) in paragraph at lines 12--13
-\T1/phv/m/n/12 cuan-ti-za-ción di-ná-mi-ca por cuan-ti-les ex-pan-di-dos, ex-pa
-n-sión de eti-que-tas pa-ra
+Underfull \hbox (badness 2096) in paragraph at lines 15--16
+[]\T1/phv/m/n/12 Las prin-ci-pa-les con-tri-bu-cio-nes son: (1) una ar-qui-tec-
+tu-ra hí-bri-da SNN-CNN
  []
 
 
@@ -1613,40 +1556,34 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 
+l.16 
       [1
 
 
 ]
-Underfull \hbox (badness 1412) in paragraph at lines 18--19
-[]\T1/phv/m/n/12 Las con-tri-bu-cio-nes prin-ci-pa-les del tra-ba-jo son: (1) u
-na ar-qui-tec-tu-ra hí-bri-da
- []
-
-
-Underfull \hbox (badness 8000) in paragraph at lines 18--19
-\T1/phv/m/n/12 SNN-CNN que se pue-de op-ti-mi-zar au-to-má-ti-ca-men-te, (2) un
- pi-pe-li-ne de
- []
-
-
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 \chapter
+l.19 \chapter
              *{Abstract} [2]
-Underfull \hbox (badness 1147) in paragraph at lines 32--33
-[]\T1/phv/m/n/12 The ex-pe-ri-men-tal metho-do-logy em-plo-yed Ba-ye-sian op-ti
--mi-za-tion with Op-tu-na
+Underfull \hbox (badness 1005) in paragraph at lines 27--28
+\T1/phv/m/n/12 and dif-fe-rent pro-ces-sing mo-des (di-rect, weigh-ted sum, ma-
+xi-mum). The goal is
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 34--35
-\T1/phv/m/n/12 im-ba-lan-ced, only 1.92$ $% ano-ma-lies) and Ca-lIt2 (mo-re ba-
-lan-ced, with 24.80$ $%
+Underfull \hbox (badness 1509) in paragraph at lines 29--30
+\T1/phv/m/n/12 400 neu-rons). The fully re-pro-du-ci-ble pre-pro-ces-sing work-
+flow in-clu-des dy-na-mic
+ []
+
+) (Capitulos/1-Introduccion/1.0-IntroducciÃ³n.tex
+Underfull \hbox (badness 1577) in paragraph at lines 35--1
+\T1/phv/m/n/12 for ano-maly de-tec-tion, of-fe-ring a fa-vo-ra-ble ba-lan-ce be
+t-ween per-for-man-ce and
  []
 
 
@@ -1657,24 +1594,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [3
 
 ]
-Underfull \hbox (badness 1596) in paragraph at lines 36--37
-\T1/phv/m/n/12 ad-van-ta-ges of SNNs. An in-ter-es-ting fin-ding: ex-pe-ri-ment
-s show that au-to-ma-tic
- []
-
-
-Underfull \hbox (badness 1642) in paragraph at lines 36--37
-\T1/phv/m/n/12 op-ti-mi-za-tion con-sis-tently fa-vors Me-xi-can hat and Gaus-s
-ian ker-nels with di-rect
- []
-
-) (Capitulos/1-Introduccion/1.0-IntroducciÃ³n.tex
-Underfull \hbox (badness 2426) in paragraph at lines 42--1
-\T1/phv/m/n/12 de-tec-tion ap-pli-ca-tions. They of-fer a good ba-lan-ce bet-we
-en per-for-man-ce and
- []
-
-
 
 [4]
 Cap\'{\i }tulo 1.
@@ -1831,9 +1750,27 @@ s sos-te-ni-bles que
 
 
 [6]
+Underfull \hbox (badness 1014) in paragraph at lines 37--38
+\T1/phv/m/n/12 has-ta los en-fo-ques más re-cien-tes de apren-di-za-je pro-fun-
+do. Se exa-mi-nan
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 37--38
+\T1/phv/m/n/12 apren-di-za-je pro-fun-do en de-tec-ción de ano-ma-lías, y la op
+-ti-mi-za-ción de
+ []
+
+
 Underfull \hbox (badness 1314) in paragraph at lines 39--40
 \T1/phv/m/n/12 las hi-pó-te-sis de par-ti-da y las res-tric-cio-nes iden-ti-fi-
 ca-das. Se des-cri-be en
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 39--40
+\T1/phv/m/n/12 de-sa-rro-lla-dos pa-ra los da-ta-sets IOPS y Ca-lIt2, in-clu-ye
+n-do nor-ma-li-za-ción
  []
 
 
@@ -1842,44 +1779,29 @@ Underfull \hbox (badness 4805) in paragraph at lines 41--42
 s im-ple-men-ta-dos,
  []
 
-) (Capitulos/1-Introduccion/1.4-PlanificaciÃ³n temporal.tex
+
+
+[7]) (Capitulos/1-Introduccion/1.4-PlanificaciÃ³n temporal.tex
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
 .
 
 (C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-Underfull \vbox (badness 7273) has occurred while \output is active []
-
-
-
-[7]
 Overfull \hbox (1.6028pt too wide) in paragraph at lines 9--25
  [][] 
  []
 
 
-Underfull \hbox (badness 3354) in paragraph at lines 31--32
-[]\T1/phv/m/n/12 A con-ti-nua-ción, em-pe-za-re-mos con la im-ple-men-ta-ción d
-el mo-de-lo hí-bri-do
- []
-
-
-Underfull \hbox (badness 1668) in paragraph at lines 31--32
-\T1/phv/m/n/12 de hi-per-pa-rá-me-tros me-dian-te fra-me-works co-mo Op-tu-na. 
-Pres-ta-re-mos es-pe-cial
- []
-
-
-Underfull \hbox (badness 2080) in paragraph at lines 35--36
-\T1/phv/m/n/12 fren-te a mo-de-los tra-di-cio-na-les. Los re-sul-ta-dos se ana-
-li-za-rán en pro-fun-di-dad,
+Underfull \hbox (badness 2521) in paragraph at lines 31--32
+[]\T1/phv/m/n/12 A con-ti-nua-ción, se im-ple-men-ta-rá el mo-de-lo hí-bri-do S
+NN-CNN, aña-dien-do
  []
 
 
 
 [8]
-<Imagenes/Gantt.png, id=385, 865.0719pt x 715.473pt>
+<Imagenes/Gantt.png, id=404, 865.0719pt x 715.473pt>
 File: Imagenes/Gantt.png Graphic file (type png)
 <use Imagenes/Gantt.png>
 Package pdftex.def Info: Imagenes/Gantt.png  used on input line 39.
@@ -1896,12 +1818,6 @@ Overfull \hbox (38.935pt too wide) in paragraph at lines 39--40
 [10 <./Imagenes/Gantt.png>]
 Cap\'{\i }tulo 2.
 (Capitulos/2-Fundamentos Teoricos/2.1-Fundamentos_estadÃ­sticos.tex
-Underfull \hbox (badness 1571) in paragraph at lines 2--3
-\T1/phv/m/n/12 sis-te-má-ti-co de in-no-va-cio-nes, es-te es-tu-dio iden-ti-fi-
-ca hi-tos tec-no-ló-gi-cos cla-ve y
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1941,15 +1857,16 @@ o-ra-les mul-ti-va-ria-das,
 
 
 
-[13]
-
-LaTeX Warning: Citation `noauthor_180703748_nodate' on page 14 undefined on inp
-ut line 12.
-
-) (Capitulos/2-Fundamentos Teoricos/2.5-SNN.tex
+[13]) (Capitulos/2-Fundamentos Teoricos/2.5-SNN.tex
 Underfull \hbox (badness 1205) in paragraph at lines 12--1
 []\T1/phv/m/n/12 En 2018, ga-nan pro-mi-nen-cia los en-fo-ques de apren-di-za-j
 e au-to-su-per-vi-sa-do,
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 5--6
+[]\T1/phv/m/n/12 Las re-des neu-ro-na-les que co-no-ce-mos, las ANNs tra-di-cio
+-na-les, pro-ce-san
  []
 
 
@@ -1963,6 +1880,11 @@ Underfull \hbox (badness 2103) in paragraph at lines 21--21
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[]|\T1/phv/m/n/12 Impulsos dis-cre-tos
+ []
+
+
 Underfull \hbox (badness 5862) in paragraph at lines 23--23
 []|\T1/phv/m/n/12 El mo-men-to exac-to no
  []
@@ -1973,65 +1895,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--30
-[]|\T1/phv/m/n/12 Neuronas bio-ló-gi-cas
- []
+Underfull \vbox (badness 8094) has occurred while \output is active []
 
 
 
 [14]
-Underfull \vbox (badness 2818) has occurred while \output is active []
-
-
 
 [15]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.159 ...r de fuga, donde $0 < \alpha < 1$. \alpha
+                                                  $ controla la rapidez con ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
 
 [16]
+<Imagenes/Ejemplo ilustrativo de una neurona LIF.png, id=491, 2742.245pt x 2258
+.4375pt>
+File: Imagenes/Ejemplo ilustrativo de una neurona LIF.png Graphic file (type pn
+g)
+<use Imagenes/Ejemplo ilustrativo de una neurona LIF.png>
+Package pdftex.def Info: Imagenes/Ejemplo ilustrativo de una neurona LIF.png  u
+sed on input line 219.
+(pdftex.def)             Requested size: 455.24411pt x 374.90053pt.
 
-[17]
-Underfull \hbox (badness 2875) in paragraph at lines 129--130
+Underfull \hbox (badness 2875) in paragraph at lines 233--234
 []\T1/phv/b/n/12 Positivos (ex-ci-ta-to-rios): \T1/phv/m/n/12 Au-men-tan el vol
 -ta-je de la neu-ro-na re-cep-to-ra,
  []
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 135--136
+
+[17]
+Underfull \hbox (badness 2277) in paragraph at lines 239--240
 \T1/phv/m/n/12 ex-ci-ta-to-rias ac-ti-van a otras neu-ro-nas, pro-pa-gan-do in-
 for-ma-ción. Las neu-ro-nas
  []
 
-
-Underfull \hbox (badness 1082) in paragraph at lines 135--136
-\T1/phv/m/n/12 ac-ti-vi-dad des-con-tro-la-da. El ba-lan-ce en-tre am-bas de-te
-r-mi-na la es-ta-bi-li-dad y el
- []
-
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 145.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 149.
-
-
-[18]
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 150.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 161.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 162.
-) (Capitulos/2-Fundamentos Teoricos/2.6-Benchmarks.tex
-
-[19]
-<Imagenes/Anomaly Detection Evolution.png, id=487, 1232.9262pt x 692.3466pt>
-File: Imagenes/Anomaly Detection Evolution.png Graphic file (type png)
-<use Imagenes/Anomaly Detection Evolution.png>
-Package pdftex.def Info: Imagenes/Anomaly Detection Evolution.png  used on inpu
-t line 12.
-(pdftex.def)             Requested size: 597.51698pt x 335.53416pt.
 ) (Capitulos/2-Fundamentos Teoricos/2.7-Eficiencia_energÃ©tica.tex
 Underfull \hbox (badness 3250) in paragraph at lines 4--5
 \T1/phv/m/n/12 sig-ni-fi-ca-ti-vos en tér-mi-nos de con-su-mo ener-gé-ti-co, es
@@ -2045,61 +1948,409 @@ Underfull \hbox (badness 1803) in paragraph at lines 4--5
  []
 
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[20]
 
-[21 <./Imagenes/Anomaly Detection Evolution.png>]
-Underfull \hbox (badness 1783) in paragraph at lines 30--31
-\T1/phv/m/n/12 de-bi-do a su na-tu-ra-le-za im-pul-sa-da por even-tos y su ca-p
-a-ci-dad pa-ra rea-li-zar
+
+[18 <./Imagenes/Ejemplo ilustrativo de una neurona LIF.png>]
+Underfull \hbox (badness 1769) in paragraph at lines 30--31
+\T1/phv/m/n/12 ope-ra-cio-nes de acu-mu-la-ción en lu-gar de mul-ti-pli-ca-cio-
+nes cos-to-sas [[]]. Es-ta
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 30--31
-\T1/phv/m/n/12 compu-tación usan-do úni-ca-men-te ope-ra-cio-nes de acu-mu-la-c
-ión en lu-gar de
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+[19]
 Underfull \hbox (badness 1147) in paragraph at lines 34--35
 []\T1/phv/m/n/12 Un es-tu-dio re-cien-te pre-sen-ta una me-to-do-lo-gía de tran
 s-for-mar exi-to-sa-men-te
  []
 
 
-
-[22]
-
-LaTeX Warning: Citation `noauthor_optuna_nodate' on page 23 undefined on input 
-line 38.
-
-
-LaTeX Warning: Citation `noauthor_optuna_nodate' on page 23 undefined on input 
-line 40.
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+[]\T1/phv/m/n/12 Actualmente exis-ten frá-me-works es-pe-cia-li-za-dos en op-ti
+-mi-zar la
+ []
 
 
-LaTeX Warning: Citation `noauthor_efficient_2021' on page 23 undefined on input
- line 42.
+Underfull \hbox (badness 1895) in paragraph at lines 40--41
+\T1/phv/m/n/12 hi-per-pa-ra-me-tri-za-ción co-mo es el ca-so de Op-tu-na. Es-te
+ uti-li-za al-go-rit-mos de
+ []
 
 
+Underfull \hbox (badness 1097) in paragraph at lines 40--41
+\T1/phv/m/n/12 crí-ti-ca de-bi-do a la com-ple-ja di-ná-mi-ca tem-po-ral en-tre
+ neu-ro-nas y im-pul-sos, la
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 40--41
+\T1/phv/m/n/12 con sig-ni-fi-ca-ti-va-men-te me-nos eva-lua-cio-nes que mé-to-d
+os tra-di-cio-na-les co-mo la
+ []
+
+
+
+[20]
 Underfull \hbox (badness 1852) in paragraph at lines 42--43
 \T1/phv/m/n/12 más pro-me-te-do-ras, evi-tan-do compu-tacio-nes cos-to-sas e in
 -ne-ce-sa-rias que son
  []
 
-) (Capitulos/2-Fundamentos Teoricos/2.8 Conclusiones.tex
-
-[23])) (Capitulos/3-Especificacion del trabajo/3.0-Especificaciones.tex
-
-[24]
-Cap\'{\i }tulo 3.
-(Capitulos/3-Especificacion del trabajo/3.1-Especificaciones_trabajo.tex
-Underfull \hbox (badness 1092) in paragraph at lines 24--25
-\T1/phv/m/n/12 dis-po-ni-bi-li-dad de con-jun-tos de da-tos reales y eti-que-ta
--dos pa-ra de-tec-ción
+) (Capitulos/2-Fundamentos Teoricos/2.6-Arquitectura_SNN_base.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/b/n/17.28 Arquitectura SNN ba-se pa-ra de-tec-ción de
  []
 
 
+Underfull \vbox (badness 5817) has occurred while \output is active []
+
+
+
+[21]
+Underfull \hbox (badness 1917) in paragraph at lines 18--19
+ []\T1/phv/b/n/12 Capa B (pro-ce-sa-mien-to).[] \T1/phv/m/n/12 Com-pues-ta por 
+100 neu-ro-nas LIF com-ple-ta-men-te
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 22--23
+[]\T1/phv/m/n/12 Conexiones re-cu-rren-tes den-tro de la pro-pia ca-pa B: las n
+eu-ro-nas es-tán
+ []
+
+<Imagenes/Diagrama de capas de SNN Base.png, id=545, 861.2175pt x 797.98125pt>
+File: Imagenes/Diagrama de capas de SNN Base.png Graphic file (type png)
+<use Imagenes/Diagrama de capas de SNN Base.png>
+Package pdftex.def Info: Imagenes/Diagrama de capas de SNN Base.png  used on in
+put line 27.
+(pdftex.def)             Requested size: 364.19667pt x 337.46332pt.
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+
+[22]
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.43 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.43 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.43 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.43 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[]\T1/phv/m/n/12 Esta co-di-fi-ca-ción pre-sen-ta ven-ta-jas im-por-tan-tes: es
+ de-ter-mi-nis-ta,
+ []
+
+
+
+[23 <./Imagenes/Diagrama de capas de SNN Base.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[]\T1/phv/m/n/12 También se pe-na-li-zan las co-ne-xio-nes ha-cia neu-ro-nas qu
+e dis-pa-ren
+ []
+
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 60.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 60.
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.72 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.72 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.72 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.72 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 74--75
+[]\T1/phv/m/n/12 El um-bral pue-de es-ta-ble-cer-se me-dian-te aná-li-sis es-ta
+-dís-ti-co de la ac-ti-vi-dad
+ []
+
+
+
+[24]
+Underfull \hbox (badness 6944) in paragraph at lines 81--82
+[]\T1/phv/m/n/12 Ausencia de ex-trac-ción de ca-rac-te-rís-ti-cas je-rár-qui-ca
+s: la co-nec-ti-vi-dad
+ []
+
+) (Capitulos/2-Fundamentos Teoricos/2.8 Conclusiones.tex
+Underfull \hbox (badness 2111) in paragraph at lines 3--4
+[]\T1/phv/m/n/12 La evo-lu-ción des-de mé-to-dos es-ta-dís-ti-cos clá-si-cos ha
+s-ta re-des neu-ro-na-les
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 3--4
+\T1/phv/m/n/12 y efi-cien-cia compu-tacio-nal. Los mé-to-dos de apren-di-za-je 
+pro-fun-do de-mues-tran
+ []
+
+
+
+[25]
+Underfull \hbox (badness 1721) in paragraph at lines 5--6
+\T1/phv/m/n/12 STDP mo-di-fi-ca-do, de-mues-tra via-bi-li-dad del en-fo-que pe-
+ro ex-po-ne li-mi-ta-cio-nes:
+ []
+
+)) (Capitulos/3-Especificacion del trabajo/3.0-Especificaciones.tex
+Underfull \hbox (badness 3209) in paragraph at lines 7--1
+\T1/phv/m/n/12 re-quie-re ar-qui-tec-tu-ras hí-bri-das que com-bi-nen es-tra-té
+-gi-ca-men-te las for-ta-le-zas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--1
+\T1/phv/m/n/12 de múl-ti-ples en-fo-ques, par-ti-cu-lar-men-te pa-ra apli-ca-ci
+o-nes que de-man-den
+ []
+
+
+
+[26]
+Cap\'{\i }tulo 3.
+(Capitulos/3-Especificacion del trabajo/3.1-Especificaciones_trabajo.tex
 Underfull \hbox (badness 1331) in paragraph at lines 24--25
 \T1/phv/m/n/12 da-ta-sets pú-bli-cos co-mo IOPS y Ca-lIt2 uti-li-za-dos en ex-p
 e-rien-cias pre-vias
@@ -2107,7 +2358,7 @@ e-rien-cias pre-vias
 
 
 
-[25
+[27
 
 ]
 Underfull \hbox (badness 1189) in paragraph at lines 25--26
@@ -2135,7 +2386,7 @@ o-na-les jun-to con el
 
 
 
-[26]) (Capitulos/3-Especificacion del trabajo/BindsNET.tex
+[28]) (Capitulos/3-Especificacion del trabajo/BindsNET.tex
 Underfull \hbox (badness 3907) in paragraph at lines 1--1
 []\T1/phv/b/n/17.28 Selección de Binds-NET co-mo fra-me-work de
  []
@@ -2146,196 +2397,96 @@ Underfull \hbox (badness 3118) in paragraph at lines 5--6
  se-lec-ción in-clu-yen su
  []
 
-
-Underfull \hbox (badness 5388) in paragraph at lines 10--11
-[]\T1/phv/m/n/12 La ins-ta-la-ción y con-fi-gu-ra-ción de Binds-NET pre-sen-tó 
-de-sa-fíos téc-ni-cos
- []
-
-
-Underfull \hbox (badness 1701) in paragraph at lines 12--13
-[]\T1/phv/m/n/12 Los con-flic-tos de de-pen-den-cias se ex-ten-die-ron a la ges
--tión de pa-que-tes,
- []
-
-
-
-[27]) (Capitulos/3-Especificacion del trabajo/SNN-CNN.tex
-Underfull \hbox (badness 1661) in paragraph at lines 5--6
-[]\T1/phv/m/n/12 La mo-ti-va-ción prin-ci-pal pa-ra de-sa-rro-llar es-te mo-de-
-lo hí-bri-do sur-ge de las
- []
-
-
-
-[28]
-Underfull \hbox (badness 1406) in paragraph at lines 11--12
-[]\T1/phv/b/n/12 Capa de en-tra-da (A)\T1/phv/m/n/12 : Com-pues-ta por un nú-me
--ro va-ria-ble de neu-ro-nas
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-[]\T1/phv/b/n/12 Capa de pro-ce-sa-mien-to (B)\T1/phv/m/n/12 : For-ma-da por 10
-0 neu-ro-nas LIF
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-\T1/phv/m/n/12 (\T1/cmtt/m/n/12 snn_-process_-layer_-neurons_-size = 100\T1/phv
-/m/n/12 ), co-nec-ta-das de ma-ne-ra
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 12--13
-\T1/cmtt/m/n/12 nu1 \T1/phv/m/n/12 y \T1/cmtt/m/n/12 nu2 \T1/phv/m/n/12 pa-ra a
-jus-tar pe-sos si-náp-ti-cos. La red se en-tre-na ex-po-nien-do
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-[]\T1/phv/b/n/12 Falta de ex-trac-ción de ca-rac-te-rís-ti-cas je-rár-qui-cas\T
-1/phv/m/n/12 : La co-ne-xión
- []
-
-
-Underfull \hbox (badness 3312) in paragraph at lines 24--26
-[]\T1/phv/m/n/12 El nue-vo mo-de-lo hí-bri-do abor-da es-tas li-mi-ta-cio-nes i
-n-te-gran-do una ca-pa
- []
-
-
-Underfull \hbox (badness 3229) in paragraph at lines 24--26
-\T1/phv/m/n/12 con-vo-lu-cio-nal (C) des-pués de B, crean-do una ar-qui-tec-tu-
-ra hí-bri-da (SNN +
+) (Capitulos/3-Especificacion del trabajo/SNN-CNN.tex
+Underfull \hbox (badness 1107) in paragraph at lines 7--1
+[]\T1/phv/m/n/12 Los de-ta-lles so-bre la ins-ta-la-ción y con-fi-gu-ra-ción de
+l en-torno de de-sa-rro-llo,
  []
 
 
 
 [29]
-Overfull \hbox (9.16496pt too wide) in paragraph at lines 108--108
+Underfull \hbox (badness 2644) in paragraph at lines 14--15
+[]\T1/phv/m/n/12 Optimización au-to-ma-ti-za-da con Op-tu-na: Los hi-per-pa-rá-
+me-tros (nu1, nu2,
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 20--21
+\T1/phv/m/n/12 Ca-lIt2) con téc-ni-cas de ex-pan-sión de eti-que-tas y pad-ding
+ pa-ra ma-ne-jar
+ []
+
+
+
+[30]
+Overfull \hbox (9.16496pt too wide) in paragraph at lines 99--99
 []|\T1/phv/b/n/10.95 Procesamiento 
  []
 
 
-Overfull \hbox (5.56274pt too wide) in paragraph at lines 108--108
+Overfull \hbox (5.56274pt too wide) in paragraph at lines 99--99
 \T1/phv/b/n/10.95 Con-vo-lu-cio-nal|  
  []
 
 LaTeX Info: Symbol \textrightarrow not provided by
             font family phv in TS1 encoding.
-            Default family used instead on input line 161.
+            Default family used instead on input line 152.
 
-Underfull \hbox (badness 1331) in paragraph at lines 161--162
+Underfull \hbox (badness 1331) in paragraph at lines 152--153
 []\T1/phv/b/n/12 nu1\T1/phv/m/n/12 : Con-tro-la la ac-tua-li-za-ción si-náp-ti-
 ca en la co-ne-xión A\TS1/cmss/m/n/12 ^^Y\T1/phv/m/n/12 B (en-tra-da a
  []
 
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 162.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 162.
 
-Underfull \hbox (badness 3271) in paragraph at lines 162--163
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[31]
+
+[32]
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 153.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 153.
+
+Underfull \hbox (badness 3271) in paragraph at lines 153--154
 []\T1/phv/b/n/12 nu2\T1/phv/m/n/12 : Re-gu-la el apren-di-za-je en co-ne-xio-ne
 s B\TS1/cmss/m/n/12 ^^Y\T1/phv/m/n/12 B (re-cu-rren-tes) y B\TS1/cmss/m/n/12 ^^
 Y\T1/phv/m/n/12 C
  []
 
 
-Underfull \hbox (badness 1189) in paragraph at lines 165--166
+Underfull \hbox (badness 1189) in paragraph at lines 156--157
 \T1/phv/m/n/12 (inhi-bi-ción). El ran-go [-0.5, 0.5] per-mi-te ex-plo-rar des-d
 e inhi-bi-ción fuer-te has-ta
  []
 
 
-
-[30]
-
-[31]
-
-[32]
-Underfull \hbox (badness 1762) in paragraph at lines 171--172
+Underfull \hbox (badness 1762) in paragraph at lines 162--163
 []\T1/phv/b/n/12 decay\T1/phv/m/n/12 : Cons-tan-te de tiem-po de de-cai-mien-to
  de la mem-bra-na neu-ro-nal.
  []
 
 
-Underfull \hbox (badness 3250) in paragraph at lines 192--195
+Underfull \hbox (badness 3250) in paragraph at lines 183--186
 []\T1/phv/b/n/12 sigma\T1/phv/m/n/12 : An-chu-ra del fil-tro gaus-siano. Va-lo-
 res ba-jos (0.5): Ker-nels más
- []
-
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family phv in TS1 encoding.
-            Default family used instead on input line 200.
-
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-[]\T1/phv/b/n/12 exc_-inh_-ba-lan-ce\T1/phv/m/n/12 : Ba-lan-ce en-tre co-ne-xio
--nes ex-ci-ta-to-rias/inhibitorias.
  []
 
 
 
 [33]
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 191.
 
-! LaTeX Error: Environment lstlisting undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.226         \begin{lstlisting}
-                                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{itemize} on input line 224 ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.228         \end{lstlisting}
-                              
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Environment lstlisting undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.232         \begin{lstlisting}
-                                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: \begin{itemize} on input line 224 ended by \end{lstlisting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.234         \end{lstlisting}
-                              
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 1748) in paragraph at lines 236--237
-[]\T1/phv/m/n/12 Combinación pon-de-ra-da de ca-pas B y C. Ma-yor pe-so (0.7) a
- la ca-pa
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+[]\T1/phv/b/n/12 exc_-inh_-ba-lan-ce\T1/phv/m/n/12 : Ba-lan-ce en-tre co-ne-xio
+-nes ex-ci-ta-to-rias/inhibitorias.
  []
 
 
@@ -2345,97 +2496,101 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.238         \begin{lstlisting}
+l.224         \begin{lstlisting}
                                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{itemize} on input line 224 ended by \end{lstlisting}.
+! LaTeX Error: \begin{itemize} on input line 216 ended by \end{lstlisting}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.240         \end{lstlisting}
+l.226         \end{lstlisting}
                               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Imagenes/Diagrama SNN.png, id=593, 1008.76875pt x 792.9625pt>
+
+Underfull \hbox (badness 1748) in paragraph at lines 228--229
+[]\T1/phv/m/n/12 Combinación pon-de-ra-da de ca-pas B y C. Ma-yor pe-so (0.7) a
+ la ca-pa
+ []
+
+
+
+[34]
+<Imagenes/Diagrama SNN.png, id=645, 756.57657pt x 538.26094pt>
 File: Imagenes/Diagrama SNN.png Graphic file (type png)
 <use Imagenes/Diagrama SNN.png>
-Package pdftex.def Info: Imagenes/Diagrama SNN.png  used on input line 311.
-(pdftex.def)             Requested size: 455.24411pt x 357.85829pt.
+Package pdftex.def Info: Imagenes/Diagrama SNN.png  used on input line 303.
+(pdftex.def)             Requested size: 455.24411pt x 323.87894pt.
 
-Underfull \hbox (badness 1810) in paragraph at lines 318--319
+Underfull \hbox (badness 1810) in paragraph at lines 310--311
 []\T1/phv/m/n/12 En es-te blo-que ini-cial la se-rie tem-po-ral bru-ta se di-vi
 -de en con-jun-tos de
  []
 
 
 
-[34]
-<Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2).png, id=600, 1556.81625
+[35 <./Imagenes/Diagrama SNN.png>]
+<Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2).png, id=653, 1556.81625
 pt x 234.1247pt>
 File: Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2).png Graphic file (
 type png)
 <use Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2).png>
 Package pdftex.def Info: Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2)
-.png  used on input line 322.
+.png  used on input line 314.
 (pdftex.def)             Requested size: 455.24411pt x 68.46243pt.
 
-Underfull \hbox (badness 1092) in paragraph at lines 329--330
+Underfull \hbox (badness 1092) in paragraph at lines 321--322
 []\T1/phv/m/n/12 La in-cor-po-ra-ción de una ca-pa con-vo-lu-cio-nal hí-bri-da 
 re-pre-sen-ta una de las
  []
 
 
-Underfull \hbox (badness 1460) in paragraph at lines 329--330
+Underfull \hbox (badness 1460) in paragraph at lines 321--322
 \T1/phv/m/n/12 in-no-va-cio-nes más sig-ni-fi-ca-ti-vas del mo-de-lo pro-pues-t
 o, fu-sio-nan-do la efi-cien-cia
  []
 
 
-Underfull \hbox (badness 1205) in paragraph at lines 329--330
+Underfull \hbox (badness 1205) in paragraph at lines 321--322
 \T1/phv/m/n/12 ener-gé-ti-ca de las SNNs con las ca-pa-ci-da-des de ex-trac-ció
 n de ca-rac-te-rís-ti-cas
  []
 
 
-Underfull \hbox (badness 1783) in paragraph at lines 329--330
+Underfull \hbox (badness 1783) in paragraph at lines 321--322
 \T1/phv/m/n/12 es-pa-cia-les de las re-des neu-ro-na-les con-vo-lu-cio-na-les. 
 Es-ta ar-qui-tec-tu-ra hí-bri-da
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[35 <./Imagenes/Diagrama SNN.png>]
-Underfull \hbox (badness 2318) in paragraph at lines 335--336
-\T1/phv/m/n/12 es-pe-cí-fi-co se fun-da-men-ta en evi-den-cia ex-pe-ri-men-tal 
-que de-mues-tra que las
+Underfull \hbox (badness 1082) in paragraph at lines 327--328
+[]\T1/phv/m/n/12 La evi-den-cia ex-pe-ri-men-tal res-pal-da es-ta de-ci-sión, l
+as ar-qui-tec-tu-ras hí-bri-das
  []
 
-<Imagenes/Arquitectura detallada SNN.png, id=609, 1610.26593pt x 741.52031pt>
+<Imagenes/Arquitectura detallada SNN.png, id=655, 1610.26593pt x 741.52031pt>
 File: Imagenes/Arquitectura detallada SNN.png Graphic file (type png)
 <use Imagenes/Arquitectura detallada SNN.png>
 Package pdftex.def Info: Imagenes/Arquitectura detallada SNN.png  used on input
- line 341.
+ line 333.
 (pdftex.def)             Requested size: 455.24411pt x 209.63828pt.
+
+Underfull \vbox (badness 2237) has occurred while \output is active []
+
 
 
 [36 <./Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2).png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [37 <./Imagenes/Arquitectura detallada SNN.png>]
-Underfull \hbox (badness 1348) in paragraph at lines 358--360
+Underfull \hbox (badness 1348) in paragraph at lines 350--352
 \T1/phv/m/n/12 donde $\OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\O
 T1/cmr/m/n/12 )$ \T1/phv/m/n/12 re-pre-sen-ta el tren de im-pul-sos de en-tra-d
 a y $\OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ 
@@ -2444,36 +2599,23 @@ a y $\OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$
 
 
 
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 422--423
-[]$\OML/cmm/m/it/12 N[]$\T1/phv/m/n/12 : nú-me-ro de neu-ro-nas en la ca-pa de 
-en-tra-da (igual a
- []
-
-) (Capitulos/3-Especificacion del trabajo/Preprocesamiento.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-[]\T1/phv/m/n/12 En pri-mer lu-gar, se bus-có de-sa-rro-llar pi-pe-li-nes de pr
-e-pro-ce-sa-mien-to
- []
-
-
-Underfull \hbox (badness 1077) in paragraph at lines 3--4
-\T1/phv/m/n/12 es-tan-da-ri-za-dos que pu-die-ran ma-ne-jar la he-te-ro-ge-nei-
-dad inhe-ren-te a los da-tos
+[38]) (Capitulos/3-Especificacion del trabajo/Preprocesamiento.tex
+Underfull \hbox (badness 1708) in paragraph at lines 3--4
+\T1/phv/m/n/12 en tre-nes de im-pul-sos dis-cre-tos [[]]. Co-mo ob-je-ti-vo adi
+-cio-nal, se im-ple-men-tó
  []
 
 
 
 [39]
-Underfull \hbox (badness 1648) in paragraph at lines 7--8
-\T1/phv/m/n/12 Ope-ra-tions Per Se-cond) con-tie-ne in-di-ca-do-res cla-ve de r
-en-di-mien-to (\T1/phv/b/n/12 KPIs\T1/phv/m/n/12 ) de
+Underfull \hbox (badness 6542) in paragraph at lines 5--5
+[]\T1/phv/b/n/14.4 Implementación de flu-jos de pre-pro-ce-sa-mien-to pa-ra
  []
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 7--8
-\T1/phv/m/n/12 di-fe-ren-tes ser-vi-cios, pre-sen-ta pa-tro-nes tem-po-ra-les h
-e-te-ro-gé-neos que in-clu-yen
+Underfull \hbox (badness 6461) in paragraph at lines 7--8
+[]\T1/phv/m/n/12 El da-ta-set IOPS con-tie-ne in-di-ca-do-res cla-ve de ren-di-
+mien-to (KPIs) de
  []
 
 
@@ -2483,9 +2625,9 @@ li-za-dos que abor-dan
  []
 
 
-Underfull \hbox (badness 6157) in paragraph at lines 9--10
-\T1/phv/m/n/12 los di-fe-ren-tes ti-pos de \T1/phv/b/n/12 KPIs \T1/phv/m/n/12 p
-re-sen-tes en el da-ta-set, re-co-no-cien-do que
+Underfull \hbox (badness 6477) in paragraph at lines 9--10
+\T1/phv/m/n/12 los di-fe-ren-tes ti-pos de KPIs pre-sen-tes en el da-ta-set, re
+-co-no-cien-do que
  []
 
 
@@ -2501,20 +2643,34 @@ Underfull \hbox (badness 3039) in paragraph at lines 9--10
  []
 
 
+Underfull \hbox (badness 6893) in paragraph at lines 9--10
+\T1/cmtt/m/n/12 create_-new_-dataset_-per_-every_-different_-kpi \T1/phv/m/n/12
+ im-ple-men-ta la se-gre-ga-ción de
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 9--10
+\T1/phv/m/n/12 da-tos por ti-po de KPI, fa-ci-li-tan-do el pro-ce-sa-mien-to pa
+-ra-le-lo y la op-ti-mi-za-ción
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 13--13
+[]\T1/phv/b/n/14.4 Implementación de flu-jos de pre-pro-ce-sa-mien-to pa-ra
+ []
+
+
 Underfull \hbox (badness 1394) in paragraph at lines 15--16
 []\T1/phv/m/n/12 El da-ta-set Ca-lIt2, que re-gis-tra flu-jos de per-so-nas en 
 el edi-fi-cio Ca-lIt2 de
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 [40]
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
-[]\T1/phv/m/n/12 El mó-du-lo \T1/phv/b/n/12 Ca-lIt2_-trans-form_-da-te_-to_-ti-
-mes-tamp \T1/phv/m/n/12 im-ple-men-ta la
+[]\T1/phv/m/n/12 El mó-du-lo \T1/cmtt/m/n/12 CalIt2_-transform_-date_-to_-times
+tamp \T1/phv/m/n/12 im-ple-men-ta la
  []
 
 
@@ -2536,9 +2692,9 @@ a-li-za me-dian-te
  []
 
 
-Underfull \hbox (badness 2980) in paragraph at lines 17--18
-\T1/phv/b/n/12 Ca-lIt2_-check_-every_-row_-is_-re-pea-ted_-2_-ti-mes\T1/phv/m/n
-/12 , que con-fir-ma la pre-sen-cia de
+Underfull \hbox (badness 4303) in paragraph at lines 17--18
+\T1/cmtt/m/n/12 CalIt2_-check_-every_-row_-is_-repeated_-2_-times\T1/phv/m/n/12
+ , que con-fir-ma la pre-sen-cia de
  []
 
 
@@ -2548,24 +2704,30 @@ im-ple-men-ta-do en
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 19--20
-\T1/phv/m/n/12 y pro-xi-mi-dad tem-po-ral a even-tos co-no-ci-dos. Es-te mó-du-
-lo in-cor-po-ra ló-gi-ca de
+Underfull \hbox (badness 1946) in paragraph at lines 19--20
+\T1/cmtt/m/n/12 CalIt2_-fill_-label_-field \T1/phv/m/n/12 uti-li-za cri-te-rios
+ ba-sa-dos en um-bra-les de con-teo de
  []
 
+)) (Capitulos/4-Resultados/4.0-Resultados.tex
 
-Underfull \hbox (badness 5592) in paragraph at lines 23--24
-[]\T1/phv/m/n/12 La im-ple-men-ta-ción de al-go-rit-mos de nor-ma-li-za-ción te
-m-po-ral, in-clu-yen-do
- []
-
-
-
-[41])) (Capitulos/4-Resultados/4.0-Resultados.tex
+[41]
 
 [42]
 Cap\'{\i }tulo 4.
 (Capitulos/4-Resultados/4.1-Descripcion-escenarios.tex
+Underfull \hbox (badness 1127) in paragraph at lines 3--5
+[]\T1/phv/m/n/12 En es-te ca-pí-tu-lo se pre-sen-tan los es-ce-na-rios, con-fi-
+gu-ra-cio-nes y pro-to-co-los
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 7--8
+[]\T1/phv/b/n/12 Baselines TS-FEDL\T1/phv/m/n/12 : OhShu-Lih [[]], Khan-Zul-fi-
+qar [[]], ZhengZhen-yu [[]],
+ []
+
+
 
 [43
 
@@ -2588,14 +2750,14 @@ er-sio-nes dis-tin-tos de \T1/cmtt/m/n/12 torch\T1/phv/m/n/12 ,
  []
 
 
+
+[44]
 Underfull \hbox (badness 2426) in paragraph at lines 49--50
 []\T1/phv/b/n/12 Cambios es-truc-tu-ra-les\T1/phv/m/n/12 : tan-to NumPy 2.x co-
 mo Pan-das 2.x in-tro-du-cen
  []
 
 
-
-[44]
 Underfull \hbox (badness 8132) in paragraph at lines 58--59
 []\T1/phv/b/n/12 Dispositivo de cómpu-to\T1/phv/m/n/12 : Se-lec-cio-na-ble me-d
 ian-te pa-rá-me-tro \T1/cmtt/m/n/12 --device
@@ -2740,10 +2902,6 @@ Underfull \hbox (badness 1132) in paragraph at lines 130--131
 []\T1/phv/b/n/12 Convergencia em-pí-ri-ca de TPE: \T1/phv/m/n/12 Los es-tu-dios
  de op-ti-mi-za-ción mues-tran
  []
-
-
-LaTeX Warning: Citation `noauthor_efficient_2021' on page 47 undefined on input
- line 131.
 
 
 Underfull \hbox (badness 3407) in paragraph at lines 131--132
@@ -2929,6 +3087,9 @@ te-men-te ker-nels \T1/cmtt/m/n/12 mexican_-hat \T1/phv/m/n/12 y
  []
 
 
+Underfull \vbox (badness 4454) has occurred while \output is active []
+
+
 
 [52]
 
@@ -2943,24 +3104,36 @@ en-cia-les en efi-cien-cia
 [54]
 Cap\'{\i }tulo 5.
 
-Underfull \hbox (badness 3240) in paragraph at lines 4--5
-\T1/phv/m/n/12 usan-do ar-qui-tec-tu-ras ba-sa-das en SNNs. Pro-po-ne-mos una e
-x-ten-sión hí-bri-da
+Underfull \hbox (badness 3179) in paragraph at lines 5--6
+\T1/phv/m/n/12 usan-do ar-qui-tec-tu-ras ba-sa-das en SNNs. Se pro-po-ne una ex
+-ten-sión hí-bri-da
  []
 
 
-Underfull \hbox (badness 2990) in paragraph at lines 16--16
+Underfull \hbox (badness 1297) in paragraph at lines 5--6
+\T1/phv/m/n/12 ano-ma-lías) y Ca-lIt2 (más ba-lan-cea-do, 24.80$ $% ano-ma-lías
+). Se apli-ca un flu-jo
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 17--17
 []|\T1/phv/m/n/10.95 O2: Di-se-ño y de-sa-rro-llo de ar-qui-tec-tu-ras de SNNs
  []
 
 
-Underfull \hbox (badness 6477) in paragraph at lines 18--18
+Underfull \hbox (badness 6477) in paragraph at lines 19--19
 \T1/phv/m/n/10.95 ex-pe-ri-men-ta-ción en con-jun-tos de da-tos reales de
  []
 
 
-Underfull \hbox (badness 4967) in paragraph at lines 19--19
+Underfull \hbox (badness 4967) in paragraph at lines 20--20
 []|\T1/phv/m/n/10.95 O5: Com-pa-ra-ción de la efi-cien-cia ener-gé-ti-ca y el
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 30--31
+\T1/phv/m/n/12 y con-si-guien-do que los hi-per-pa-rá-me-tros con-ver-jan de fo
+r-ma es-ta-ble. La
  []
 
 
@@ -2968,29 +3141,30 @@ Underfull \hbox (badness 4967) in paragraph at lines 19--19
 [55
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
+Underfull \hbox (badness 6157) in paragraph at lines 31--32
 []\T1/phv/b/n/12 Objetivo cum-pli-do par-cial-men-te\T1/phv/m/n/12 : O3 (Im-ple
--men-ta-ción sos-te-ni-ble) -
+-men-ta-ción sos-te-ni-ble): Se
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 36--37
+Underfull \hbox (badness 2103) in paragraph at lines 37--38
 \T1/phv/m/n/12 con-vo-lu-cio-nal pa-ra-me-tri-za-ble (ker-nels gaus-siano, la-p
 la-ciano, me-xi-can hat,
  []
 
 
-
-[56]
-Underfull \hbox (badness 3769) in paragraph at lines 39--40
-[]\T1/phv/m/n/12 Análisis pre-li-mi-nar de com-ple-ji-dad compu-tacio-nal (es-t
-i-ma-ción de MACs
+Underfull \hbox (badness 3396) in paragraph at lines 40--41
+[]\T1/phv/m/n/12 Análisis pre-li-mi-nar de com-ple-ji-dad compu-tacio-nal, sen-
+tan-do ba-ses pa-ra
  []
 
+
+
+[56]
 ! Undefined control sequence.
 \enit@endenumerate ->\enit@after 
                                  \endlist \ifx \enit@series \relax \else \if...
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2998,16 +3172,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-
-Underfull \hbox (badness 1609) in paragraph at lines 40--41
-[]\T1/phv/m/n/12 Almacenamiento es-truc-tu-ra-do de con-fi-gu-ra-cio-nes (\T1/c
-mtt/m/n/12 best_-config.json\T1/phv/m/n/12 ) pa-ra
- []
-
 ! Undefined control sequence.
 \enit@endenumerate ...\else \ifnum \enit@resuming 
                                                   =\@ne \enit@setresumekeys ...
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3018,7 +3186,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3027,7 +3195,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3038,7 +3206,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3049,7 +3217,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3058,7 +3226,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Undefined control sequence.
 <argument> enit@resume@series@\enit@series 
                                            
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3069,7 +3237,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \enit@endenumerate ...t \fi \ifnum \enit@resuming 
                                                   =\thr@@ \enit@setresumekey...
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3080,7 +3248,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -3089,7 +3257,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Undefined control sequence.
 \enit@setresumekeys ...xpandafter {\enit@savekeys 
                                                   }\xdef \enit@afterlist {#2...
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3100,7 +3268,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \enit@setresumekeys ...it@toks }\ifnum \enit@type 
                                                   =\z@ #3\def \enit@noexcs {...
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3111,30 +3279,98 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    =
-l.41 \end{enumerate}
+l.42 \end{enumerate}
                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 46--47
+Underfull \hbox (badness 1436) in paragraph at lines 47--48
 \T1/phv/m/n/12 en da-ta-sets muy des-ba-lan-cea-dos co-mo IOPS (4.6x, de 0.060 
 a 0.277),
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 46--47
+Underfull \hbox (badness 1052) in paragraph at lines 47--48
 \T1/phv/m/n/12 aun-que el ren-di-mien-to de-pen-de del nú-me-ro de neu-ro-nas (
 n_-100 >n_-200
  []
 
 
+Underfull \hbox (badness 1546) in paragraph at lines 58--59
+[]\T1/phv/m/n/12 El mo-de-lo hí-bri-do de-sa-rro-lla-do tie-ne po-ten-cial pa-r
+a apli-ca-cio-nes reales de
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 58--59
+\T1/phv/m/n/12 man-te-ni-mien-to pre-dic-ti-vo y mo-ni-to-ri-za-ción IoT, es-pe
+-cial-men-te en en-tor-nos con
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 58--59
+\T1/phv/m/n/12 res-tric-cio-nes ener-gé-ti-cas. La ar-qui-tec-tu-ra ba-sa-da en
+ im-pul-sos dis-cre-tos es
+ []
+
+
 
 [57]
-Underfull \hbox (badness 2245) in paragraph at lines 57--58
-\T1/phv/m/n/12 de man-te-ni-mien-to pre-dic-ti-vo y mo-ni-to-ri-za-ción IoT, es
--pe-cial-men-te en en-tor-nos
+Underfull \hbox (badness 1221) in paragraph at lines 73--74
+[]\T1/phv/b/n/12 Externa\T1/phv/m/n/12 : Los da-ta-sets (IOPS, Ca-lIt2) pue-de 
+que no re-pre-sen-ten to-da la
+ []
+
+
+
+[58]
+Underfull \hbox (badness 1400) in paragraph at lines 78--79
+\T1/phv/m/n/12 compu-tacio-nal. La ar-qui-tec-tu-ra pro-pues-ta lo-gró F1-score
+s de 0.417 en Ca-lIt2,
+ []
+
+
+Underfull \hbox (badness 7595) in paragraph at lines 80--81
+[]\T1/phv/m/n/12 La op-ti-mi-za-ción ba-ye-sia-na con Op-tu-na de-mos-tró ser u
+na he-rra-mien-ta
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 80--81
+\T1/phv/m/n/12 sis-te-má-ti-ca-men-te el es-pa-cio de hi-per-pa-rá-me-tros neu-
+ro-na-les y con-vo-lu-cio-na-les.
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 80--81
+\T1/phv/m/n/12 El mo-de-lo pre-sen-ta ca-rac-te-rís-ti-cas ar-qui-tec-tu-ra-les
+ que su-gie-ren po-ten-cial pa-ra
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 80--81
+\T1/phv/m/n/12 neu-ro-mór-fi-co de-di-ca-do don-de las ven-ta-jas ener-gé-ti-ca
+s pue-den apro-ve-char-se
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 82--84
+[]\T1/phv/m/n/12 La me-to-do-lo-gía de-sa-rro-lla-da sien-ta ba-ses só-li-das p
+a-ra tra-ba-jos fu-tu-ros en
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 82--84
+\T1/phv/m/n/12 de-tec-ción de ano-ma-lías con SNNs, pro-por-cio-nan-do un flu-j
+o re-pro-du-ci-ble de
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 90--92
+[]\T1/phv/m/n/12 Línea prio-ri-ta-ria pa-ra va-li-dar em-pí-ri-ca-men-te las es
+-ti-ma-cio-nes de efi-cien-cia
  []
 
 
@@ -3142,178 +3378,155 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[58]
-Underfull \hbox (badness 1221) in paragraph at lines 77--78
-[]\T1/phv/b/n/12 Externa\T1/phv/m/n/12 : Los da-ta-sets (IOPS, Ca-lIt2) pue-de 
-que no re-pre-sen-ten to-da la
- []
-
-
-Underfull \hbox (badness 1400) in paragraph at lines 82--83
-\T1/phv/m/n/12 compu-tacio-nal. La ar-qui-tec-tu-ra pro-pues-ta lo-gró F1-score
-s de 0.417 en Ca-lIt2,
- []
-
-
-
 [59]
-Underfull \hbox (badness 7595) in paragraph at lines 84--85
-[]\T1/phv/m/n/12 La op-ti-mi-za-ción ba-ye-sia-na con Op-tu-na de-mos-tró ser u
-na he-rra-mien-ta
- []
-
-
-Underfull \hbox (badness 1377) in paragraph at lines 84--85
-\T1/phv/m/n/12 sis-te-má-ti-ca-men-te el es-pa-cio de hi-per-pa-rá-me-tros neu-
-ro-na-les y con-vo-lu-cio-na-les.
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 84--85
-\T1/phv/m/n/12 El mo-de-lo pre-sen-ta ca-rac-te-rís-ti-cas ar-qui-tec-tu-ra-les
- que su-gie-ren po-ten-cial pa-ra
- []
-
-
-Underfull \hbox (badness 1360) in paragraph at lines 84--85
-\T1/phv/m/n/12 apro-ve-char-se ple-na-men-te, aun-que ha-ce fal-ta ha-cer me-di
--cio-nes es-pe-cí-fi-cas de
- []
-
-
-Underfull \hbox (badness 1509) in paragraph at lines 86--88
-[]\T1/phv/m/n/12 La me-to-do-lo-gía de-sa-rro-lla-da sien-ta ba-ses só-li-das p
-a-ra tra-ba-jos fu-tu-ros en
- []
-
-
-Underfull \hbox (badness 1983) in paragraph at lines 94--96
-[]\T1/phv/m/n/12 Línea prio-ri-ta-ria pa-ra va-li-dar em-pí-ri-ca-men-te las es
--ti-ma-cio-nes de efi-cien-cia
- []
-
-
-Underfull \hbox (badness 5446) in paragraph at lines 97--98
-\T1/phv/m/n/12 com-pa-ti-ble (e.g. NxSDK / La-va pa-ra Loihi), sus-ti-tu-yen-do
- ope-ra-cio-nes
- []
-
-
-
-[60]
-Underfull \hbox (badness 10000) in paragraph at lines 99--100
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 []\T1/phv/b/n/12 Comparativa ener-gé-ti-ca\T1/phv/m/n/12 : Me-di-ción di-rec-ta
  fren-te a im-ple-men-ta-cio-nes
  []
 
 
-Underfull \hbox (badness 4779) in paragraph at lines 106--107
+Underfull \hbox (badness 4779) in paragraph at lines 102--103
 []\T1/phv/b/n/12 Datasets mul-ti-va-rian-tes in-dus-tria-les\T1/phv/m/n/12 : In
 -cor-po-rar se-ña-les de vi-bra-ción,
  []
 
 
-Underfull \hbox (badness 1596) in paragraph at lines 114--115
+Underfull \hbox (badness 1596) in paragraph at lines 109--110
 []\T1/phv/b/n/12 Re-calibración de um-bra-les\T1/phv/m/n/12 : Ajus-te au-to-má-
 ti-co de um-bra-les neu-ro-na-les
  []
 
 
-Underfull \hbox (badness 1983) in paragraph at lines 115--116
+
+[60]
+Underfull \hbox (badness 1983) in paragraph at lines 110--111
 []\T1/phv/b/n/12 Despliegue ed-ge\T1/phv/m/n/12 : Em-pa-que-ta-do op-ti-mi-za-d
 o pa-ra mi-cro-con-tro-la-do-res con
  []
 
 
-Underfull \hbox (badness 6204) in paragraph at lines 115--116
+Underfull \hbox (badness 6204) in paragraph at lines 110--111
 \T1/phv/m/n/12 so-por-te SNN na-ti-vo (e.g. neu-ro-morphic in-fe-ren-ce en-gi-n
 es) in-clu-yen-do
  []
 
+) (Capitulos/Anexos/A-Manual-Instalacion.tex
+
+[61]
+Ap\'{e}ndice A.
+
+Underfull \hbox (badness 5388) in paragraph at lines 6--7
+[]\T1/phv/m/n/12 La ins-ta-la-ción y con-fi-gu-ra-ción de Binds-NET pre-sen-tó 
+de-sa-fíos téc-ni-cos
+ []
 
 
-[61]) (main.bbl
+Underfull \hbox (badness 1701) in paragraph at lines 12--13
+[]\T1/phv/m/n/12 Los con-flic-tos de de-pen-den-cias se ex-ten-die-ron a la ges
+-tión de pa-que-tes,
+ []
 
-[62]
-Cap\'{\i }tulo 6.
 
-Underfull \hbox (badness 1199) in paragraph at lines 19--25
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[62
+
+])
+
+[63]
+
+[64
+
+] (main.bbl
+Ap\'{e}ndice B.
+
+Underfull \hbox (badness 1199) in paragraph at lines 33--39
 \T1/phv/m/n/12 Ale-xan-der M. Heard, and Ying-ying Wu.  2d spin-tro-nics for ne
 u-ro-morphic
  []
 
 
 
-[63
+[65
 
 ]
-Underfull \hbox (badness 1715) in paragraph at lines 60--65
+Underfull \hbox (badness 1715) in paragraph at lines 82--87
 []\T1/phv/m/n/12 Gabriele Gua-lan-di and Ales-san-dro V. Pa-pa-do-pou-los.  Wor
 st-case im-pact
  []
 
 
-Underfull \hbox (badness 4328) in paragraph at lines 60--65
+Underfull \hbox (badness 4328) in paragraph at lines 82--87
 \T1/phv/m/n/12 as-sess-ment of multi-alarm stealth at-tacks against con-trol sy
 s-tems with
  []
 
 
-Underfull \hbox (badness 4391) in paragraph at lines 100--103
+Underfull \hbox (badness 4391) in paragraph at lines 122--125
 []\T1/phv/m/n/12 Sepp Ho-chrei-ter and Jür-gen Sch-midhu-ber.  Long short-term 
 me-mory.
  []
 
 
 
-[64]
-Underfull \hbox (badness 8151) in paragraph at lines 145--149
-[]\T1/phv/m/n/12 Renjie Wu and Ea-monn J. Keogh.  Cu-rrent ti-me se-ries ano-ma
-ly
+[66]
+Underfull \hbox (badness 2096) in paragraph at lines 164--168
+[]\T1/phv/m/n/12 Wulfram Gerst-ner, Wer-ner M. Kistler, Ri-chard Naud, and Liam
+ Pa-nins-ki.
  []
 
 
 
-[65]
-Underfull \hbox (badness 2088) in paragraph at lines 205--210
+[67]
+Underfull \hbox (badness 2088) in paragraph at lines 238--243
 \T1/phv/m/n/12 learning[]oriented spi-king neu-ral net-works li-brary in python
 .  \T1/phv/m/sl/12 Fron-tiers in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--238
+Underfull \hbox (badness 10000) in paragraph at lines 259--265
 []\T1/phv/m/n/12 Milvus.  What pre-pro-ces-sing tech-ni-ques are used in
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--238
+Underfull \hbox (badness 10000) in paragraph at lines 259--265
 \T1/phv/m/n/12 ano-maly de-tec-tion?  [][]$\T1/cmtt/m/n/12 https : / / milvus .
  io / ai-[]quick-[]reference /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--238
+Underfull \hbox (badness 10000) in paragraph at lines 259--265
 \T1/cmtt/m/n/12 what-[]preprocessing-[]techniques-[]are-[]used-[]in-[]anomaly-[
 ]detection/$[][]\T1/phv/m/n/12 , 2025.
  []
 
 
-Underfull \hbox (badness 1661) in paragraph at lines 257--262
+
+[68]
+Underfull \hbox (badness 1661) in paragraph at lines 306--311
 \T1/phv/m/n/12 Mo-ritz, Ken Gold-berg, and Ion Stoi-ca.  A sys-tem for mas-si-v
 ely pa-ra-llel
  []
 
 
 
-[66]
-Underfull \hbox (badness 6641) in paragraph at lines 294--302
+[69]
+Underfull \hbox (badness 6641) in paragraph at lines 345--353
 \T1/phv/m/n/12 John Arthur, Kai Hyn-na, Fo-pe-fo-lu Fo-lo-wo-se-le, Syl-vain Sa
 ïghi, Te-re-sa
  []
 
+
+Underfull \hbox (badness 8151) in paragraph at lines 373--377
+[]\T1/phv/m/n/12 Renjie Wu and Ea-monn J. Keogh.  Cu-rrent ti-me se-ries ano-ma
+ly
+ []
+
 )
 
-[67] (main.aux
+[70] (main.aux
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
 )
@@ -3323,54 +3536,38 @@ L3 programming layer <2025-05-26>
  ***********
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: D7054FE4065B85C2972D7D8F7FD3B04A;7599
-(rerunfilecheck)             After:  7E38A2E3FC53C16BA21801ECB635A1C2;7454.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 1D2561601E117253F240549BC8DEA089;7936.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 40 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 31389 strings out of 468219
- 611172 string characters out of 5442933
- 1048808 words of memory out of 5000000
- 58905 multiletter control sequences out of 15000+600000
- 693702 words of font info for 124 fonts, out of 8000000 for 9000
+ 31428 strings out of 468219
+ 612432 string characters out of 5442933
+ 1051867 words of memory out of 5000000
+ 58920 multiletter control sequences out of 15000+600000
+ 683071 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,17n,107p,1209b,3170s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
-, replaced by a fixed one
-
- <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1
-000.pk> <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt1095.pk> <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/e
-c/dpi600\tcss1200.pk> <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\tctt1200.pk> <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/ljf
-our/jknappen/ec/dpi600\ectt1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C
-:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fil
-es/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb
-8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX/fon
-ts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on main.pdf (81 pages, 958349 bytes).
+ 102i,17n,107p,1185b,3177s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ectt1200.pk> <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ectt1095.pk> <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\tcss1200.pk><C:/Program Files/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uh
+vb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (84 pages, 1063329 bytes).
 PDF statistics:
- 1104 PDF objects out of 1200 (max. 8388607)
- 281 named destinations out of 1000 (max. 500000)
- 365 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1133 PDF objects out of 1200 (max. 8388607)
+ 307 named destinations out of 1000 (max. 500000)
+ 383 words of extra memory for PDF output out of 10000 (max. 10000000)
 

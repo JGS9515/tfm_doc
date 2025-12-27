@@ -22,60 +22,62 @@
 \contentsline {subsection}{\numberline {2.4.1}¿Qué es una Red Neuronal de Impulsos?}{14}{subsection.2.4.1}%
 \contentsline {subsubsection}{Diferencias fundamentales con las ANNs tradicionales}{14}{section*.9}%
 \contentsline {subsection}{\numberline {2.4.2}Componentes básicos de una SNN}{15}{subsection.2.4.2}%
-\contentsline {subsubsection}{La neurona de impulsos: modelo LIF}{16}{section*.11}%
-\contentsline {subsubsection}{Sinapsis: las conexiones entre neuronas}{18}{section*.12}%
-\contentsline {subsubsection}{Codificación de información en spikes}{18}{section*.13}%
-\contentsline {paragraph}{1. Codificación por frecuencia (\textit {Rate Coding})}{18}{section*.14}%
-\contentsline {paragraph}{2. Codificación temporal (\textit {Temporal Coding})}{19}{section*.15}%
-\contentsline {section}{\numberline {2.5}Desarrollo de Benchmarks}{19}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Eficiencia energética}{20}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Limitaciones energéticas de los métodos tradicionales}{20}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Paradigma de eficiencia energética en SNNs}{22}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Hiperparametros en SNN}{23}{subsection.2.6.3}%
-\contentsline {section}{\numberline {2.7}Conclusiones}{24}{section.2.7}%
-\contentsline {chapter}{\numberline {3}Especificación del trabajo}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Alcance}{25}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Hipótesis y Restricciones}{25}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Restricciones}{25}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Descripción de la solución propuesta}{26}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Selección de BindsNET como framework de desarrollo}{27}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Resolución de desafíos técnicos en el entorno BindsNET}{27}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Problemas de compatibilidad y configuración del entorno}{27}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Estrategias de Resolución Implementadas}{28}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Arquitectura del nuevo modelo híbrido}{28}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1} Motivación y diferencias respecto a la SNN original}{28}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Análisis de Variables Modificables del Modelo Híbrido}{30}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Variables Centrales del Modelo Híbrido}{30}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Parámetros de Optimización con Optuna}{30}{subsection.3.6.4}%
-\contentsline {subsubsection}{Configuración de Parámetros Convolucionales del Kernel}{33}{section*.22}%
-\contentsline {subsubsection}{Balance Excitatorio-Inhibitorio}{33}{section*.23}%
-\contentsline {subsection}{\numberline {3.6.5}Modos de Procesamiento Convolucional}{34}{subsection.3.6.5}%
-\contentsline {subsection}{\numberline {3.6.6}Esquema general}{34}{subsection.3.6.6}%
-\contentsline {subsubsection}{Codificación y preprocesado de la señal}{35}{section*.25}%
-\contentsline {subsection}{\numberline {3.6.7}Capa convolucional híbrida (SNN-CNN)}{36}{subsection.3.6.7}%
-\contentsline {subsubsection}{Posicionamiento arquitectural}{36}{section*.27}%
-\contentsline {subsubsection}{Detalle arquitectural de la capa convolucional híbrida}{36}{section*.28}%
-\contentsline {subsubsection}{Tipos de kernels implementados}{37}{section*.30}%
-\contentsline {subsubsection}{Conversión de Impulsos a Tensor y Gradientes}{38}{section*.31}%
-\contentsline {subsection}{\numberline {3.6.8}Complejidad computacional}{38}{subsection.3.6.8}%
-\contentsline {subsubsection}{Estimación del número de operaciones MAC ejecutadas}{39}{section*.32}%
-\contentsline {subsubsection}{Estimación de MACs para SNNs}{39}{section*.33}%
-\contentsline {section}{\numberline {3.7}Preprocesamiento de datos para SNN}{40}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Implementación de pipelines para dataset IOPS}{40}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Implementación de pipelines para dataset CalIt2}{41}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Algoritmos de normalización temporal}{41}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Arquitectura modular y reutilizable del código}{41}{subsection.3.7.4}%
+\contentsline {subsubsection}{La neurona de impulsos: modelo LIF}{15}{section*.11}%
+\contentsline {paragraph}{Ejemplo ilustrativo.}{16}{section*.12}%
+\contentsline {subsubsection}{Sinapsis: las conexiones entre neuronas}{17}{section*.14}%
+\contentsline {section}{\numberline {2.5}Eficiencia energética}{19}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Limitaciones energéticas de los métodos tradicionales}{19}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Paradigma de eficiencia energética en SNNs}{20}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Hiperparametros en SNN}{20}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Arquitectura SNN base para detección de anomalías en series temporales}{21}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Arquitectura bicapa}{22}{subsection.2.6.1}%
+\contentsline {paragraph}{Capa A (entrada).}{22}{section*.16}%
+\contentsline {paragraph}{Capa B (procesamiento).}{22}{section*.17}%
+\contentsline {subsection}{\numberline {2.6.2}Codificación por cuantiles}{22}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Aprendizaje mediante STDP modificado}{23}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Criterio de detección de anomalías}{24}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5}Limitaciones de la arquitectura base}{25}{subsection.2.6.5}%
+\contentsline {section}{\numberline {2.7}Conclusiones}{25}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Especificación del trabajo}{27}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Alcance}{27}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Hipótesis y Restricciones}{27}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Restricciones}{27}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Descripción de la solución propuesta}{28}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Selección de BindsNET como framework de desarrollo}{29}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Arquitectura del nuevo modelo híbrido}{29}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Motivación y diferencias respecto al modelo SNN base}{29}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Análisis de Variables Modificables del Modelo Híbrido}{31}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Variables Centrales del Modelo Híbrido}{33}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Parámetros de Optimización con Optuna}{33}{subsection.3.5.4}%
+\contentsline {subsubsection}{Configuración de Parámetros Convolucionales del Kernel}{33}{section*.23}%
+\contentsline {subsubsection}{Balance Excitatorio-Inhibitorio}{34}{section*.24}%
+\contentsline {subsection}{\numberline {3.5.5}Modos de Procesamiento Convolucional}{34}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Esquema general}{34}{subsection.3.5.6}%
+\contentsline {subsubsection}{Codificación y preprocesado de la señal}{35}{section*.26}%
+\contentsline {subsection}{\numberline {3.5.7}Capa convolucional híbrida (SNN-CNN)}{36}{subsection.3.5.7}%
+\contentsline {subsubsection}{Ubicación de la capa convolucional en la arquitectura}{36}{section*.28}%
+\contentsline {subsubsection}{Detalle arquitectural de la capa convolucional híbrida}{37}{section*.29}%
+\contentsline {subsubsection}{Tipos de kernels implementados}{37}{section*.31}%
+\contentsline {subsubsection}{Conversión de Impulsos a Tensor y Gradientes}{38}{section*.32}%
+\contentsline {subsection}{\numberline {3.5.8}Complejidad computacional}{38}{subsection.3.5.8}%
+\contentsline {subsubsection}{Estimación del número de operaciones MAC ejecutadas}{38}{section*.33}%
+\contentsline {subsubsection}{Estimación de MACs para SNNs}{39}{section*.34}%
+\contentsline {section}{\numberline {3.6}Preprocesamiento de datos para SNN}{39}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Implementación de flujos de preprocesamiento para dataset IOPS}{40}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Implementación de flujos de preprocesamiento para dataset CalIt2}{40}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Algoritmos de normalización temporal}{41}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Arquitectura modular y reutilizable del código}{41}{subsection.3.6.4}%
 \contentsline {chapter}{\numberline {4}Resultados}{43}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Descripción de los escenarios experimentales}{43}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Datasets y particionado}{43}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Configuración de hardware y software}{44}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Diseño experimental de tamaños de capa y protocolo de optimización}{46}{subsection.4.1.3}%
-\contentsline {subsubsection}{Protocolo de optimización de hiperparámetros}{47}{section*.39}%
-\contentsline {paragraph}{Justificación de 100 pruebas por configuración:}{47}{section*.40}%
-\contentsline {subsubsection}{Salida registrada por prueba}{48}{section*.41}%
-\contentsline {subsubsection}{Criterio de selección final}{48}{section*.42}%
-\contentsline {subsubsection}{Resumen estructurado}{48}{section*.43}%
-\contentsline {subsubsection}{Síntesis}{49}{section*.44}%
+\contentsline {subsubsection}{Protocolo de optimización de hiperparámetros}{47}{section*.40}%
+\contentsline {paragraph}{Justificación de 100 pruebas por configuración:}{47}{section*.41}%
+\contentsline {subsubsection}{Salida registrada por prueba}{48}{section*.42}%
+\contentsline {subsubsection}{Criterio de selección final}{48}{section*.43}%
+\contentsline {subsubsection}{Resumen estructurado}{48}{section*.44}%
+\contentsline {subsubsection}{Síntesis}{49}{section*.45}%
 \contentsline {subsection}{\numberline {4.1.4}Hiperparámetros y estrategia de búsqueda}{49}{subsection.4.1.4}%
 \contentsline {section}{\numberline {4.2}Metodología de evaluación}{50}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Entorno de ejecución}{50}{subsection.4.2.1}%
@@ -83,22 +85,25 @@
 \contentsline {subsection}{\numberline {4.2.3}Protocolo de validación}{50}{subsection.4.2.3}%
 \contentsline {section}{\numberline {4.3}Análisis de resultados}{51}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Resultados por dataset}{51}{subsection.4.3.1}%
-\contentsline {subsubsection}{IOPS}{51}{section*.45}%
-\contentsline {subsubsection}{CalIt2}{52}{section*.48}%
+\contentsline {subsubsection}{IOPS}{51}{section*.46}%
+\contentsline {subsubsection}{CalIt2}{51}{section*.49}%
 \contentsline {subsection}{\numberline {4.3.2}Comparación con modelos TSFEDL}{53}{subsection.4.3.2}%
 \contentsline {chapter}{\numberline {5}Conclusiones}{55}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Resumen del trabajo desarrollado}{55}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Grado de cumplimiento de los objetivos}{55}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Principales contribuciones}{56}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Discusión de resultados}{57}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Interpretación técnica}{58}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Implicaciones prácticas}{58}{subsection.5.4.2}%
-\contentsline {section}{\numberline {5.5}Limitaciones y consideraciones de validez}{59}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Limitaciones experimentales}{59}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Consideraciones de validez}{59}{subsection.5.5.2}%
-\contentsline {section}{\numberline {5.6}Conclusiones finales}{60}{section.5.6}%
+\contentsline {subsection}{\numberline {5.4.1}Implicaciones prácticas}{57}{subsection.5.4.1}%
+\contentsline {section}{\numberline {5.5}Limitaciones y consideraciones de validez}{58}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Limitaciones experimentales}{58}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Consideraciones de validez}{58}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}Conclusiones finales}{59}{section.5.6}%
 \contentsline {section}{\numberline {5.7}Trabajos futuros}{60}{section.5.7}%
 \contentsline {subsection}{\numberline {5.7.1}Evaluación energética y despliegue neuromórfico}{60}{subsection.5.7.1}%
-\contentsline {subsection}{\numberline {5.7.2}Optimización técnica y robustez}{61}{subsection.5.7.2}%
-\contentsline {subsection}{\numberline {5.7.3}Despliegue y monitorización neuromórfica}{61}{subsection.5.7.3}%
-\contentsline {chapter}{\numberline {6}Bibliograf\'{\i }a}{63}{chapter.6}%
+\contentsline {subsection}{\numberline {5.7.2}Optimización técnica}{60}{subsection.5.7.2}%
+\contentsline {subsection}{\numberline {5.7.3}Despliegue y monitorización neuromórfica}{60}{subsection.5.7.3}%
+\contentsline {chapter}{\numberline {A}Manual de instalación y configuración técnica}{62}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Instalación y configuración de BindsNET}{62}{section.Alph1.1}%
+\contentsline {subsection}{\numberline {A.1.1}Problemas de compatibilidad y configuración del entorno}{62}{subsection.Alph1.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Estrategias de resolución implementadas}{63}{subsection.Alph1.1.2}%
+\contentsline {chapter}{\numberline {B}Bibliograf\'{\i }a}{65}{appendix.Alph2}%
