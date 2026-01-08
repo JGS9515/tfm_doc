@@ -5,8 +5,8 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Comparación entre ANNs tradicionales y SNNs}}{15}{table.caption.10}%
 \contentsline {table}{\numberline {2.2}{\ignorespaces Comparación de rendimiento entre métodos estadísticos y redes neuronales artificiales. Fuente: \cite {mali_comparison_2024}}}{19}{table.caption.15}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Comparación entre modelo SNN base y modelo híbrido — Parte 1: arquitectura, conexiones y optimización.}}{31}{table.caption.19}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparación entre modelo SNN base y modelo híbrido — Parte 2: evaluación, implementación y ventajas.}}{32}{table.caption.20}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparación entre modelo SNN base y modelo híbrido (Parte 1): arquitectura, conexiones y optimización.}}{31}{table.caption.19}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparación entre modelo SNN base y modelo híbrido (Parte 2): evaluación, implementación y ventajas.}}{32}{table.caption.20}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Comparativa principal de versiones de software entre TSFEDL y Proyecto SNN.}}{45}{table.caption.37}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces Resultados de detección de anomalías en dataset IOPS. N representa el número de neuronas en las capas B y C para los modelos SNN. Se muestran los mejores resultados obtenidos tras optimización con Optuna para cada configuración.}}{52}{table.caption.47}%
