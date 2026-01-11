@@ -1,0 +1,119 @@
+\chapter{Conclusiones}
+\label{chap:conclusiones}
+
+\section{Resumen del trabajo desarrollado}
+Este TFM ha abordado el problema de detectar anomalías en series temporales usando arquitecturas basadas en SNNs. Se propone una extensión híbrida SNN-CNN que se optimiza automáticamente con Optuna. Se emplean dos datasets con características bastante diferentes: IOPS (muy desbalanceado, solo 1.92\% anomalías) y CalIt2 (más balanceado, 24.80\% anomalías). Se aplica un flujo de preprocesamiento que incluye cuantización dinámica por cuantiles expandidos, expansión de etiquetas para compensar el desbalanceo temporal, y segmentación en ventanas de longitud T=250. La arquitectura propuesta (A--B--C) integra una capa convolucional parametrizable con kernels gaussiano, laplaciano, mexican hat y box, junto con modos de fusión direct, weighted\_sum y max. Se utiliza F1-score como métrica principal, comparando contra el modelo SNN base (A--B) y baselines de TSFEDL \cite{AGUILERAMARTOS2023223}. La motivación energética del trabajo se basa en el potencial de las SNNs, especialmente para computación neuromórfica eficiente.
+
+\section{Grado de cumplimiento de los objetivos}
+% Reutilizar la lista de objetivos del \hyperref[chap:fundamentos]{Capítulo 2} y marcar su estado.
+\begin{table}[htbp]
+    \centering
+    \small
+    \begin{tabular}{p{0.62\textwidth}p{0.28\textwidth}}
+        \hline\hline
+        \textbf{Objetivo} & \textbf{Estado (Sí/Parcial/No)} \\
+        \hline
+        O1: Revisión bibliográfica de modelos de SNNs y su aplicación en detección de anomalías y mantenimiento predictivo. & Sí \\
+        O2: Diseño y desarrollo de arquitecturas de SNNs optimizadas para la detección de anomalías en datos de sensores industriales. & Sí \\
+        O3: Implementación de modelos de SNNs sostenibles que minimicen el consumo energético sin sacrificar la precisión. & Parcial \\
+        O4: Validación de los modelos desarrollados mediante experimentación en conjuntos de datos reales de mantenimiento predictivo. & Sí \\
+        O5: Comparación de la eficiencia energética y el rendimiento predictivo frente a modelos tradicionales de detección de anomalías. & Sí \\ 
+        % Añadir otros si hubo (p.ej. integración MLOps con W\&B)
+        \hline\hline
+    \end{tabular}
+    \caption{Resumen del grado de cumplimiento de los objetivos planteados.}
+    \label{tab:objetivos-cumplimiento}
+\end{table}
+
+
+\begin{itemize}
+    \item \textbf{Objetivo destacado}: O2 (Diseño y desarrollo de arquitecturas optimizadas): Se logró desarrollar una arquitectura híbrida SNN-CNN con optimización bayesiana automatizada mediante Optuna TPE, ejecutando 100 pruebas por configuración y consiguiendo que los hiperparámetros converjan de forma estable. La optimización automatizada fue clave, ya que permitió explorar sistemáticamente el espacio de parámetros neuronales y convolucionales.
+    \item \textbf{Objetivo cumplido parcialmente}: O3 (Implementación sostenible): Se desarrolló el análisis teórico de eficiencia mediante estimación de MACs, pero no se pudo validar en hardware neuromórfico por limitaciones de acceso.
+\end{itemize}
+
+\section{Principales contribuciones}
+% Lista breve de aportaciones técnicas / metodológicas.
+\begin{enumerate}
+    \item Propuesta e implementación de una arquitectura híbrida SNN-CNN con capa convolucional parametrizable (kernels gaussiano, laplaciano, mexican hat, box) y modos de fusión (direct, weighted\_sum, max), desarrollada mediante optimización bayesiana (Optuna TPE) sobre parámetros neuronales (threshold, decay), de plasticidad (nu1, nu2).
+    \item Flujo de preprocesamiento reproducible: cuantización dinámica por cuantiles expandidos, expansión de etiquetas para mejorar la cobertura de eventos anómalos, y segmentación temporal en ventanas de longitud.
+    \item Comparativa empírica contra el modelo base (SNN A--B) y contra baselines de \texttt{TSFEDL} mostrando que, aunque los modelos TSFEDL tienen mejor rendimiento (F1=0.436 vs 0.277 en IOPS, F1=0.704 vs 0.417 en CalIt2), las SNN mantienen ventajas en eficiencia y potencial para computación neuromórfica.
+    \item Análisis preliminar de complejidad computacional, sentando bases para evaluación energética futura en hardware neuromórfico.
+    \item Almacenamiento estructurado de configuraciones para reproducibilidad.
+\end{enumerate}
+
+\section{Discusión de resultados}
+Los resultados del análisis experimental muestran que:
+\begin{itemize}
+    \item La capa convolucional mejora bastante el F1-score respecto a la SNN base en datasets muy desbalanceados como IOPS (4.6x, de 0.060 a 0.277), aunque el rendimiento depende del número de neuronas (n\_100 > n\_200 > n\_400). En CalIt2 se mantiene estable con F1-scores alrededor de 0.416-0.417 independientemente del número de neuronas (100-400).
+    \item El modo de procesamiento \texttt{direct} fue elegido consistentemente por Optuna como óptimo en CalIt2, junto con kernels \texttt{mexican\_hat} y \texttt{gaussian} con tamaños 5-7, lo que indica preferencia por suavizado espacial. En cambio, IOPS favoreció \texttt{weighted\_sum} y \texttt{max} con kernels \texttt{laplacian} y \texttt{mexican\_hat}, sugiriendo que se necesita detección de bordes para anomalías de sistema más bruscas.
+    \item Los parámetros \texttt{threshold} (rango [-66.8, -67.7]) y \texttt{decay} (rango [73.6-139.8]) son los más influyentes según las optimizaciones de Optuna, seguidos de \texttt{kernel\_size} y \texttt{sigma}, confirmando la importancia de la dinámica neuronal LIF.
+    \item Los modelos TSFEDL (OhShuLih, KhanZulfiqar, ZhengZhenyu, WeiXiaoyan) superan consistentemente a las SNN en ambos datasets, con diferencias más marcadas en IOPS debido al desbalanceo extremo que las SNN no logran manejar bien.
+\end{itemize}
+
+% \subsection{Interpretación técnica}
+% Los patrones observados en la selección de kernels sugieren preferencias específicas según las características del dataset:
+% En CalIt2, Optuna seleccionó repetidamente kernels \texttt{mexican\_hat} y \texttt{gaussian} con tamaños intermedios (5-7), lo que indica que el suavizado espacial y la detección de transiciones graduales funcionan mejor que la detección de bordes abruptos para este tipo de señales de flujo de edificios. El kernel \texttt{mexican\_hat}, al combinar un componente central positivo con anillos negativos, permite detectar cambios locales sin perder el contexto temporal, mientras que el kernel \texttt{gaussian} atenúa el ruido impulsivo manteniendo las características principales de la señal.
+
+\subsection{Implicaciones prácticas}
+El modelo híbrido desarrollado tiene potencial para aplicaciones reales de mantenimiento predictivo y monitorización IoT, especialmente en entornos con restricciones energéticas. La arquitectura basada en impulsos discretos es naturalmente compatible con hardware neuromórfico de bajo consumo y su naturaleza dispersa sugiere que podría procesarse de forma eficiente, aunque habría que hacer mediciones específicas de rendimiento temporal para validar su viabilidad en aplicaciones de tiempo real. En mantenimiento predictivo, el alto recall observado (99.9\% en CalIt2) es crucial para evitar fallos no detectados, aunque la baja precisión requiere sistemas de post-procesado para reducir falsas alarmas.
+
+
+\section{Limitaciones y consideraciones de validez}
+\subsection{Limitaciones experimentales}
+\begin{itemize}
+    \item \textbf{Particionado 50/50}: La falta de validación cruzada temporal podría introducir sesgos en la generalización.
+    \item \textbf{Estimación energética indirecta}: No medimos el consumo real en hardware neuromórfico (solo estimaciones analíticas de MACs).
+    \item \textbf{Escalabilidad multivariante}: Los experimentos se centraron principalmente en señales univariadas (o pocas variables); falta evaluar en entornos fuertemente multivariados.
+    \item \textbf{GPU}: Uno de los motivos para elegir BindsNET fue poder aprovechar la aceleración GPU; sin embargo, no conseguimos una configuración estable (incompatibilidades de dependencias en Windows), lo que aumentó la duración de los entrenamientos y limitó la exploración de hiperparámetros. Esto podría significar que no identificamos todas las combinaciones óptimas. Aún así, como todos los modelos se ejecutaron bajo condiciones homogéneas (CPU) y el preprocesamiento fue uniforme, la validez interna de la comparación se mantiene. Futuros trabajos en un entorno Linux con soporte CUDA habilitado permitirán ampliar la búsqueda y evaluar la robustez frente a una exploración más exhaustiva.
+\end{itemize}
+
+\subsection{Consideraciones de validez}
+\begin{itemize}
+    \item \textbf{Interna}: La expansión de etiquetas podría inflar artificialmente el recall si no se aplica de forma consistente en inferencia.
+    \item \textbf{Externa}: Los datasets (IOPS, CalIt2) puede que no representen toda la diversidad industrial (ciclos estacionales largos, variabilidad contextual).
+    \item \textbf{Baselines}: Las comparaciones con TSFEDL se limitaron a cuatro modelos específicos (OhShuLih, KhanZulfiqar, ZhengZhenyu, WeiXiaoyan), sin acceso a mediciones de consumo energético de los baselines.
+\end{itemize}
+
+\section{Conclusiones finales}
+En resumen, este trabajo ha demostrado que las arquitecturas híbridas SNN-CNN, aunque no superan consistentemente a los métodos de deep learning tradicionales en términos de F1-score, ofrecen un equilibrio interesante entre rendimiento y eficiencia computacional. La arquitectura propuesta logró F1-scores de 0.417 en CalIt2, manteniéndose competitiva en datasets moderadamente balanceados, mientras que en IOPS mostró mejoras notables respecto al modelo SNN base (4.6x) pero sigue teniendo limitaciones frente a métodos tradicionales en escenarios de desbalanceo extremo.
+
+La optimización bayesiana con Optuna demostró ser una herramienta fundamental para ajustar bien las arquitecturas SNN complejas, permitiendo explorar sistemáticamente el espacio de hiperparámetros neuronales y convolucionales. El modelo presenta características arquitecturales que sugieren potencial para aplicaciones de edge computing, especialmente cuando se despliegue en hardware neuromórfico dedicado donde las ventajas energéticas pueden aprovecharse plenamente, aunque hace falta hacer mediciones específicas de rendimiento temporal en futuros trabajos.
+
+La metodología desarrollada sienta bases sólidas para trabajos futuros en detección de anomalías con SNNs, proporcionando un flujo reproducible de preprocesamiento, optimización y evaluación que se puede extender a otros dominios y arquitecturas neuromórficas más avanzadas.
+Estos hallazgos apoyan la hipótesis de que integrar mecanismos convolucionales y optimización sistemática reduce la brecha entre SNN y enfoques ANN tradicionales para detección de anomalías en series temporales.
+
+\section{Trabajos futuros}
+% Estructurar en líneas de investigación priorizadas.
+
+\subsection{Evaluación energética y despliegue neuromórfico}
+\label{subsec:trabajo-futuro-neuromorfico}
+Línea prioritaria para validar empíricamente las estimaciones de eficiencia ejecutando en hardware neuromórfico dedicado:
+\begin{itemize}
+    \item \textbf{Plataformas candidatas}: Intel Loihi 2, SpiNNaker 2, BrainScaleS-2, chips basados en memristores emergentes.
+    \item \textbf{Portado del modelo}: Conversión de parámetros LIF y topología a formato compatible (e.g. NxSDK / Lava para Loihi).
+    \item \textbf{Métricas energéticas}: Joules por inferencia, mW promedio, latencia por ventana \(T\), escalabilidad en número de neuronas vs. consumo.
+    \item \textbf{Comparativa energética}: Medición directa frente a implementaciones GPU/CPU para cuantificar las ventajas reales del paradigma neuromórfico.
+\end{itemize}
+
+\subsection{Optimización técnica}
+\begin{itemize}
+    \item \textbf{Validación cruzada temporal}: Implementar estrategias como rolling-origin o nested backtesting para hacer más robusta la estimación de generalización.
+    \item \textbf{Optimización multiobjetivo}: Extender la optimización con Optuna a objetivos conjuntos (F1 y coste computacional/MACs), usando algoritmos como NSGA-II.
+    \item \textbf{Datasets multivariantes industriales}: Incorporar señales de vibración, temperatura y presión para validar la aplicabilidad en mantenimiento predictivo real.
+\end{itemize}
+
+\subsection{Despliegue y monitorización neuromórfica}
+Integración específica para sistemas SNN en producción:
+\begin{itemize}
+    \item \textbf{Monitorización de dispersidad}: Seguimiento continuo de patrones de actividad neuronal para detectar degradación de eficiencia o deriva del comportamiento.
+    \item \textbf{Re-calibración de umbrales}: Ajuste automático de umbrales neuronales basado en la distribución reciente de impulsos para mantener sensitividad sin re-entrenar completamente.
+    \item \textbf{Despliegue edge}: Empaquetado optimizado para microcontroladores con soporte SNN nativo (e.g. neuromorphic inference engines) incluyendo cuantización de parámetros sinápticos.
+    \item \textbf{Flujo neuromórfico}: Versionado de topologías de red y pesos sinápticos con herramientas específicas para arquitecturas basadas en impulsos.
+\end{itemize}
+
+% \subsection{Aplicabilidad práctica}
+% \begin{itemize}
+%     \item \textbf{Sistemas híbridos SNN-ANN}: Implementar capas de post-procesado tradicionales sobre representaciones SNN para mejorar precisión manteniendo eficiencia en inferencia.
+%     \item \textbf{Análisis de explicabilidad}: Desarrollar técnicas de interpretación específicas para patrones temporales de impulsos en el contexto de detección de anomalías.
+%     \item \textbf{Optimización de codificación}: Evaluar impacto de diferentes estrategias de cuantización temporal y espacial en la calidad de representación y eficiencia computacional.
+% \end{itemize>

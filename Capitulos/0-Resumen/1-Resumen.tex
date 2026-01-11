@@ -1,0 +1,35 @@
+\chapter*{Resumen}
+\addcontentsline{toc}{chapter}{Resumen}
+\label{chap:resumen}
+
+La detección de anomalías en series temporales es un problema transversal que afecta a múltiples sectores, desde la supervisión de redes hasta el mantenimiento predictivo de infraestructuras críticas. Los enfoques tradicionales resultan eficaces, pero presentan limitaciones en eficiencia energética y escalabilidad, especialmente en escenarios de dispositivos con recursos restringidos.
+
+Este Trabajo Fin de Máster desarrolla y optimiza una arquitectura híbrida SNN-CNN para la detección de anomalías en series temporales, con énfasis en sostenibilidad computacional y eficiencia energética. Las SNN resultan especialmente prometedoras al aproximar la dinámica del cerebro y favorecer, por su activación esporádica, un consumo energético potencialmente inferior.
+
+La propuesta parte de una SNN base (A--B) y añade una capa convolucional optimizable (A--B--C) con núcleos parametrizables (gaussiano, laplaciano, sombrero mexicano, caja) y distintos modos de procesamiento (directo, suma ponderada, máximo). El objetivo es combinar la extracción espacial propia de las redes convolucionales con la eficiencia temporal asíncrona de las SNN.
+
+Para la búsqueda de hiperparámetros se emplea optimización bayesiana con Optuna TPE, ejecutando 100 pruebas por configuración en tres tamaños de red (100, 200 y 400 neuronas). El flujo de preprocesamiento, plenamente reproducible, incluye cuantización dinámica por cuantiles expandidos, expansión de etiquetas para mitigar el desequilibrio temporal y segmentación en ventanas de longitud T=250.
+
+El análisis de resultados obtenidos confirma que los parámetros neuronales (threshold, decay) y de plasticidad (nu1, nu2) son los más influyentes. Los parámetros convolucionales (kernel\_size, sigma) se sitúan a continuación, lo que refuerza que la dinámica LIF desempeña un papel clave en el rendimiento del modelo.
+
+Las principales contribuciones son: (1) una arquitectura híbrida SNN-CNN optimizable de forma automática; (2) un flujo de preprocesamiento reproducible adaptado a las SNN; (3) evidencia empírica de que la hibridación mejora de forma notable el rendimiento en conjuntos de datos desequilibrados; y (4) una metodología comparativa que puede servir de base para trabajos posteriores en el área.
+
+En conjunto, el trabajo demuestra el potencial de las arquitecturas híbridas SNN-CNN para la detección de anomalías, al ofrecer un buen equilibrio entre rendimiento y eficiencia computacional, lo que las posiciona como una alternativa viable para aplicaciones de tiempo real en entornos con restricciones energéticas.
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\label{chap:resumen}
+
+Anomaly detection in time series is a cross-cutting problem affecting multiple sectors, from network monitoring to predictive maintenance of critical infrastructures. Traditional approaches are effective but present limitations in energy efficiency and scalability, especially in scenarios with resource-constrained devices.
+
+This Master's Thesis develops and optimizes a hybrid SNN-CNN architecture for time series anomaly detection, with emphasis on computational sustainability and energy efficiency. SNNs are particularly promising as they approximate brain dynamics and favor, through their sparse activation, potentially lower energy consumption.
+
+The proposal starts from a base SNN (A--B) and adds an optimizable convolutional layer (A--B--C) with parametrizable kernels (Gaussian, Laplacian, Mexican hat, box) and different processing modes (direct, weighted sum, maximum). The goal is to combine the spatial extraction characteristic of convolutional networks with the asynchronous temporal efficiency of SNNs.
+
+For hyperparameter search, Bayesian optimization with Optuna TPE is employed, executing 100 trials per configuration across three network sizes (100, 200, and 400 neurons). The fully reproducible preprocessing workflow includes dynamic quantization by expanded quantiles, label expansion to mitigate temporal imbalance, and segmentation into windows of length T=250.
+
+Analysis of obtained results confirms that neural parameters (threshold, decay) and plasticity parameters (nu1, nu2) are the most influential. Convolutional parameters (kernel\_size, sigma) follow, which reinforces that LIF dynamics play a key role in model performance.
+
+The main contributions are: (1) an automatically optimizable hybrid SNN-CNN architecture; (2) a reproducible preprocessing workflow adapted to SNNs; (3) empirical evidence that hybridization notably improves performance on imbalanced datasets; and (4) a comparative methodology that can serve as a foundation for subsequent work in the area.
+
+Overall, this work demonstrates the potential of hybrid SNN-CNN architectures for anomaly detection, offering a favorable balance between performance and computational efficiency, which positions them as a viable alternative for real-time applications in energy-constrained environments.

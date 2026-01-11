@@ -104,7 +104,7 @@ Publisher: Multidisciplinary Digital Publishing Institute},
   author = {{Talent.com}},
   title = {Salario},
   url = {https://es.talent.com/salary?job=data},
-  urldate = {2024-08-16}, % Reemplaza con la fecha de acceso actual
+  urldate = {2024-08-16},
   year = {2024},
 }
 
@@ -311,10 +311,15 @@ Publisher: Multidisciplinary Digital Publishing Institute},
 	keywords = {Computer Science - Social and Information Networks},
 }
 %[20]
-@online{noauthor_180703748_nodate,
-	title = {[1807.03748] Representation Learning with Contrastive Predictive Coding},
+@misc{oord_representation_2018,
+	title = {Representation Learning with Contrastive Predictive Coding},
 	url = {https://arxiv.org/abs/1807.03748},
+	author = {van den Oord, Aaron and Li, Yazhe and Vinyals, Oriol},
 	urldate = {2025-06-18},
+	date = {2018-07},
+	eprinttype = {arxiv},
+	eprint = {1807.03748},
+	doi = {10.48550/arXiv.1807.03748},
 }
 %[21]
 @inproceedings{zhang_skip-step_2024,
@@ -333,12 +338,14 @@ Publisher: Multidisciplinary Digital Publishing Institute},
 }
 %3.4 Métodos de optimización y ajuste de hiperparámetros
 %[22]
-@online{noauthor_adaptation_nodate,
-	title = {Adaptation in Natural and Artificial Systems (John H. Holland) - {ProQuest}},
-	url = {https://www.proquest.com/openview/c78067a39019fb29daf134cf5dfbb2d6/1?pq-origsite=gscholar&cbl=30748},
-	abstract = {Explore millions of resources from scholarly journals, books, newspapers, videos and more, on the {ProQuest} Platform.},
-	urldate = {2025-06-18},
-	langid = {english},
+@book{holland_adaptation_1992,
+	title = {Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control, and Artificial Intelligence},
+	author = {Holland, John H.},
+	publisher = {MIT Press},
+	address = {Cambridge, MA, USA},
+	year = {1992},
+	edition = {2nd},
+	isbn = {978-0262082136},
 }
 %[23]
 @inproceedings{snoek_practical_2012,
@@ -584,12 +591,14 @@ Publisher: Multidisciplinary Digital Publishing Institute},
 	keywords = {{ANN}, {ANN}-to-{SNN} conversion, {CNN}, {NoC}, {SNN}, artificial neural network, convolutional neural network, low energy, network-on-chip, spiking neural network},
 }
 %[39]
-@online{noauthor_optuna_nodate,
+@online{kaushik_optuna_2024,
 	title = {Optuna: The Smarter Way to Optimize Your Machine Learning Models},
+	author = {Kaushik, Dhrubajyoti},
 	url = {https://www.linkedin.com/pulse/optuna-smarter-way-optimize-your-machine-learning-models-kaushik-unjqc},
 	shorttitle = {Optuna},
-	abstract = {1. Introduction "Ever feel like you’re stuck in a loop when tuning hyperparameters for your machine learning models? You try different combinations of values, test them, and repeat.},
+	abstract = {1. Introduction "Ever feel like you're stuck in a loop when tuning hyperparameters for your machine learning models? You try different combinations of values, test them, and repeat.},
 	urldate = {2025-06-19},
+	date = {2024},
 	langid = {english},
 }
 %[40]
@@ -605,8 +614,9 @@ Publisher: Multidisciplinary Digital Publishing Institute},
 	doi = {10.1016/j.neucom.2024.128483},
 }
 %[41]
-@online{noauthor_efficient_2021,
+@online{broutonlab_efficient_2021,
 	title = {Efficient Hyperparameter Optimization with Optuna Framework},
+	author = {{BroutonLab}},
 	url = {https://broutonlab.com/blog/efficient-hyperparameter-optimization-with-optuna-framework/},
 	abstract = {Hyperparameters optimization is an essential part of machine learning and deep learning projects. Manually selecting the best hyperparameters is not easy. This is the case especially for complex models such as neural networks.},
 	titleaddon = {{BroutonLab} Blog},
@@ -631,6 +641,27 @@ Publisher: Multidisciplinary Digital Publishing Institute},
 	urldate = {2025-06-19},
 	date = {2019-12},
 	langid = {english},
+}
+
+%Referencias sobre modelos LIF y neurociencia computacional
+%[43]
+@book{gerstner2014neuronal,
+	title = {Neuronal Dynamics: From Single Neurons to Networks and Models of Cognition},
+	author = {Gerstner, Wulfram and Kistler, Werner M. and Naud, Richard and Paninski, Liam},
+	year = {2014},
+	publisher = {Cambridge University Press},
+	address = {Cambridge, UK},
+	isbn = {978-1-107-06083-8},
+	url = {https://neuronaldynamics.epfl.ch/}
+}
+%[44]
+@book{dayan2001theoretical,
+	title = {Theoretical Neuroscience: Computational and Mathematical Modeling of Neural Systems},
+	author = {Dayan, Peter and Abbott, Laurence F.},
+	year = {2001},
+	publisher = {MIT Press},
+	address = {Cambridge, MA},
+	isbn = {978-0-262-04199-7}
 }
 
 
@@ -710,4 +741,63 @@ Publisher: Multidisciplinary Digital Publishing Institute},
   pages        = {230--246},
   year         = {2020},
   url          = {https://proceedings.mlsys.org/paper/2020/file/76dc611d6ebaafc66cc0879c71b5db5c-Paper.pdf}
+}
+@article{AGUILERAMARTOS2023223,
+  title        = {{TSFEDL}: A python library for time series spatio-temporal feature extraction and prediction using deep learning},
+  journal      = {Neurocomputing},
+  volume       = {517},
+  pages        = {223--228},
+  year         = {2023},
+  doi          = {10.1016/j.neucom.2022.10.062},
+  author       = {Aguilera-Martos, Ignacio and Garc{\'i}a-Vico, {\'A}ngel M. and Luengo, Juli{\'a}n and Damas, Sergio and Melero, Francisco J. and Valle-Alonso, Jos{\'e} Javier and Herrera, Francisco}
+}
+@article{OHSHU2022,
+  title        = {Automated diagnosis of arrhythmia using combination of CNN and LSTM techniques with variable length heart beats},
+  author       = {Oh, Shu Lih and Ng, Eddie Y. K. and San Tan, Ru and Acharya, U. Rajendra},
+  journal      = {Computers in Biology and Medicine},
+  volume       = {102},
+  pages        = {278--287},
+  year         = {2018},
+  doi          = {10.1016/j.compbiomed.2018.06.002},
+  note         = {Implementado en librería TSFEDL}
+}
+@article{KHAN2022,
+  title        = {A novel CNN-GRU-based hybrid approach for short-term residential load forecasting},
+  author       = {Sajjad, M. and Khan, Z. A. and Ullah, A. and Hussain, T. and Ullah, W. and Lee, M. Y. and Baik, S. W.},
+  journal      = {IEEE Access},
+  volume       = {8},
+  pages        = {143759--143768},
+  year         = {2020},
+  doi          = {10.1109/ACCESS.2020.3009537},
+  note         = {Implementado en librería TSFEDL}
+}
+@article{ZHENG2022,
+  title        = {An automatic diagnosis of arrhythmias using a combination of CNN and LSTM technology},
+  author       = {Zheng, Z. and Chen, Z. and Hu, F. and Zhu, J. and Tang, Q. and Liang, Y.},
+  journal      = {Electronics},
+  volume       = {9},
+  number       = {1},
+  pages        = {121},
+  year         = {2020},
+  doi          = {10.3390/electronics9010121},
+  note         = {Implementado en librería TSFEDL}
+}
+@article{WEI2022,
+  title        = {Early prediction of epileptic seizures using a long-term recurrent convolutional network},
+  author       = {Wei, Xiaoyan and Zhou, Limeng and Chen, Zhenghua and Zhang, Luping},
+  journal      = {Journal of Neuroscience Methods},
+  volume       = {327},
+  pages        = {108395},
+  year         = {2019},
+  doi          = {10.1016/j.jneumeth.2019.108395},
+  note         = {Implementado en librería TSFEDL}
+}
+
+% Vacuum Spiker - Arquitectura SNN base de referencia
+@misc{vazquez_vacuum_2024,
+  title        = {Vacuum Spiker: A Spiking Neural Network-Based Model for Efficient Anomaly Detection in Time Series},
+  author       = {V{\'a}zquez, I. X. and Sedano, J. and Afzal, M. and Garc{\'i}a-Vico, A. M.},
+  year         = {2024},
+  howpublished = {\url{https://arxiv.org/abs/2510.06910}},
+  note         = {arXiv:2510.06910 [cs.NE]}
 }

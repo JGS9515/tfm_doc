@@ -1,0 +1,3585 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.6.26)  29 DEC 2025 12:35
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-05-26>
+(C:\Program Files\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count275
+\c@chapter=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/05/14 v25.9 The multilingual framework for pdfLaTeX, LuaLaT
+eX and XeLaTeX
+\babel@savecnt=\count284
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2043.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2045.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2047.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2048.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2049.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2051.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2076.
+\U@D=\dimen149
+\l@unhyphenated=\language79
+
+(C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count285
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/babel-spanish\spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+
+(C:\Program Files\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+)
+\es@quottoks=\toks17
+\es@quotdepth=\count286
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) 
+on input line 4.
+LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1)
+ on input line 4.
+
+(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\enitkv@toks@=\toks20
+\labelindent=\skip51
+\enit@outerparindent=\dimen150
+\enit@toks=\toks21
+\enit@inbox=\box53
+\enit@count@id=\count287
+\enitdp@description=\count288
+)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2025-05-20 v7.01m Hypertext links for LaTeX
+
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.s
+ty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestri
+ng.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count289
+)
+(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count290
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen151
+\Hy@linkcounter=\count291
+\Hy@pagecounter=\count292
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2025-05-20 v7.01m Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count293
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2025-05-20 v7.01m Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4040.
+Package hyperref Info: Hyper figures OFF on input line 4157.
+Package hyperref Info: Link nesting OFF on input line 4162.
+Package hyperref Info: Hyper index ON on input line 4165.
+Package hyperref Info: Plain pages OFF on input line 4172.
+Package hyperref Info: Backreferencing OFF on input line 4177.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4424.
+\c@Hy@tempcnt=\count294
+
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen152
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count295
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring ON on input line 6060.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+(C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count296
+\c@Item=\count297
+\c@Hfootnote=\count298
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2025-05-20 v7.01m Hyperref driver for pdfTeX
+\Fld@listcount=\count299
+\c@bookmark@seq@number=\count300
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck
+.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter
+.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip52
+) (C:\Program Files\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks23
+\pgfutil@tempdima=\dimen155
+\pgfutil@tempdimb=\dimen156
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box54
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen157
+\Gin@req@width=\dimen158
+)
+(C:\Program Files\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.
+tex
+\pgfkeys@tmptoks=\toks26
+))
+\pgf@x=\dimen159
+\pgf@y=\dimen160
+\pgf@xa=\dimen161
+\pgf@ya=\dimen162
+\pgf@xb=\dimen163
+\pgf@yb=\dimen164
+\pgf@xc=\dimen165
+\pgf@yc=\dimen166
+\pgf@xd=\dimen167
+\pgf@yd=\dimen168
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count301
+\c@pgf@countb=\count302
+\c@pgf@countc=\count303
+\c@pgf@countd=\count304
+\t@pgf@toka=\toks27
+\t@pgf@tokb=\toks28
+\t@pgf@tokc=\toks29
+\pgf@sys@id@count=\count305
+ (C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count306
+\pgfsyssoftpath@bigbuffer@items=\count307
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen169
+\pgfmath@count=\count308
+\pgfmath@box=\box55
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.co
+de.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.
+tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmeti
+cs.code.tex) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex
+) (C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count309
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfint.code.tex)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen170
+\pgf@picmaxx=\dimen171
+\pgf@picminy=\dimen172
+\pgf@picmaxy=\dimen173
+\pgf@pathminx=\dimen174
+\pgf@pathmaxx=\dimen175
+\pgf@pathminy=\dimen176
+\pgf@pathmaxy=\dimen177
+\pgf@xx=\dimen178
+\pgf@xy=\dimen179
+\pgf@yx=\dimen180
+\pgf@yy=\dimen181
+\pgf@zx=\dimen182
+\pgf@zy=\dimen183
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.t
+ex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen184
+\pgf@path@lasty=\dimen185
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen186
+\pgf@shorten@start@additional=\dimen187
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count310
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.te
+x
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen188
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code
+.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen189
+\pgf@pt@y=\dimen190
+\pgf@pt@temp=\dimen191
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.
+tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen192
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen193
+\pgf@sys@shading@range@num=\count311
+\pgf@shadingcount=\count312
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box59
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.te
+x
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Program Files\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box60
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen194
+\pgf@nodesepend=\dimen195
+)
+(C:\Program Files\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgffor.sty
+(C:\Program Files\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex))
+(C:\Program Files\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Program Files\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen196
+\pgffor@skip=\dimen197
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.
+tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count313
+\pgfplotmarksize=\dimen198
+)
+\tikz@lastx=\dimen199
+\tikz@lasty=\dimen256
+\tikz@lastxsaved=\dimen257
+\tikz@lastysaved=\dimen258
+\tikz@lastmovetox=\dimen259
+\tikz@lastmovetoy=\dimen260
+\tikzleveldistance=\dimen261
+\tikzsiblingdistance=\dimen262
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count314
+\tikznumberofchildren=\count315
+\tikznumberofcurrentchild=\count316
+\tikz@fig@count=\count317
+ (C:\Program Files\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count318
+\pgfmatrixcurrentcolumn=\count319
+\pgf@matrix@numberofcolumns=\count320
+)
+\tikz@expandcount=\count321
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.t
+ex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen263
+\pgfarrowlength=\dimen264
+\pgfarrowwidth=\dimen265
+\pgfarrowlinewidth=\dimen266
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+rypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (config.tex
+
+! LaTeX Error: Option clash for package color.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage
+               {graphicx}
+The package color has already been loaded with options:
+  []
+There has now been an attempt to load it with options
+  [usenames, dvipsnames]
+Adding the global options:
+  ,usenames, dvipsnames
+to your \documentclass declaration may fix this.
+Try typing  <return>  to proceed.
+
+(C:\Program Files\MiKTeX\tex/latex/tools\enumerate.sty
+Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
+\@enLab=\toks35
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip53
+\multirow@cntb=\count322
+\multirow@dima=\skip54
+\bigstrutjot=\dimen267
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count323
+\c@@ppsavesec=\count324
+\c@@ppsaveapp=\count325
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/tocbibind\tocbibind.sty
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has chapter divisions on input line 50.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/wrapfig\wrapfig.sty
+\wrapoverhang=\dimen268
+\WF@size=\dimen269
+\c@WF@wrappedlines=\count326
+\WF@box=\box65
+\WF@everypar=\toks36
+Package: wrapfig 2003/01/31  v 3.6
+)
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geom
+etric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc
+.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symb
+ols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arro
+ws.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.callouts.code.tex
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.call
+outs.code.tex))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.mult
+ipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box66
+\pgfnodeparttwobox=\box67
+\pgfnodepartthreebox=\box68
+\pgfnodepartfourbox=\box69
+\pgfnodeparttwentybox=\box70
+\pgfnodepartnineteenbox=\box71
+\pgfnodeparteighteenbox=\box72
+\pgfnodepartseventeenbox=\box73
+\pgfnodepartsixteenbox=\box74
+\pgfnodepartfifteenbox=\box75
+\pgfnodepartfourteenbox=\box76
+\pgfnodepartthirteenbox=\box77
+\pgfnodeparttwelvebox=\box78
+\pgfnodepartelevenbox=\box79
+\pgfnodeparttenbox=\box80
+\pgfnodepartninebox=\box81
+\pgfnodeparteightbox=\box82
+\pgfnodepartsevenbox=\box83
+\pgfnodepartsixbox=\box84
+\pgfnodepartfivebox=\box85
+)))
+(C:\Program Files\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibra
+ryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(C:\Program Files\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen270
+))
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen271
+\captionmargin=\dimen272
+\caption@leftmargin=\dimen273
+\caption@rightmargin=\dimen274
+\caption@width=\dimen275
+\caption@indent=\dimen276
+\caption@parindent=\dimen277
+\caption@hangindent=\dimen278
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count327
+\c@continuedfloat=\count328
+Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count329
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count330
+)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/06/16 v2.17y AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks37
+\ex@=\dimen279
+))
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen280
+)
+(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count331
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count332
+\leftroot@=\count333
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count334
+\DOTSCASE@=\count335
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box86
+\strutbox@=\box87
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen281
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count336
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count337
+\dotsspace@=\muskip18
+\c@parentequation=\count338
+\dspbrk@lvl=\count339
+\tag@help=\toks38
+\row@=\count340
+\column@=\count341
+\maxfields@=\count342
+\andhelp@=\toks39
+\eqnshift@=\dimen282
+\alignsep@=\dimen283
+\tagshift@=\dimen284
+\tagwidth@=\dimen285
+\totwidth@=\dimen286
+\lineht@=\dimen287
+\@envbody=\toks40
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks41
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/amscls\amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks42
+\thm@bodyfont=\toks43
+\thm@headfont=\toks44
+\thm@notefont=\toks45
+\thm@headpunct=\toks46
+\thm@preskip=\skip58
+\thm@postskip=\skip59
+\thm@headsep=\skip60
+\dth@everypar=\toks47
+)
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/03/12 v0.6f Insert pages of external PDF documents (AM)
+
+(C:\Program Files\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count343
+\calc@Bcount=\count344
+\calc@Adimen=\dimen288
+\calc@Bdimen=\dimen289
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count345
+\calc@Cskip=\skip63
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen290
+\ESO@tempdimb=\dimen291
+)
+\AM@pagewidth=\dimen292
+\AM@pageheight=\dimen293
+\AM@fboxrule=\dimen294
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2025/03/12 v0.6f Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count346
+\AM@pagebox=\box88
+\AM@global@opts=\toks48
+\AM@pagecnt=\count347
+\AM@toc@title=\toks49
+\AM@lof@heading=\toks50
+\c@AM@survey=\count348
+\AM@templatesizebox=\box89
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(C:\Program Files\MiKTeX\tex/latex/base\flafter.sty
+Package: flafter 2025/06/08 v1.4y Standard LaTeX floats after reference (FMi)
+Applying: [2025/06/01] float order in 2-column on input line 49.
+Already applied: [2015/01/01] float order in 2-column on input line 152.
+Already applied: [0000/00/00] float order in 2-column on input line 254.
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/hyphenat\hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language80
+LaTeX Info: Redefining \_ on input line 43.
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+
+(C:\Program Files\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Program Files\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks51
+\XKV@tempa@toks=\toks52
+)
+\XKV@depth=\count349
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/collectbox\collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box90
+)
+\tc@llx=\dimen295
+\tc@lly=\dimen296
+\tc@urx=\dimen297
+\tc@ury=\dimen298
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen299
+\adjbox@Height=\dimen300
+\adjbox@Depth=\dimen301
+\adjbox@Totalheight=\dimen302
+\adjbox@pwidth=\dimen303
+\adjbox@pheight=\dimen304
+\adjbox@pdepth=\dimen305
+\adjbox@ptotalheight=\dimen306
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count350
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box91
+\sift@deathcycles=\count351
+\@vwid@loff=\dimen307
+\@vwid@roff=\dimen308
+)
+==> First Aid for varwidth.sty applied!
+) (C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/anysize\anysize.sty
+Package: anysize 1994/08/13 setting margin sizes
+
+document style option `anysize' loaded
+Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
+Version 1.0, Aug 13, 1994
+\@Leftmargin=\dimen309
+\@Rightmargin=\dimen310
+\@Topmargin=\dimen311
+\@Bottommargin=\dimen312
+) (C:\Program Files\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/svg\svg.sty
+Package: svg 2020/11/26 v2.02k (include SVG pictures)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2025/06/04 v3.45 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2025/06/04 v3.45 KOMA-Script package (file load hooks)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+Package: scrlfile-hook 2025/06/04 v3.45 KOMA-Script package (using LaTeX hooks)
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2025/06/04 v3.45 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 370.
+)
+(C:\Program Files\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\shellesc.sty
+Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 77.
+)
+\c@svg@param@lastpage=\count352
+\svg@box=\box92
+\c@svg@param@currpage=\count353
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/transparent\transparent.sty
+Package: transparent 2022-10-27 v1.5 Transparency with color stacks
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/transparent\transparent-nomet
+adata.sty
+Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color
+ stack (HO)
+ (C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+))) (C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/emptypage\emptypage.sty
+Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
+pages
+)
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen313
+\lightrulewidth=\dimen314
+\cmidrulewidth=\dimen315
+\belowrulesep=\dimen316
+\belowbottomsep=\dimen317
+\aboverulesep=\dimen318
+\abovetopsep=\dimen319
+\cmidrulesep=\dimen320
+\cmidrulekern=\dimen321
+\defaultaddspace=\dimen322
+\@cmidla=\count354
+\@cmidlb=\count355
+\@aboverulesep=\dimen323
+\@belowrulesep=\dimen324
+\@thisruleclass=\count356
+\@lastruleclass=\count357
+\@thisrulewidth=\dimen325
+)
+(C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+
+(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+\col@sep=\dimen326
+\ar@mcellbox=\box93
+\extrarowheight=\dimen327
+\NC@list=\toks53
+\extratabsurround=\skip64
+\backup@length=\skip65
+\ar@cellbox=\box94
+)
+\TX@col@width=\dimen328
+\TX@old@table=\dimen329
+\TX@old@col=\dimen330
+\TX@target=\dimen331
+\TX@delta=\dimen332
+\TX@cols=\count358
+\TX@ftn=\toks54
+)
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \usepackage
+                {makeidx}
+Classes and packages should only be loaded at the top level
+
+(C:\Program Files\MiKTeX\tex/latex/base\makeidx.sty
+Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
+)
+\@indexfile=\write4
+\openout4 = `main.idx'.
+
+
+Writing index file main.idx
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \usepackage
+                [T1]{fontenc}
+Classes and packages should only be loaded at the top level
+
+(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+)
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \usepackage
+                {helvet}
+Classes and packages should only be loaded at the top level
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/psnfss\helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \RequirePackage
+                    {keyval}
+Classes and packages should only be loaded at the top level
+
+)
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \usepackage
+                {fancyhdr}
+Classes and packages should only be loaded at the top level
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip66
+\f@nch@offset@elh=\skip67
+\f@nch@offset@erh=\skip68
+\f@nch@offset@olh=\skip69
+\f@nch@offset@orh=\skip70
+\f@nch@offset@elf=\skip71
+\f@nch@offset@erf=\skip72
+\f@nch@offset@olf=\skip73
+\f@nch@offset@orf=\skip74
+\f@nch@height=\skip75
+\f@nch@footalignment=\skip76
+\f@nch@widthL=\skip77
+\f@nch@widthC=\skip78
+\f@nch@widthR=\skip79
+\@temptokenb=\toks55
+)
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 \usepackage
+                [absolute,overlay]{textpos}
+Classes and packages should only be loaded at the top level
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/textpos\textpos.sty
+Package: textpos 2022/07/23 v1.10.1
+Package textpos Info: choosing support for LaTeX3 on input line 60.
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \RequirePackage
+                    {keyval}
+Classes and packages should only be loaded at the top level
+
+\TP@textbox=\box95
+\TP@holdbox=\box96
+\TPHorizModule=\dimen333
+\TPVertModule=\dimen334
+\TP@margin=\dimen335
+\TP@absmargin=\dimen336
+Grid set 16 x 16 = 37.34424pt x 52.81541pt
+\TPboxrulesize=\dimen337
+\TP@ox=\dimen338
+\TP@oy=\dimen339
+\TP@tbargs=\toks56
+TextBlockOrigin set to 0pt x 0pt
+))
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 13
+.
+ (C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count359
+) (main.aux
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported  on input line 13.
+
+
+LaTeX Warning: Label `chap:resumen' multiply defined.
+
+
+LaTeX Warning: Label `tab:resultados-iops-escalabilidad' multiply defined.
+
+
+LaTeX Warning: Label `tab:resultados-iops' multiply defined.
+
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{document}
+                     
+Classes and packages should only be loaded at the top level
+
+Package hyperref Info: Link coloring ON on input line 13.
+(main.out) (main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count360
+\scratchdimen=\dimen340
+\scratchbox=\box97
+\nofMPsegments=\count361
+\nofMParguments=\count362
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count363
+\MPscratchDim=\dimen341
+\MPnumerator=\count364
+\makeMPintoPDFobject=\count365
+\everyMPtoPDFconversion=\toks58
+)
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{document}
+                     
+Classes and packages should only be loaded at the top level
+
+(C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.178   \RequirePackage
+                       {infwarerr}[2007/09/09]
+Classes and packages should only be loaded at the top level
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.179   \RequirePackage
+                       {grfext}\relax
+Classes and packages should only be loaded at the top level
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 \RequirePackage
+                     {infwarerr}[2007/09/09]
+Classes and packages should only be loaded at the top level
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.255 \RequirePackage
+                     {kvdefinekeys}[2010/03/01]
+Classes and packages should only be loaded at the top level
+
+)
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180   \RequirePackage
+                       {kvoptions}[2007/10/02]
+Classes and packages should only be loaded at the top level
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.181   \RequirePackage
+                       {pdftexcmds}[2007/11/11]
+Classes and packages should only be loaded at the top level
+
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{document}
+                     
+Classes and packages should only be loaded at the top level
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 ...ePackageWithOptions{pdflscape-nometadata}}
+                                                  
+Classes and packages should only be loaded at the top level
+
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/pdflscape\pdflscape-nometadat
+a.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \RequirePackage
+                    {iftex}[2019/11/07]%
+Classes and packages should only be loaded at the top level
+
+
+! LaTeX Error: Loading a class or package in a group.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \RequirePackage
+                    {lscape}
+Classes and packages should only be loaded at the top level
+
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+<Licencias/width_550.png, id=166, 551.05875pt x 192.72pt>
+File: Licencias/width_550.png Graphic file (type png)
+<use Licencias/width_550.png>
+Package pdftex.def Info: Licencias/width_550.png  used on input line 28.
+(pdftex.def)             Requested size: 85.35826pt x 29.8507pt.
+
+
+pdfTeX warning: pdflatex (file ./PDF/PortadaTFM.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<PDF/PortadaTFM.pdf, id=168, 597.19112pt x 845.19763pt>
+File: PDF/PortadaTFM.pdf Graphic file (type pdf)
+<use PDF/PortadaTFM.pdf>
+Package pdftex.def Info: PDF/PortadaTFM.pdf  used on input line 28.
+(pdftex.def)             Requested size: 597.18967pt x 845.19557pt.
+
+
+pdfTeX warning: pdflatex (file ./PDF/PortadaTFM.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex (file ./PDF/PortadaTFM.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<PDF/PortadaTFM.pdf, id=170, page=1, 597.19112pt x 845.19763pt>
+File: PDF/PortadaTFM.pdf Graphic file (type pdf)
+<use PDF/PortadaTFM.pdf, page 1>
+Package pdftex.def Info: PDF/PortadaTFM.pdf , page1 used on input line 28.
+(pdftex.def)             Requested size: 597.18967pt x 845.19557pt.
+File: PDF/PortadaTFM.pdf Graphic file (type pdf)
+<use PDF/PortadaTFM.pdf, page 1>
+Package pdftex.def Info: PDF/PortadaTFM.pdf , page1 used on input line 28.
+(pdftex.def)             Requested size: 597.217pt x 845.23425pt.
+File: PDF/PortadaTFM.pdf Graphic file (type pdf)
+<use PDF/PortadaTFM.pdf, page 1>
+Package pdftex.def Info: PDF/PortadaTFM.pdf , page1 used on input line 28.
+(pdftex.def)             Requested size: 597.217pt x 845.23425pt.
+File: PDF/PortadaTFM.pdf Graphic file (type pdf)
+<use PDF/PortadaTFM.pdf, page 1>
+Package pdftex.def Info: PDF/PortadaTFM.pdf , page1 used on input line 28.
+(pdftex.def)             Requested size: 597.217pt x 845.23425pt.
+
+
+File: PDF/PortadaTFM.pdf Graphic file (type pdf)
+<use PDF/PortadaTFM.pdf, page 1>
+Package pdftex.def Info: PDF/PortadaTFM.pdf , page1 used on input line 28.
+(pdftex.def)             Requested size: 597.217pt x 845.23425pt.
+[1
+
+
+{C:/Users/Javier/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program F
+iles/MiKTeX/fonts/enc/dvips/base/8r.enc} <./PDF/PortadaTFM.pdf> <./Licencias/wi
+dth_550.png>]
+
+[2
+
+] (Capitulos/Agradecimientos.tex)
+
+[1]
+
+[2
+
+] (Capitulos/FichaNormas.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
+
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/jknappen\ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+Overfull \hbox (0.80687pt too wide) in paragraph at lines 3--17
+[][] 
+ []
+
+)
+
+[3]
+
+[4
+
+] (main.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+
+[5
+
+])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+
+
+[6] (main.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+
+
+[7
+
+
+]
+
+[8
+
+] (main.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+
+Underfull \hbox (badness 1675) in paragraph at lines 6--6
+ [][] [][][]\T1/phv/m/n/12 Comparación de ren-di-mien-to en-tre mé-to-dos es-ta
+-dís-ti-cos y re-des 
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 11--11
+ [][] [][][]\T1/phv/m/n/12 Comparativa prin-ci-pal de ver-sio-nes de soft-wa-re
+ en-tre TS-FEDL y 
+ []
+
+)
+\tf@lot=\write8
+\openout8 = `main.lot'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[9
+
+]
+
+[10] (Capitulos/Siglas.tex
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 6.
+
+Underfull \hbox (badness 1616) in paragraph at lines 24--25
+   [] \T1/phv/m/sl/12 Eu-ro-pean Cre-dit Trans-fer and Ac-cu-mu-la-tion Sys-tem
+\T1/phv/m/n/12 , Sis-te-ma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--29
+   [] \T1/phv/m/sl/12 In-put/Output Ope-ra-tions Per Se-cond\T1/phv/m/n/12 , Op
+e-ra-cio-nes de
+ []
+
+
+
+[11
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+   [] \T1/phv/m/sl/12 Nu-men-ta Ano-maly Bench-mark\T1/phv/m/n/12 , Bench-mark 
+de Ano-ma-lías
+ []
+
+
+Underfull \hbox (badness 4792) in paragraph at lines 56--57
+   [] \T1/phv/m/sl/12 Seasonal-Trend de-com-po-si-tion using Loess\T1/phv/m/n/1
+2 , Des-com-po-si-ción
+ []
+
+
+Underfull \hbox (badness 3590) in paragraph at lines 60--61
+   [] \T1/phv/m/sl/12 Tree-structured Par-zen Es-ti-ma-tor\T1/phv/m/n/12 , Es-t
+i-ma-dor de Par-zen con
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 62--63
+\T1/phv/m/n/12 Ca-rac-te-rís-ti-cas de Se-ries Tem-po-ra-les me-dian-te Apren-d
+i-za-je
+ []
+
+
+Underfull \hbox (badness 2707) in paragraph at lines 64--65
+   [] \T1/phv/m/sl/12 Uni-ver-sity of Ca-li-for-nia, Ri-ver-si-de\T1/phv/m/n/12
+ , Uni-ver-si-dad de Ca-li-for-nia,
+ []
+
+)
+
+[12] (Capitulos/0-Resumen/1-Resumen.tex
+Underfull \hbox (badness 1655) in paragraph at lines 9--10
+\T1/phv/m/n/12 má-xi-mo). El ob-je-ti-vo es com-bi-nar la ex-trac-ción es-pa-ci
+al pro-pia de las re-des
+ []
+
+
+Underfull \hbox (badness 2096) in paragraph at lines 15--16
+[]\T1/phv/m/n/12 Las prin-ci-pa-les con-tri-bu-cio-nes son: (1) una ar-qui-tec-
+tu-ra hí-bri-da SNN-CNN
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.16 
+      [1
+
+
+]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.19 \chapter
+             *{Abstract} [2]
+Underfull \hbox (badness 1005) in paragraph at lines 27--28
+\T1/phv/m/n/12 and dif-fe-rent pro-ces-sing mo-des (di-rect, weigh-ted sum, ma-
+xi-mum). The goal is
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 29--30
+\T1/phv/m/n/12 400 neu-rons). The fully re-pro-du-ci-ble pre-pro-ces-sing work-
+flow in-clu-des dy-na-mic
+ []
+
+) (Capitulos/1-Introduccion/1.0-IntroducciÃ³n.tex
+Underfull \hbox (badness 1577) in paragraph at lines 35--1
+\T1/phv/m/n/12 for ano-maly de-tec-tion, of-fe-ring a fa-vo-ra-ble ba-lan-ce be
+t-ween per-for-man-ce and
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[3
+
+]
+
+[4]
+Cap\'{\i }tulo 1.
+(Capitulos/1-Introduccion/1.1-IntroducciÃ³n.tex
+Underfull \hbox (badness 1484) in paragraph at lines 11--12
+\T1/phv/m/n/12 co-mo au-to-en-co-ders y re-des neu-ro-na-les re-cu-rren-tes han
+ de-mos-tra-do un buen
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 13--14
+[]\T1/phv/m/n/12 Las SNNs apa-re-cen co-mo un en-fo-que in-tere-san-te que in-t
+en-ta imi-tar me-jor
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[5
+
+]
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.26 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.26 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.26 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.26 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.26 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.26 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.26 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.26 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.26 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.26 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.26 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.26 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Underfull \hbox (badness 2376) in paragraph at lines 35--36
+\T1/phv/m/n/12 ar-qui-tec-tu-ras SNNs op-ti-mi-za-das e im-ple-men-tar mo-de-lo
+s sos-te-ni-bles que
+ []
+
+
+
+[6]
+Underfull \hbox (badness 1014) in paragraph at lines 37--38
+\T1/phv/m/n/12 has-ta los en-fo-ques más re-cien-tes de apren-di-za-je pro-fun-
+do. Se exa-mi-nan
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 37--38
+\T1/phv/m/n/12 apren-di-za-je pro-fun-do en de-tec-ción de ano-ma-lías, y la op
+-ti-mi-za-ción de
+ []
+
+
+Underfull \hbox (badness 1314) in paragraph at lines 39--40
+\T1/phv/m/n/12 las hi-pó-te-sis de par-ti-da y las res-tric-cio-nes iden-ti-fi-
+ca-das. Se des-cri-be en
+ []
+
+
+Underfull \hbox (badness 1796) in paragraph at lines 39--40
+\T1/phv/m/n/12 de-sa-rro-lla-dos pa-ra los da-ta-sets IOPS y Ca-lIt2, in-clu-ye
+n-do nor-ma-li-za-ción
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 41--42
+\T1/phv/m/n/12 pro-pues-to. Se des-cri-ben los es-ce-na-rios ex-pe-ri-men-ta-le
+s im-ple-men-ta-dos,
+ []
+
+
+
+[7]) (Capitulos/1-Introduccion/1.4-PlanificaciÃ³n temporal.tex
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 3
+.
+
+(C:\Users\Javier\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1phv.fd
+File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
+)
+Overfull \hbox (1.6028pt too wide) in paragraph at lines 9--25
+ [][] 
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 31--32
+[]\T1/phv/m/n/12 A con-ti-nua-ción, se im-ple-men-ta-rá el mo-de-lo hí-bri-do S
+NN-CNN, aña-dien-do
+ []
+
+
+
+[8]
+<Imagenes/Gantt.png, id=404, 865.0719pt x 715.473pt>
+File: Imagenes/Gantt.png Graphic file (type png)
+<use Imagenes/Gantt.png>
+Package pdftex.def Info: Imagenes/Gantt.png  used on input line 39.
+(pdftex.def)             Requested size: 597.50746pt x 494.17911pt.
+
+Overfull \hbox (38.935pt too wide) in paragraph at lines 39--40
+ [][] 
+ []
+
+)) (Capitulos/2-Fundamentos Teoricos/2.0-Fundamentos.tex
+
+[9]
+
+[10 <./Imagenes/Gantt.png>]
+Cap\'{\i }tulo 2.
+(Capitulos/2-Fundamentos Teoricos/2.1-Fundamentos_estadÃ­sticos.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[11
+
+]) (Capitulos/2-Fundamentos Teoricos/2.3-Deep_learning.tex
+Underfull \hbox (badness 2521) in paragraph at lines 16--1
+[]\T1/phv/m/n/12 La dé-ca-da de 1990 mar-có un avan-ce sig-ni-fi-ca-ti-vo con e
+l de-sa-rro-llo del
+ []
+
+
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/b/n/17.28 Aprendizaje pro-fun-do en la de-tec-ción de
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 4--5
+\T1/phv/m/n/12 ano-ma-lías me-dian-te ar-qui-tec-tu-ras neu-ro-na-les ca-pa-ces
+ de apren-der pa-tro-nes
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 4--5
+\T1/phv/m/n/12 tem-po-ra-les com-ple-jos. Los au-to-en-co-ders pro-fun-dos sur-
+gie-ron co-mo pa-ra-dig-ma
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 10--11
+\T1/phv/m/n/12 je-rár-qui-cas en la de-tec-ción de ano-ma-lías en se-ries tem-p
+o-ra-les mul-ti-va-ria-das,
+ []
+
+
+
+[13]) (Capitulos/2-Fundamentos Teoricos/2.5-SNN.tex
+Underfull \hbox (badness 1205) in paragraph at lines 12--1
+[]\T1/phv/m/n/12 En 2018, ga-nan pro-mi-nen-cia los en-fo-ques de apren-di-za-j
+e au-to-su-per-vi-sa-do,
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 5--6
+[]\T1/phv/m/n/12 Las re-des neu-ro-na-les que co-no-ce-mos, las ANNs tra-di-cio
+-na-les, pro-ce-san
+ []
+
+
+Underfull \hbox (badness 4765) in paragraph at lines 21--21
+[]|\T1/phv/m/n/12 Comunicación en-tre
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 21--21
+[]|\T1/phv/m/n/12 Valores con-ti-nuos (0.0 -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+[]|\T1/phv/m/n/12 Impulsos dis-cre-tos
+ []
+
+
+Underfull \hbox (badness 5862) in paragraph at lines 23--23
+[]|\T1/phv/m/n/12 El mo-men-to exac-to no
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[]|\T1/phv/m/n/12 Solo pro-ce-sa cuan-do
+ []
+
+
+Underfull \vbox (badness 8094) has occurred while \output is active []
+
+
+
+[14]
+
+[15]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.159 ...r de fuga, donde $0 < \alpha < 1$. \alpha
+                                                  $ controla la rapidez con ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+
+[16]
+<Imagenes/Ejemplo ilustrativo de una neurona LIF.png, id=491, 2742.245pt x 2258
+.4375pt>
+File: Imagenes/Ejemplo ilustrativo de una neurona LIF.png Graphic file (type pn
+g)
+<use Imagenes/Ejemplo ilustrativo de una neurona LIF.png>
+Package pdftex.def Info: Imagenes/Ejemplo ilustrativo de una neurona LIF.png  u
+sed on input line 219.
+(pdftex.def)             Requested size: 455.24411pt x 374.90053pt.
+
+Underfull \hbox (badness 2875) in paragraph at lines 233--234
+[]\T1/phv/b/n/12 Positivos (ex-ci-ta-to-rios): \T1/phv/m/n/12 Au-men-tan el vol
+-ta-je de la neu-ro-na re-cep-to-ra,
+ []
+
+
+
+[17]
+Underfull \hbox (badness 2277) in paragraph at lines 239--240
+\T1/phv/m/n/12 ex-ci-ta-to-rias ac-ti-van a otras neu-ro-nas, pro-pa-gan-do in-
+for-ma-ción. Las neu-ro-nas
+ []
+
+) (Capitulos/2-Fundamentos Teoricos/2.7-Eficiencia_energÃ©tica.tex
+Underfull \hbox (badness 3250) in paragraph at lines 4--5
+\T1/phv/m/n/12 sig-ni-fi-ca-ti-vos en tér-mi-nos de con-su-mo ener-gé-ti-co, es
+-pe-cial-men-te cuan-do se
+ []
+
+
+Underfull \hbox (badness 1803) in paragraph at lines 4--5
+\T1/phv/m/n/12 ar-ti-fi-cia-les tra-di-cio-na-les re-quie-ren ope-ra-cio-nes de
+ mul-ti-pli-ca-ción in-ten-si-vas que
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[18 <./Imagenes/Ejemplo ilustrativo de una neurona LIF.png>]
+Underfull \hbox (badness 1769) in paragraph at lines 30--31
+\T1/phv/m/n/12 ope-ra-cio-nes de acu-mu-la-ción en lu-gar de mul-ti-pli-ca-cio-
+nes cos-to-sas [[]]. Es-ta
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[19]
+Underfull \hbox (badness 1147) in paragraph at lines 34--35
+[]\T1/phv/m/n/12 Un es-tu-dio re-cien-te pre-sen-ta una me-to-do-lo-gía de tran
+s-for-mar exi-to-sa-men-te
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+[]\T1/phv/m/n/12 Actualmente exis-ten frá-me-works es-pe-cia-li-za-dos en op-ti
+-mi-zar la
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 40--41
+\T1/phv/m/n/12 hi-per-pa-ra-me-tri-za-ción co-mo es el ca-so de Op-tu-na. Es-te
+ uti-li-za al-go-rit-mos de
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 40--41
+\T1/phv/m/n/12 crí-ti-ca de-bi-do a la com-ple-ja di-ná-mi-ca tem-po-ral en-tre
+ neu-ro-nas y im-pul-sos, la
+ []
+
+
+Underfull \hbox (badness 1231) in paragraph at lines 40--41
+\T1/phv/m/n/12 con sig-ni-fi-ca-ti-va-men-te me-nos eva-lua-cio-nes que mé-to-d
+os tra-di-cio-na-les co-mo la
+ []
+
+
+
+[20]
+Underfull \hbox (badness 1852) in paragraph at lines 42--43
+\T1/phv/m/n/12 más pro-me-te-do-ras, evi-tan-do compu-tacio-nes cos-to-sas e in
+-ne-ce-sa-rias que son
+ []
+
+) (Capitulos/2-Fundamentos Teoricos/2.6-Arquitectura_SNN_base.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]\T1/phv/b/n/17.28 Arquitectura SNN ba-se pa-ra de-tec-ción de
+ []
+
+
+Underfull \vbox (badness 5817) has occurred while \output is active []
+
+
+
+[21]
+Underfull \hbox (badness 1917) in paragraph at lines 18--19
+ []\T1/phv/b/n/12 Capa B (pro-ce-sa-mien-to).[] \T1/phv/m/n/12 Com-pues-ta por 
+100 neu-ro-nas LIF com-ple-ta-men-te
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 22--23
+[]\T1/phv/m/n/12 Conexiones re-cu-rren-tes den-tro de la pro-pia ca-pa B: las n
+eu-ro-nas es-tán
+ []
+
+<Imagenes/Diagrama de capas de SNN Base.png, id=545, 861.2175pt x 797.98125pt>
+File: Imagenes/Diagrama de capas de SNN Base.png Graphic file (type png)
+<use Imagenes/Diagrama de capas de SNN Base.png>
+Package pdftex.def Info: Imagenes/Diagrama de capas de SNN Base.png  used on in
+put line 27.
+(pdftex.def)             Requested size: 364.19667pt x 337.46332pt.
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+
+[22]
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.43 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.43 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.43 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.43 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.43 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+[]\T1/phv/m/n/12 Esta co-di-fi-ca-ción pre-sen-ta ven-ta-jas im-por-tan-tes: es
+ de-ter-mi-nis-ta,
+ []
+
+
+
+[23 <./Imagenes/Diagrama de capas de SNN Base.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
+[]\T1/phv/m/n/12 También se pe-na-li-zan las co-ne-xio-nes ha-cia neu-ro-nas qu
+e dis-pa-ren
+ []
+
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 60.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 60.
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.72 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.72 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.72 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.72 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.72 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 74--75
+[]\T1/phv/m/n/12 El um-bral pue-de es-ta-ble-cer-se me-dian-te aná-li-sis es-ta
+-dís-ti-co de la ac-ti-vi-dad
+ []
+
+
+
+[24]
+Underfull \hbox (badness 6944) in paragraph at lines 81--82
+[]\T1/phv/m/n/12 Ausencia de ex-trac-ción de ca-rac-te-rís-ti-cas je-rár-qui-ca
+s: la co-nec-ti-vi-dad
+ []
+
+) (Capitulos/2-Fundamentos Teoricos/2.8 Conclusiones.tex
+Underfull \hbox (badness 2111) in paragraph at lines 3--4
+[]\T1/phv/m/n/12 La evo-lu-ción des-de mé-to-dos es-ta-dís-ti-cos clá-si-cos ha
+s-ta re-des neu-ro-na-les
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 3--4
+\T1/phv/m/n/12 y efi-cien-cia compu-tacio-nal. Los mé-to-dos de apren-di-za-je 
+pro-fun-do de-mues-tran
+ []
+
+
+
+[25]
+Underfull \hbox (badness 1721) in paragraph at lines 5--6
+\T1/phv/m/n/12 STDP mo-di-fi-ca-do, de-mues-tra via-bi-li-dad del en-fo-que pe-
+ro ex-po-ne li-mi-ta-cio-nes:
+ []
+
+)) (Capitulos/3-Especificacion del trabajo/3.0-Especificaciones.tex
+Underfull \hbox (badness 3209) in paragraph at lines 7--1
+\T1/phv/m/n/12 re-quie-re ar-qui-tec-tu-ras hí-bri-das que com-bi-nen es-tra-té
+-gi-ca-men-te las for-ta-le-zas
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--1
+\T1/phv/m/n/12 de múl-ti-ples en-fo-ques, par-ti-cu-lar-men-te pa-ra apli-ca-ci
+o-nes que de-man-den
+ []
+
+
+
+[26]
+Cap\'{\i }tulo 3.
+(Capitulos/3-Especificacion del trabajo/3.1-Especificaciones_trabajo.tex
+Underfull \hbox (badness 1331) in paragraph at lines 24--25
+\T1/phv/m/n/12 da-ta-sets pú-bli-cos co-mo IOPS y Ca-lIt2 uti-li-za-dos en ex-p
+e-rien-cias pre-vias
+ []
+
+
+
+[27
+
+]
+Underfull \hbox (badness 1189) in paragraph at lines 25--26
+\T1/phv/m/n/12 ex-pe-ri-men-tal de las ven-ta-jas ener-gé-ti-cas de las SNNs fr
+en-te a mé-to-dos
+ []
+
+
+Underfull \hbox (badness 2443) in paragraph at lines 25--26
+\T1/phv/m/n/12 tra-di-cio-na-les re-quie-re hard-wa-re es-pe-cia-li-za-do neu-r
+o-mór-fi-co o me-di-cio-nes
+ []
+
+
+Underfull \hbox (badness 1033) in paragraph at lines 35--36
+\T1/phv/m/n/12 con-vo-lu-cio-na-les con la efi-cien-cia ener-gé-ti-ca inhe-ren-
+te de las SNNs. Es-ta
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 35--36
+\T1/phv/m/n/12 de ca-rac-te-rís-ti-cas es-pa-cia-les de las re-des con-vo-lu-ci
+o-na-les jun-to con el
+ []
+
+
+
+[28]) (Capitulos/3-Especificacion del trabajo/BindsNET.tex
+Underfull \hbox (badness 3907) in paragraph at lines 1--1
+[]\T1/phv/b/n/17.28 Selección de Binds-NET co-mo fra-me-work de
+ []
+
+
+Underfull \hbox (badness 3118) in paragraph at lines 5--6
+[]\T1/phv/m/n/12 Las ca-rac-te-rís-ti-cas téc-ni-cas que de-ter-mi-na-ron es-ta
+ se-lec-ción in-clu-yen su
+ []
+
+) (Capitulos/3-Especificacion del trabajo/SNN-CNN.tex
+Underfull \hbox (badness 1107) in paragraph at lines 7--1
+[]\T1/phv/m/n/12 Los de-ta-lles so-bre la ins-ta-la-ción y con-fi-gu-ra-ción de
+l en-torno de de-sa-rro-llo,
+ []
+
+
+
+[29]
+Underfull \hbox (badness 2644) in paragraph at lines 14--15
+[]\T1/phv/m/n/12 Optimización au-to-ma-ti-za-da con Op-tu-na: Los hi-per-pa-rá-
+me-tros (nu1, nu2,
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 20--21
+\T1/phv/m/n/12 Ca-lIt2) con téc-ni-cas de ex-pan-sión de eti-que-tas y pad-ding
+ pa-ra ma-ne-jar
+ []
+
+
+
+[30]
+Overfull \hbox (9.16496pt too wide) in paragraph at lines 99--99
+[]|\T1/phv/b/n/10.95 Procesamiento 
+ []
+
+
+Overfull \hbox (5.56274pt too wide) in paragraph at lines 99--99
+\T1/phv/b/n/10.95 Con-vo-lu-cio-nal|  
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 100--100
+[]\T1/phv/m/n/12 Tabla 3.1: |Com-pa-ra-ción en-tre mo-de-lo SNN ba-se y mo-de-l
+o hí-bri-do (Par-te 1):
+ []
+
+
+Underfull \hbox (badness 1337) in paragraph at lines 140--140
+[]\T1/phv/m/n/12 Tabla 3.2: |Com-pa-ra-ción en-tre mo-de-lo SNN ba-se y mo-de-l
+o hí-bri-do (Par-te 2):
+ []
+
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 152.
+
+Underfull \hbox (badness 1331) in paragraph at lines 152--153
+[]\T1/phv/b/n/12 nu1\T1/phv/m/n/12 : Con-tro-la la ac-tua-li-za-ción si-náp-ti-
+ca en la co-ne-xión A\TS1/cmss/m/n/12 ^^Y\T1/phv/m/n/12 B (en-tra-da a
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[31]
+
+[32]
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 153.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 153.
+
+Underfull \hbox (badness 3271) in paragraph at lines 153--154
+[]\T1/phv/b/n/12 nu2\T1/phv/m/n/12 : Re-gu-la el apren-di-za-je en co-ne-xio-ne
+s B\TS1/cmss/m/n/12 ^^Y\T1/phv/m/n/12 B (re-cu-rren-tes) y B\TS1/cmss/m/n/12 ^^
+Y\T1/phv/m/n/12 C
+ []
+
+
+Underfull \hbox (badness 1189) in paragraph at lines 156--157
+\T1/phv/m/n/12 (inhi-bi-ción). El ran-go [-0.5, 0.5] per-mi-te ex-plo-rar des-d
+e inhi-bi-ción fuer-te has-ta
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 162--163
+[]\T1/phv/b/n/12 decay\T1/phv/m/n/12 : Cons-tan-te de tiem-po de de-cai-mien-to
+ de la mem-bra-na neu-ro-nal.
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 183--186
+[]\T1/phv/b/n/12 sigma\T1/phv/m/n/12 : An-chu-ra del fil-tro gaus-siano. Va-lo-
+res ba-jos (0.5): Ker-nels más
+ []
+
+
+
+[33]
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family phv in TS1 encoding.
+            Default family used instead on input line 191.
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+[]\T1/phv/b/n/12 exc_-inh_-ba-lan-ce\T1/phv/m/n/12 : Ba-lan-ce en-tre co-ne-xio
+-nes ex-ci-ta-to-rias/inhibitorias.
+ []
+
+
+! LaTeX Error: Environment lstlisting undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224         \begin{lstlisting}
+                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{itemize} on input line 216 ended by \end{lstlisting}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226         \end{lstlisting}
+                              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 228--229
+[]\T1/phv/m/n/12 Combinación pon-de-ra-da de ca-pas B y C. Ma-yor pe-so (0.7) a
+ la ca-pa
+ []
+
+
+
+[34]
+<Imagenes/Diagrama SNN.png, id=645, 756.57657pt x 538.26094pt>
+File: Imagenes/Diagrama SNN.png Graphic file (type png)
+<use Imagenes/Diagrama SNN.png>
+Package pdftex.def Info: Imagenes/Diagrama SNN.png  used on input line 303.
+(pdftex.def)             Requested size: 455.24411pt x 323.87894pt.
+
+Underfull \hbox (badness 1810) in paragraph at lines 310--311
+[]\T1/phv/m/n/12 En es-te blo-que ini-cial la se-rie tem-po-ral bru-ta se di-vi
+-de en con-jun-tos de
+ []
+
+
+
+[35 <./Imagenes/Diagrama SNN.png>]
+<Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2).png, id=653, 1556.81625
+pt x 234.1247pt>
+File: Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2).png Graphic file (
+type png)
+<use Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2).png>
+Package pdftex.def Info: Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2)
+.png  used on input line 314.
+(pdftex.def)             Requested size: 455.24411pt x 68.46243pt.
+
+Underfull \hbox (badness 1092) in paragraph at lines 321--322
+[]\T1/phv/m/n/12 La in-cor-po-ra-ción de una ca-pa con-vo-lu-cio-nal hí-bri-da 
+re-pre-sen-ta una de las
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 321--322
+\T1/phv/m/n/12 in-no-va-cio-nes más sig-ni-fi-ca-ti-vas del mo-de-lo pro-pues-t
+o, fu-sio-nan-do la efi-cien-cia
+ []
+
+
+Underfull \hbox (badness 1205) in paragraph at lines 321--322
+\T1/phv/m/n/12 ener-gé-ti-ca de las SNNs con las ca-pa-ci-da-des de ex-trac-ció
+n de ca-rac-te-rís-ti-cas
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 321--322
+\T1/phv/m/n/12 es-pa-cia-les de las re-des neu-ro-na-les con-vo-lu-cio-na-les. 
+Es-ta ar-qui-tec-tu-ra hí-bri-da
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 327--328
+[]\T1/phv/m/n/12 La evi-den-cia ex-pe-ri-men-tal res-pal-da es-ta de-ci-sión, l
+as ar-qui-tec-tu-ras hí-bri-das
+ []
+
+<Imagenes/Arquitectura detallada SNN.png, id=655, 1610.26593pt x 741.52031pt>
+File: Imagenes/Arquitectura detallada SNN.png Graphic file (type png)
+<use Imagenes/Arquitectura detallada SNN.png>
+Package pdftex.def Info: Imagenes/Arquitectura detallada SNN.png  used on input
+ line 333.
+(pdftex.def)             Requested size: 455.24411pt x 209.63828pt.
+
+Underfull \vbox (badness 2237) has occurred while \output is active []
+
+
+
+[36 <./Imagenes/CodificaciÃ³n y preprocesado de la seÃ±al (2).png>]
+
+[37 <./Imagenes/Arquitectura detallada SNN.png>]
+Underfull \hbox (badness 1348) in paragraph at lines 350--352
+\T1/phv/m/n/12 donde $\OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\O
+T1/cmr/m/n/12 )$ \T1/phv/m/n/12 re-pre-sen-ta el tren de im-pul-sos de en-tra-d
+a y $\OML/cmm/m/it/12 S[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 t\OT1/cmr/m/n/12 )$ 
+\T1/phv/m/n/12 la sa-li-da
+ []
+
+
+
+[38]) (Capitulos/3-Especificacion del trabajo/Preprocesamiento.tex
+Underfull \hbox (badness 1708) in paragraph at lines 3--4
+\T1/phv/m/n/12 en tre-nes de im-pul-sos dis-cre-tos [[]]. Co-mo ob-je-ti-vo adi
+-cio-nal, se im-ple-men-tó
+ []
+
+
+
+[39]
+Underfull \hbox (badness 6542) in paragraph at lines 5--5
+[]\T1/phv/b/n/14.4 Implementación de flu-jos de pre-pro-ce-sa-mien-to pa-ra
+ []
+
+
+Underfull \hbox (badness 6461) in paragraph at lines 7--8
+[]\T1/phv/m/n/12 El da-ta-set IOPS con-tie-ne in-di-ca-do-res cla-ve de ren-di-
+mien-to (KPIs) de
+ []
+
+
+Underfull \hbox (badness 2393) in paragraph at lines 9--10
+[]\T1/phv/m/n/12 La im-ple-men-ta-ción se es-truc-tu-ró en mó-du-los es-pe-cia-
+li-za-dos que abor-dan
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 9--10
+\T1/phv/m/n/12 los di-fe-ren-tes ti-pos de KPIs pre-sen-tes en el da-ta-set, re
+-co-no-cien-do que
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+\T1/phv/m/n/12 ca-da mé-tri-ca re-quie-re es-tra-te-gias de nor-ma-li-za-ción e
+s-pe-cí-fi-cas de-bi-do a
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 9--10
+\T1/phv/m/n/12 sus ran-gos de va-lo-res y ca-rac-te-rís-ti-cas es-ta-dís-ti-cas
+ par-ti-cu-la-res. El mó-du-lo
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 9--10
+\T1/cmtt/m/n/12 create_-new_-dataset_-per_-every_-different_-kpi \T1/phv/m/n/12
+ im-ple-men-ta la se-gre-ga-ción de
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 9--10
+\T1/phv/m/n/12 da-tos por ti-po de KPI, fa-ci-li-tan-do el pro-ce-sa-mien-to pa
+-ra-le-lo y la op-ti-mi-za-ción
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 13--13
+[]\T1/phv/b/n/14.4 Implementación de flu-jos de pre-pro-ce-sa-mien-to pa-ra
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 15--16
+[]\T1/phv/m/n/12 El da-ta-set Ca-lIt2, que re-gis-tra flu-jos de per-so-nas en 
+el edi-fi-cio Ca-lIt2 de
+ []
+
+
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+[]\T1/phv/m/n/12 El mó-du-lo \T1/cmtt/m/n/12 CalIt2_-transform_-date_-to_-times
+tamp \T1/phv/m/n/12 im-ple-men-ta la
+ []
+
+
+Underfull \hbox (badness 5050) in paragraph at lines 17--18
+\T1/phv/m/n/12 con-ver-sión de for-ma-tos de fe-cha a re-pre-sen-ta-cio-nes ti-
+mes-tamp uni-for-mes,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+\T1/phv/m/n/12 ase-gu-ran-do com-pa-ti-bi-li-dad con los sis-te-mas de co-di-fi
+-ca-ción tem-po-ral de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+\T1/phv/m/n/12 Binds-NET. La ve-ri-fi-ca-ción de du-pli-ca-ción de da-tos se re
+a-li-za me-dian-te
+ []
+
+
+Underfull \hbox (badness 4303) in paragraph at lines 17--18
+\T1/cmtt/m/n/12 CalIt2_-check_-every_-row_-is_-repeated_-2_-times\T1/phv/m/n/12
+ , que con-fir-ma la pre-sen-cia de
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 19--20
+[]\T1/phv/m/n/12 El al-go-rit-mo de de-tec-ción y eti-que-ta-do de ano-ma-lías 
+im-ple-men-ta-do en
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 19--20
+\T1/cmtt/m/n/12 CalIt2_-fill_-label_-field \T1/phv/m/n/12 uti-li-za cri-te-rios
+ ba-sa-dos en um-bra-les de con-teo de
+ []
+
+)) (Capitulos/4-Resultados/4.0-Resultados.tex
+
+[41]
+
+[42]
+Cap\'{\i }tulo 4.
+(Capitulos/4-Resultados/4.1-Descripcion-escenarios.tex
+Underfull \hbox (badness 1127) in paragraph at lines 3--5
+[]\T1/phv/m/n/12 En es-te ca-pí-tu-lo se pre-sen-tan los es-ce-na-rios, con-fi-
+gu-ra-cio-nes y pro-to-co-los
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 7--8
+[]\T1/phv/b/n/12 Baselines TS-FEDL\T1/phv/m/n/12 : OhShu-Lih [[]], Khan-Zul-fi-
+qar [[]], ZhengZhen-yu [[]],
+ []
+
+
+
+[43
+
+]
+Underfull \hbox (badness 1436) in paragraph at lines 34--35
+[]\T1/phv/m/n/12 Expansión de eti-que-tas en en-tre-na-mien-to (\T1/cmtt/m/n/12
+ expansion = 100\T1/phv/m/n/12 ) pa-ra mi-ti-gar
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--49
+[]\T1/phv/b/n/12 Efecto ca-de-na\T1/phv/m/n/12 : li-bre-rías es-tre-cha-men-te 
+li-ga-das, co-mo \T1/phv/m/sl/12 Torch-vi-sion \T1/phv/m/n/12 y
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 48--49
+\T1/phv/m/sl/12 Light-ning/torchmetrics\T1/phv/m/n/12 , de-man-dan ran-gos de v
+er-sio-nes dis-tin-tos de \T1/cmtt/m/n/12 torch\T1/phv/m/n/12 ,
+ []
+
+
+
+[44]
+Underfull \hbox (badness 2426) in paragraph at lines 49--50
+[]\T1/phv/b/n/12 Cambios es-truc-tu-ra-les\T1/phv/m/n/12 : tan-to NumPy 2.x co-
+mo Pan-das 2.x in-tro-du-cen
+ []
+
+
+Underfull \hbox (badness 8132) in paragraph at lines 58--59
+[]\T1/phv/b/n/12 Dispositivo de cómpu-to\T1/phv/m/n/12 : Se-lec-cio-na-ble me-d
+ian-te pa-rá-me-tro \T1/cmtt/m/n/12 --device
+ []
+
+
+
+[45]
+
+[46]
+Underfull \hbox (badness 1132) in paragraph at lines 115--116
+\T1/phv/m/n/12 con-tex-tual, mien-tras que su-pe-rar 400 au-men-ta la la-ten-ci
+a y me-mo-ria de
+ []
+
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.117 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.117 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.117 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.117 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.117 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.117 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.117 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.117 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.117 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.117 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.117 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.117 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Underfull \hbox (badness 1132) in paragraph at lines 130--131
+[]\T1/phv/b/n/12 Convergencia em-pí-ri-ca de TPE: \T1/phv/m/n/12 Los es-tu-dios
+ de op-ti-mi-za-ción mues-tran
+ []
+
+
+Underfull \hbox (badness 3407) in paragraph at lines 131--132
+[]\T1/phv/b/n/12 Eficiencia con po-da: \T1/phv/m/n/12 La in-te-gra-ción de ASHA
+ re-du-ce el nú-me-ro de
+ []
+
+
+
+[47]
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.135 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.135 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.135 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.135 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.135 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.135 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.135 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.135 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.135 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.135 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.135 \end{enumerate}
+                     
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.135 \end{enumerate}
+                     
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 141--142
+[]\T1/phv/m/n/12 La con-fi-gu-ra-ción óp-ti-ma por ca-da $\OML/cmm/m/it/12 N[]$
+ \T1/phv/m/n/12 se de-fi-ne co-mo aque-lla con ma-yor
+ []
+
+
+Underfull \hbox (badness 1142) in paragraph at lines 161--162
+\T1/phv/m/n/12 evi-den-cia de con-ver-gen-cia de mé-to-dos ba-ye-sia-nos con po
+-da. Es-to per-mi-te el
+ []
+
+
+
+[48]) (Capitulos/4-Resultados/4.2-Metodologia-evaluacion.tex
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
+[]\T1/phv/m/n/12 Optimización de hi-per-pa-rá-me-tros con Op-tu-na so-bre el co
+n-jun-to de
+ []
+
+
+Underfull \hbox (badness 1281) in paragraph at lines 81--82
+\T1/phv/m/n/12 re-pro-du-ci-bi-li-dad, con un úni-co ex-pe-ri-men-to por con-fi
+-gu-ra-ción de red (sin
+ []
+
+
+
+[50]) (Capitulos/4-Resultados/4.3-Analisis-resultados.tex
+Underfull \hbox (badness 1354) in paragraph at lines 12--13
+[]\T1/phv/b/n/12 Errores\T1/phv/m/n/12 : A pe-sar de las me-jo-ras, si-gue sien
+-do com-pli-ca-do li-diar con el
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 56--58
+[]\T1/phv/m/n/12 Los re-sul-ta-dos en el da-ta-set Ca-lIt2 mues-tran un ren-di-
+mien-to con-sis-ten-te y
+ []
+
+
+
+[51]
+Underfull \hbox (badness 2393) in paragraph at lines 59--60
+[]\T1/phv/b/n/12 Tendencias\T1/phv/m/n/12 : Op-tu-na se-lec-cio-nó con-sis-ten-
+te-men-te ker-nels \T1/cmtt/m/n/12 mexican_-hat \T1/phv/m/n/12 y
+ []
+
+
+Underfull \vbox (badness 4454) has occurred while \output is active []
+
+
+
+[52]
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
+[]\T1/phv/b/n/12 Eficiencia\T1/phv/m/n/12 : Las SNN man-tie-nen ven-ta-jas po-t
+en-cia-les en efi-cien-cia
+ []
+
+)) (Capitulos/5-Conclusiones/Conclusiones.tex
+
+[54]
+Cap\'{\i }tulo 5.
+
+Underfull \hbox (badness 3179) in paragraph at lines 5--6
+\T1/phv/m/n/12 usan-do ar-qui-tec-tu-ras ba-sa-das en SNNs. Se pro-po-ne una ex
+-ten-sión hí-bri-da
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 5--6
+\T1/phv/m/n/12 ano-ma-lías) y Ca-lIt2 (más ba-lan-cea-do, 24.80$ $% ano-ma-lías
+). Se apli-ca un flu-jo
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 17--17
+[]|\T1/phv/m/n/10.95 O2: Di-se-ño y de-sa-rro-llo de ar-qui-tec-tu-ras de SNNs
+ []
+
+
+Underfull \hbox (badness 6477) in paragraph at lines 19--19
+\T1/phv/m/n/10.95 ex-pe-ri-men-ta-ción en con-jun-tos de da-tos reales de
+ []
+
+
+Underfull \hbox (badness 4967) in paragraph at lines 20--20
+[]|\T1/phv/m/n/10.95 O5: Com-pa-ra-ción de la efi-cien-cia ener-gé-ti-ca y el
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 30--31
+\T1/phv/m/n/12 y con-si-guien-do que los hi-per-pa-rá-me-tros con-ver-jan de fo
+r-ma es-ta-ble. La
+ []
+
+
+
+[55
+
+]
+Underfull \hbox (badness 6157) in paragraph at lines 31--32
+[]\T1/phv/b/n/12 Objetivo cum-pli-do par-cial-men-te\T1/phv/m/n/12 : O3 (Im-ple
+-men-ta-ción sos-te-ni-ble): Se
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 37--38
+\T1/phv/m/n/12 con-vo-lu-cio-nal pa-ra-me-tri-za-ble (ker-nels gaus-siano, la-p
+la-ciano, me-xi-can hat,
+ []
+
+
+Underfull \hbox (badness 3396) in paragraph at lines 40--41
+[]\T1/phv/m/n/12 Análisis pre-li-mi-nar de com-ple-ji-dad compu-tacio-nal, sen-
+tan-do ba-ses pa-ra
+ []
+
+
+
+[56]
+! Undefined control sequence.
+\enit@endenumerate ->\enit@after 
+                                 \endlist \ifx \enit@series \relax \else \if...
+l.42 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...\else \ifnum \enit@resuming 
+                                                  =\@ne \enit@setresumekeys ...
+l.42 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.42 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.42 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.42 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.42 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+<argument> enit@resume@series@\enit@series 
+                                           
+l.42 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@endenumerate ...t \fi \ifnum \enit@resuming 
+                                                  =\thr@@ \enit@setresumekey...
+l.42 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.42 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Undefined control sequence.
+\enit@setresumekeys ...xpandafter {\enit@savekeys 
+                                                  }\xdef \enit@afterlist {#2...
+l.42 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\enit@setresumekeys ...it@toks }\ifnum \enit@type 
+                                                  =\z@ #3\def \enit@noexcs {...
+l.42 \end{enumerate}
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   =
+l.42 \end{enumerate}
+                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 47--48
+\T1/phv/m/n/12 en da-ta-sets muy des-ba-lan-cea-dos co-mo IOPS (4.6x, de 0.060 
+a 0.277),
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 47--48
+\T1/phv/m/n/12 aun-que el ren-di-mien-to de-pen-de del nú-me-ro de neu-ro-nas (
+n_-100 >n_-200
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 58--59
+[]\T1/phv/m/n/12 El mo-de-lo hí-bri-do de-sa-rro-lla-do tie-ne po-ten-cial pa-r
+a apli-ca-cio-nes reales de
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 58--59
+\T1/phv/m/n/12 man-te-ni-mien-to pre-dic-ti-vo y mo-ni-to-ri-za-ción IoT, es-pe
+-cial-men-te en en-tor-nos con
+ []
+
+
+Underfull \hbox (badness 4940) in paragraph at lines 58--59
+\T1/phv/m/n/12 res-tric-cio-nes ener-gé-ti-cas. La ar-qui-tec-tu-ra ba-sa-da en
+ im-pul-sos dis-cre-tos es
+ []
+
+
+
+[57]
+Underfull \hbox (badness 1221) in paragraph at lines 73--74
+[]\T1/phv/b/n/12 Externa\T1/phv/m/n/12 : Los da-ta-sets (IOPS, Ca-lIt2) pue-de 
+que no re-pre-sen-ten to-da la
+ []
+
+
+
+[58]
+Underfull \hbox (badness 1400) in paragraph at lines 78--79
+\T1/phv/m/n/12 compu-tacio-nal. La ar-qui-tec-tu-ra pro-pues-ta lo-gró F1-score
+s de 0.417 en Ca-lIt2,
+ []
+
+
+Underfull \hbox (badness 7595) in paragraph at lines 80--81
+[]\T1/phv/m/n/12 La op-ti-mi-za-ción ba-ye-sia-na con Op-tu-na de-mos-tró ser u
+na he-rra-mien-ta
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 80--81
+\T1/phv/m/n/12 sis-te-má-ti-ca-men-te el es-pa-cio de hi-per-pa-rá-me-tros neu-
+ro-na-les y con-vo-lu-cio-na-les.
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 80--81
+\T1/phv/m/n/12 El mo-de-lo pre-sen-ta ca-rac-te-rís-ti-cas ar-qui-tec-tu-ra-les
+ que su-gie-ren po-ten-cial pa-ra
+ []
+
+
+Underfull \hbox (badness 3547) in paragraph at lines 80--81
+\T1/phv/m/n/12 neu-ro-mór-fi-co de-di-ca-do don-de las ven-ta-jas ener-gé-ti-ca
+s pue-den apro-ve-char-se
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 82--84
+[]\T1/phv/m/n/12 La me-to-do-lo-gía de-sa-rro-lla-da sien-ta ba-ses só-li-das p
+a-ra tra-ba-jos fu-tu-ros en
+ []
+
+
+Underfull \hbox (badness 2644) in paragraph at lines 82--84
+\T1/phv/m/n/12 de-tec-ción de ano-ma-lías con SNNs, pro-por-cio-nan-do un flu-j
+o re-pro-du-ci-ble de
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 90--92
+[]\T1/phv/m/n/12 Línea prio-ri-ta-ria pa-ra va-li-dar em-pí-ri-ca-men-te las es
+-ti-ma-cio-nes de efi-cien-cia
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+[]\T1/phv/b/n/12 Comparativa ener-gé-ti-ca\T1/phv/m/n/12 : Me-di-ción di-rec-ta
+ fren-te a im-ple-men-ta-cio-nes
+ []
+
+
+Underfull \hbox (badness 4779) in paragraph at lines 102--103
+[]\T1/phv/b/n/12 Datasets mul-ti-va-rian-tes in-dus-tria-les\T1/phv/m/n/12 : In
+-cor-po-rar se-ña-les de vi-bra-ción,
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 109--110
+[]\T1/phv/b/n/12 Re-calibración de um-bra-les\T1/phv/m/n/12 : Ajus-te au-to-má-
+ti-co de um-bra-les neu-ro-na-les
+ []
+
+
+
+[60]
+Underfull \hbox (badness 1983) in paragraph at lines 110--111
+[]\T1/phv/b/n/12 Despliegue ed-ge\T1/phv/m/n/12 : Em-pa-que-ta-do op-ti-mi-za-d
+o pa-ra mi-cro-con-tro-la-do-res con
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 110--111
+\T1/phv/m/n/12 so-por-te SNN na-ti-vo (e.g. neu-ro-morphic in-fe-ren-ce en-gi-n
+es) in-clu-yen-do
+ []
+
+) (Capitulos/Anexos/A-Manual-Instalacion.tex
+
+[61]
+Ap\'{e}ndice A.
+
+Underfull \hbox (badness 5388) in paragraph at lines 6--7
+[]\T1/phv/m/n/12 La ins-ta-la-ción y con-fi-gu-ra-ción de Binds-NET pre-sen-tó 
+de-sa-fíos téc-ni-cos
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 12--13
+[]\T1/phv/m/n/12 Los con-flic-tos de de-pen-den-cias se ex-ten-die-ron a la ges
+-tión de pa-que-tes,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[62
+
+])
+
+[63]
+
+[64
+
+] (main.bbl
+Ap\'{e}ndice B.
+
+Underfull \hbox (badness 1199) in paragraph at lines 33--39
+\T1/phv/m/n/12 Ale-xan-der M. Heard, and Ying-ying Wu.  2d spin-tro-nics for ne
+u-ro-morphic
+ []
+
+
+
+[65
+
+]
+Underfull \hbox (badness 1715) in paragraph at lines 82--87
+[]\T1/phv/m/n/12 Gabriele Gua-lan-di and Ales-san-dro V. Pa-pa-do-pou-los.  Wor
+st-case im-pact
+ []
+
+
+Underfull \hbox (badness 4328) in paragraph at lines 82--87
+\T1/phv/m/n/12 as-sess-ment of multi-alarm stealth at-tacks against con-trol sy
+s-tems with
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 122--125
+[]\T1/phv/m/n/12 Sepp Ho-chrei-ter and Jür-gen Sch-midhu-ber.  Long short-term 
+me-mory.
+ []
+
+
+
+[66]
+Underfull \hbox (badness 2096) in paragraph at lines 164--168
+[]\T1/phv/m/n/12 Wulfram Gerst-ner, Wer-ner M. Kistler, Ri-chard Naud, and Liam
+ Pa-nins-ki.
+ []
+
+
+
+[67]
+Underfull \hbox (badness 2088) in paragraph at lines 238--243
+\T1/phv/m/n/12 learning[]oriented spi-king neu-ral net-works li-brary in python
+.  \T1/phv/m/sl/12 Fron-tiers in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--265
+[]\T1/phv/m/n/12 Milvus.  What pre-pro-ces-sing tech-ni-ques are used in
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--265
+\T1/phv/m/n/12 ano-maly de-tec-tion?  [][]$\T1/cmtt/m/n/12 https : / / milvus .
+ io / ai-[]quick-[]reference /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--265
+\T1/cmtt/m/n/12 what-[]preprocessing-[]techniques-[]are-[]used-[]in-[]anomaly-[
+]detection/$[][]\T1/phv/m/n/12 , 2025.
+ []
+
+
+
+[68]
+Underfull \hbox (badness 1661) in paragraph at lines 306--311
+\T1/phv/m/n/12 Mo-ritz, Ken Gold-berg, and Ion Stoi-ca.  A sys-tem for mas-si-v
+ely pa-ra-llel
+ []
+
+
+
+[69]
+Underfull \hbox (badness 6641) in paragraph at lines 345--353
+\T1/phv/m/n/12 John Arthur, Kai Hyn-na, Fo-pe-fo-lu Fo-lo-wo-se-le, Syl-vain Sa
+ïghi, Te-re-sa
+ []
+
+
+Underfull \hbox (badness 8151) in paragraph at lines 373--377
+[]\T1/phv/m/n/12 Renjie Wu and Ea-monn J. Keogh.  Cu-rrent ti-me se-ries ano-ma
+ly
+ []
+
+)
+
+[70] (main.aux
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+)
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-05-26>
+ ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 1D2561601E117253F240549BC8DEA089;7936.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 40 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 31428 strings out of 468219
+ 612432 string characters out of 5442933
+ 1051863 words of memory out of 5000000
+ 58920 multiletter control sequences out of 15000+600000
+ 683071 words of font info for 109 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 102i,17n,107p,1185b,3177s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ectt1200.pk> <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ectt1095.pk> <C:\Users\Javier\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\tcss1200.pk><C:/Program Files/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
+iles/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uh
+vb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Progr
+am Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on main.pdf (84 pages, 1063304 bytes).
+PDF statistics:
+ 1133 PDF objects out of 1200 (max. 8388607)
+ 307 named destinations out of 1000 (max. 500000)
+ 383 words of extra memory for PDF output out of 10000 (max. 10000000)
+

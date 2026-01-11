@@ -1,0 +1,18 @@
+EXPLICACIÓN DEL DIAGRAMA PARA PRESENTACIÓN DEL TFM
+(Duración aproximada: 2 minutos)
+
+---
+
+Este diagrama muestra el flujo completo de nuestro sistema de detección de anomalías basado en redes neuronales espinosas. El proceso se divide en cuatro etapas principales que voy a explicar de forma secuencial.
+
+En primer lugar, tenemos la sección de datos y preprocesado, representada en azul. Aquí partimos de un archivo CSV con datos temporales en bruto. Estos datos pasan por un proceso de preprocesado donde se limpian y normalizan. A continuación, se codifican transformando los valores numéricos en impulsos que las neuronas pueden procesar. Finalmente, se agrupan temporalmente para crear secuencias que el modelo pueda analizar.
+
+La segunda sección, en naranja, muestra la arquitectura de la red neuronal. Los datos preprocesados entran a la capa A, que actúa como capa de entrada y distribuye la información. Esta información fluye hacia la capa B, donde ocurre el procesamiento principal mediante neuronas que simulan el comportamiento biológico del cerebro. La capa B genera impulsos que representan patrones detectados en los datos. Opcionalmente, estos impulsos pueden pasar por una tercera capa, la capa C, que aplica filtros convolucionales para mejorar la detección de características específicas, como cambios abruptos o tendencias suaves en las señales temporales.
+
+La tercera sección, en verde, corresponde a la ejecución del modelo. Aquí distinguimos dos fases: entrenamiento y prueba. Durante el entrenamiento, el modelo aprende a identificar patrones normales y anómalos usando los datos preparados. En la fase de prueba, evaluamos cómo de bien funciona el modelo con datos nuevos que no ha visto antes. Ambas fases pueden utilizar tanto la salida directa de la capa B como la salida procesada de la capa C, lo que nos permite comparar qué enfoque funciona mejor.
+
+Finalmente, en la sección morada, guardamos todos los resultados obtenidos y calculamos las métricas de rendimiento utilizando Optuna, una herramienta de optimización automática que nos ayuda a encontrar los mejores parámetros del modelo.
+
+En resumen, este diagrama ilustra cómo transformamos datos temporales en bruto en decisiones sobre anomalías, pasando por codificación, procesamiento neuronal, entrenamiento y evaluación, todo de forma automatizada y optimizada.
+
+

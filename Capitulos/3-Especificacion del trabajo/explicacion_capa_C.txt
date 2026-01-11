@@ -1,0 +1,28 @@
+EXPLICACIÓN SENCILLA: CAPA CONVOLUCIONAL C
+
+La arquitectura híbrida SNN-CNN extiende el modelo base añadiendo una tercera capa denominada capa C, que realiza procesamiento convolucional sobre los impulsos generados por la capa B. Esta extensión mejora la capacidad de extracción de características del modelo.
+
+Kernels configurables:
+
+La capa C utiliza filtros convolucionales (kernels) que pueden configurarse según el tipo de patrón que se desee detectar:
+
+- Kernel Gaussiano: Suaviza la señal temporal, reduciendo el ruido y facilitando la detección de tendencias generales.
+
+- Kernel Laplaciano: Enfocado en detectar cambios abruptos o bordes en la serie temporal, útil para identificar transiciones rápidas.
+
+- Kernel Mexican Hat: Detecta patrones específicos en el centro de la ventana mientras ignora la información de los bordes, enfocándose solo en lo más relevante.
+
+- Kernel Box: Realiza un promediado simple de la señal, siendo computacionalmente eficiente para operaciones básicas de filtrado.
+
+Modos de procesamiento:
+
+El modelo ofrece tres formas diferentes de combinar la información de las capas B y C:
+
+- Modo directo: Utiliza únicamente los impulsos procesados por la capa C, aprovechando directamente el filtrado convolucional.
+
+- Suma ponderada: Combina linealmente las salidas de ambas capas, asignando mayor peso (0.7) a la capa C y menor peso (0.3) a la capa B, equilibrando la información original con el procesamiento mejorado.
+
+- Máximo: Selecciona el valor más alto entre ambas capas en cada instante temporal, preservando las activaciones más fuertes, lo cual resulta especialmente útil para la detección de anomalías donde interesa capturar los picos de actividad.
+
+Esta flexibilidad permite adaptar el modelo a diferentes tipos de datos y objetivos, optimizando el rendimiento según las características específicas de cada conjunto de datos.
+

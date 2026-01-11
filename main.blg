@@ -1,0 +1,112 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: unsrt.bst
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Database file #1: Bibliografia.bib
+Warning--entry type for "Talent.com_2024" isn't style-file defined
+--line 103 of file Bibliografia.bib
+Warning--entry type for "kaushik_optuna_2024" isn't style-file defined
+--line 594 of file Bibliografia.bib
+Warning--entry type for "firmin_parallel_2024" isn't style-file defined
+--line 605 of file Bibliografia.bib
+Warning--entry type for "broutonlab_efficient_2021" isn't style-file defined
+--line 617 of file Bibliografia.bib
+Warning--empty year in mali_comparison_2024
+Warning--empty year in cherdo_time_2023
+Warning--empty year in kshirasagar_auditory_2024
+Warning--empty journal in plummer_2d_2025
+Warning--empty year in plummer_2d_2025
+Warning--empty journal in yusob_anomaly_2018
+Warning--empty year in yusob_anomaly_2018
+Warning--empty journal in basler_unsupervised_2022
+Warning--empty year in basler_unsupervised_2022
+Warning--empty year in shewhart_economic_1931
+Warning--empty journal in page_continuous_1954
+Warning--empty year in page_continuous_1954
+Warning--empty year in gualandi_worst-case_2023
+Warning--empty year in gualandi_optimization-based_2022
+Warning--empty journal in morissette_k-means_2013
+Warning--empty year in morissette_k-means_2013
+Warning--empty journal in cleveland_stl_1990
+Warning--empty year in cleveland_stl_1990
+Warning--empty journal in hafen_syndromic_2009
+Warning--empty year in hafen_syndromic_2009
+Warning--empty journal in hinton_reducing_2006
+Warning--empty year in hinton_reducing_2006
+Warning--empty journal in hochreiter_long_1997
+Warning--empty year in hochreiter_long_1997
+Warning--empty year in xia_novel_2024
+Warning--empty journal in zhang_rethinking_2024
+Warning--empty year in zhang_rethinking_2024
+Warning--empty year in zhang_skip-step_2024
+Warning--empty journal in skatchkovsky_bayesian_2022
+Warning--empty year in skatchkovsky_bayesian_2022
+Warning--empty year in haddad_comparative_2024
+Warning--empty year in jang_bisnn_2021
+Warning--empty journal in maddula_ai-driven_2024
+Warning--empty year in maddula_ai-driven_2024
+Warning--empty journal in islam_benchmarking_2024
+Warning--empty year in islam_benchmarking_2024
+Warning--empty year in parsa_bayesian-based_2019
+Warning--empty year in sanaullah_hybrid_2024
+Warning--empty booktitle in snoek_practical_2012
+Warning--empty year in snoek_practical_2012
+Warning--empty journal in yang_cnts_2023
+Warning--empty year in yang_cnts_2023
+Warning--empty journal in maass_networks_1997
+Warning--empty year in maass_networks_1997
+Warning--empty journal in markram_history_2011
+Warning--empty year in markram_history_2011
+Warning--empty journal in indiveri_neuromorphic_2011
+Warning--empty year in indiveri_neuromorphic_2011
+Warning--empty journal in lee_robust_2022
+Warning--empty year in lee_robust_2022
+Warning--empty journal in liu_sparsity-aware_2024
+Warning--empty year in liu_sparsity-aware_2024
+Warning--empty year in lavin_evaluating_2015
+Warning--empty journal in wu_current_2023
+Warning--empty year in wu_current_2023
+You've used 59 entries,
+            1791 wiz_defined-function locations,
+            758 strings with 15751 characters,
+and the built_in function-call counts, 14986 in all, are:
+= -- 1243
+> -- 761
+< -- 15
++ -- 278
+- -- 219
+* -- 1036
+:= -- 2257
+add.period$ -- 193
+call.type$ -- 59
+change.case$ -- 56
+chr.to.int$ -- 0
+cite$ -- 114
+duplicate$ -- 643
+empty$ -- 1447
+format.name$ -- 219
+if$ -- 3326
+int.to.chr$ -- 0
+int.to.str$ -- 59
+missing$ -- 50
+newline$ -- 310
+num.names$ -- 59
+pop$ -- 266
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 380
+stack$ -- 0
+substring$ -- 944
+swap$ -- 173
+text.length$ -- 15
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 55
+while$ -- 140
+width$ -- 61
+write$ -- 607
+(There were 59 warnings)
